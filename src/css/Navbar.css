@@ -1,0 +1,55 @@
+.navbar {
+    background-color: #f6c147;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-container {
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(41, 41, 41, 1);
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    margin-right: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin-left: 24px;
+}
+
+.nav-external {
+    margin-left: 2px;
+}
+
+.nav-link {
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(41, 41, 41, 1);
+    text-decoration: none;
+}
+
+.icon-small {
+    font-size: 12px; /* Adjust the font size as per your preference */
+}

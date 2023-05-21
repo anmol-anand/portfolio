@@ -1,14 +1,25 @@
 import React from 'react';
+import {Routes, Route} from 'react-router-dom';
+import Navbar from './Navbar';
 import Footer from './Footer';
+import Home from './Home';
+import Portfolio from './Portfolio';
+import Blogs from './Blogs';
 
-function Home() {
+function App() {
   return (
     <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the content of your home page.</p>
+      <Navbar />
+      <div>
+        <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='portfolio' element={<Portfolio/>} />
+            <Route path='/blogs' element={<Blogs/>} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default App;
