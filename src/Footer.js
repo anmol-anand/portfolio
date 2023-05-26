@@ -1,11 +1,11 @@
 import './css/Footer.css';
 import React from 'react';
-import LinkedInIcon from './assets/icons/linkedin.png';
-import GitHubIcon from './assets/icons/github.png';
-import CodeforcesIcon from './assets/icons/cf.png';
-import GmailIcon from './assets/icons/gmail.png';
-import DiscordIcon from './assets/icons/discord.png';
-import InstagramIcon from './assets/icons/instagram.png';
+import LinkedInIcon from './assets/social-icons/linkedin.png';
+import GitHubIcon from './assets/social-icons/github.png';
+import CodeforcesIcon from './assets/social-icons/cf.png';
+import GmailIcon from './assets/social-icons/gmail.png';
+import DiscordIcon from './assets/social-icons/discord.png';
+import InstagramIcon from './assets/social-icons/instagram.png';
 
 function Footer() {
   return (

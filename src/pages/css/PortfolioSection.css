@@ -53,7 +53,8 @@
 }
 
 .elaborate {
-    margin-left: 5px;
+    background-color: inherit;
+    border: 0;
 }
 
 .subtitle-container {
