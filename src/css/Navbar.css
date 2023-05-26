@@ -1,5 +1,6 @@
 .navbar {
-    background-color: #f6c147;
+    width: 100%;
+    background-color: #24262B;
     height: 60px;
     display: flex;
     align-items: center;
@@ -16,22 +17,20 @@
 }
 
 .navbar-logo {
-    font-family: gt-super, Georgia, Cambria, "Times New Roman", Times, serif;
+    font-family: 'gt-super', Georgia, Cambria, "Times New Roman", Times, serif;
     font-size: 24px;
     font-weight: 700;
-    color: rgba(41, 41, 41, 1);
     text-decoration: none;
+    color: #66d9ed;
 }
 
 .nav-menu {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    align-items: right;
+    align-items: center;
     margin-right: 40px;
     padding: 0;
-    display: flex;
-    justify-content: flex-end;
 }
 
 .nav-item {
@@ -43,11 +42,11 @@
 }
 
 .nav-link {
-    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'sohne', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: rgba(41, 41, 41, 1);
     text-decoration: none;
+    color: #66d9ed;
 }
 
 .icon-small {

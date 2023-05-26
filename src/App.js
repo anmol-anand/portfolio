@@ -2,19 +2,20 @@ import React from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Home from './Home';
-import Portfolio from './Portfolio';
-import Blogs from './Blogs';
+import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
+import Blogs from './pages/Blogs';
+import './css/App.css';
 
 function App() {
   return (
-    <div>
+    <div className="outer-wrapper">
       <Navbar />
-      <div>
+      <div className="content-section">
         <Routes>
-            <Route path='/' element={<Home/>} />
-            <Route path='portfolio' element={<Portfolio/>} />
-            <Route path='/blogs' element={<Blogs/>} />
+          <Route path='/' element={<Home/>} />
+          <Route path='portfolio' element={<Portfolio/>} />
+          <Route path='/blogs' element={<Blogs/>} />
         </Routes>
       </div>
       <Footer />

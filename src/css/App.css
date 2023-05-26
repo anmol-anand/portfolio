@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.content-section {
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  bottom: 60px;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +43,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.outer-wrapper {
+  position: absolute;
+  width: max(100%, 600px);
+  top: 0;
+  bottom: 0;
 }

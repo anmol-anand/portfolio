@@ -1,0 +1,118 @@
+.portfolio-section {
+    width: max(40%, 550px);
+    margin-bottom: 20px;
+}
+
+.visible-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-container {
+    margin: 0;
+}
+
+.logo {
+    width: 40px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.visible-text {
+    width: calc(100% - 50px);
+}
+
+.title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title-left {
+    width: 70%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.title-right {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+}  
+
+.date {
+    text-align: right;
+}
+
+.elaborate {
+    margin-left: 5px;
+}
+
+.subtitle-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.subtitle-left {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.subtitle-right {
+    width: 20%;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+}
+
+.content-container {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(117, 117, 117, 1);
+    margin: 0;
+    margin-left: 10px;
+}
+
+.content-head {
+    width: 100%;
+}
+
+.content-list {
+    list-style-type: disc;
+    margin: 0;
+}
+
+.content-item {
+    width: 100%;
+}
+
+.tags-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.tag {
+    border-radius: 100px;
+    background-color: rgba(242, 242, 242, 1);
+    color: rgba(117, 117, 117, 1);
+    padding: 2px 8px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: inherit;
+}

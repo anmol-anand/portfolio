@@ -9,8 +9,8 @@ import InstagramIcon from './assets/icons/instagram.png';
 
 function Footer() {
   return (
-    <footer class="footer">
-      <div class="footer-content">
+    <footer className="footer">
+      <div className="footer-content">
           <div class="icon-wrapper">
             <a href="https://www.linkedin.com/in/anmolaanand/" target="_blank" rel="noopener noreferrer">
               <img src={LinkedInIcon} alt="PNG Icon" className="social-icon"/>

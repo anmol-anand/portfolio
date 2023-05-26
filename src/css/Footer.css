@@ -17,10 +17,8 @@
 
 .footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
-  background-color: #ffffff;
+  bottom: 0;
   height: 60px;
+  background-color: #ffffff;
 }
-
-/* Additional styles as per your preference */
