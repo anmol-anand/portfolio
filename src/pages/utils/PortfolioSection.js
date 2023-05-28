@@ -19,36 +19,23 @@ function PortfolionSection({ jsonObj }) {
                 <div className='visible-text'>
                     <div className='title-container'>
                         <div className='title-left'>
-                            {jsonObj.title}
+                            {jsonObj.title_left}
                         </div>
-                        <div className='title-right'>
-                            {jsonObj.date && (
-                                <div className='date'>
-                                    {jsonObj.date}
-                                </div>
-                            )}
-                        </div>
+                        {(jsonObj.title_right || jsonObj.content_head || jsonObj.content_items.length > 0) && (
+                            <div className='title-right'>
+                                {jsonObj.title_right}
+                                {(jsonObj.content_head || jsonObj.content_items.length > 0) && (<button className='elaborate' onClick={toggleContent}>
+                                    {showContent ? <MinusIcon /> : <PlusIcon />}
+                                </button>)}
+                            </div>)}
                     </div>
-                    {(jsonObj.subtitle_left || jsonObj.subtitle_right) && (
+                    {(jsonObj.subtitle_list) && jsonObj.subtitle_list.map((subtitle, index) => (
                         <div className='subtitle-container'>
-                            {jsonObj.subtitle_left && (
-                                <div className='subtitle-left'>
-                                    {jsonObj.subtitle_left}
-                                </div>
-                            )}
-                            {jsonObj.subtitle_right && (
-                                <div className='subtitle-right'>
-                                    {jsonObj.subtitle_right}
-                                </div>
-                            )}
-                        </div>
-                    )}
+                            <div className='designation'> {subtitle.designation} </div>
+                            <div className='date'> {subtitle.date} </div>
+                        </div>))}
+                    
                 </div>
-                {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
-                    <button className='elaborate' onClick={toggleContent}>
-                        {showContent ? <MinusIcon /> : <PlusIcon />}
-                    </button>
-                )}
             </div>
             {showContent && (jsonObj.content_head || jsonObj.content_items.length > 0) && (
                 <div className='content-container'>
