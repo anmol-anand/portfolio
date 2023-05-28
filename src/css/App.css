@@ -30,9 +30,9 @@
 
 .content-section {
   position: absolute;
-  width: 100%;
   top: 60px;
-  bottom: 60px;
+  width: 100%;
+  overflow: auto;
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -46,8 +46,6 @@
 }
 
 .outer-wrapper {
-  position: absolute;
+  position: relative;
   width: max(100%, 600px);
-  top: 0;
-  bottom: 0;
 }

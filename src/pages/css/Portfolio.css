@@ -4,4 +4,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: inherit;
+}
+
+.section-heading {
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

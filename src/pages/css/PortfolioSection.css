@@ -1,5 +1,5 @@
 .portfolio-section {
-    width: max(40%, 550px);
+    width: max(40%, 570px);
     margin-bottom: 20px;
 }
 
@@ -31,30 +31,27 @@
 }
 
 .title-left {
-    width: 70%;
-    font-size: 20px;
+    width: 75%;
+    font-size: 18px;
     font-weight: 700;
     font-family: inherit;
 }
 
 .title-right {
-    width: 25%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: inherit;
-}  
-
-.date {
     text-align: right;
+    font-size: 14px;
+    font-weight: 450;
+    font-family: inherit;
 }
 
-.elaborate {
-    background-color: inherit;
-    border: 0;
+.subtitle-list {
+    width: 100%,
+
 }
 
 .subtitle-container {
@@ -64,26 +61,32 @@
     justify-content: space-between;
 }
 
-.subtitle-left {
-    width: 70%;
+.designation {
+    width: 55%;
     font-size: 16px;
     font-weight: 400;
     font-family: inherit;
-}
+}  
 
-.subtitle-right {
-    width: 20%;
+.date {
+    width: 45%;
     text-align: right;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
     font-family: inherit;
+    color: rgb(93, 93, 93);
+}
+
+.elaborate {
+    background-color: inherit;
+    border: 0;
 }
 
 .content-container {
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: rgba(117, 117, 117, 1);
+    color: rgb(78, 78, 78);
     margin: 0;
     margin-left: 10px;
 }
