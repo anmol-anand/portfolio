@@ -50,8 +50,7 @@
 }
 
 .subtitle-list {
-    width: 100%,
-
+    width: 100%;
 }
 
 .subtitle-container {
@@ -62,19 +61,28 @@
 }
 
 .designation {
-    width: 55%;
+    position: relative;
+    left: 0;
     font-size: 16px;
     font-weight: 400;
     font-family: inherit;
 }  
 
 .date {
-    width: 45%;
+    position: relative;
+    display: flex; 
+    flex-direction: row;
+    right: 0;
     text-align: right;
     font-size: 13px;
     font-weight: 400;
     font-family: inherit;
     color: rgb(93, 93, 93);
+}
+
+.period-delimiter {
+    margin-left: 2px;
+    margin-right: 2px; 
 }
 
 .elaborate {

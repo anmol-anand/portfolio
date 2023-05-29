@@ -32,7 +32,15 @@ function PortfolionSection({ jsonObj }) {
                     {(jsonObj.subtitle_list) && jsonObj.subtitle_list.map((subtitle, index) => (
                         <div className='subtitle-container'>
                             <div className='designation'> {subtitle.designation} </div>
-                            <div className='date'> {subtitle.date} </div>
+                            {subtitle.period ? (
+                                <div className='date'>
+                                    {subtitle.period} <span className='period-delimiter'> &#183; </span> {subtitle.date}
+                                </div>
+                            ) : (
+                                <div className='date'>
+                                    {subtitle.date}
+                                </div>
+                            )}
                         </div>))}
                     
                 </div>
