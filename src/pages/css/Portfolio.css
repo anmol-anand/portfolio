@@ -7,10 +7,16 @@
     font-family: inherit;
 }
 
+.section {
+    width: 100%;
+}
+
 .section-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: inherit;
     font-size: 24px;
     font-weight: 500;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
