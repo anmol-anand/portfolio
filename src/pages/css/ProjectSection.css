@@ -1,0 +1,62 @@
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 20px;
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+}
+
+.thumbnail {
+    width: 90%;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.content {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+}
+  
+.project-section:hover {
+    background-color: rgb(217, 217, 217);
+}
+
+.project-href {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.project-href:hover {
+    cursor: pointer;
+}
+
+.tags-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.tag {
+    border-radius: 100px;
+    background-color: rgba(242, 242, 242, 1);
+    color: rgba(117, 117, 117, 1);
+    padding: 2px 8px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: inherit;
+}

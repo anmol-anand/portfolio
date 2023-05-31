@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/PortfolioSection.css';
-import {ReactComponent as PlusIcon} from '../../assets/action-icons/plus.svg';
-import {ReactComponent as MinusIcon} from '../../assets/action-icons/minus.svg';
+
+const ASSETS_FOLDER = "/assets/";
 
 function PortfolionSection({ jsonObj }) {
     const [showContent, setShowContent] = useState(false);
@@ -9,12 +9,14 @@ function PortfolionSection({ jsonObj }) {
     const toggleContent = () => {
         setShowContent(!showContent);
     };
+    
+    const imagePath = ASSETS_FOLDER + jsonObj.logo;
 
     return (
         <div className='portfolio-section'>
             <div className='visible-section'>
                 <div className='logo-container'>
-                    <img src={jsonObj.logo} alt='IITRLogo' className='logo'/>
+                    <img src={imagePath} alt='LOGO' className='logo'/>
                 </div>
                 <div className='visible-text'>
                     <div className='title-container'>
@@ -24,9 +26,17 @@ function PortfolionSection({ jsonObj }) {
                         {(jsonObj.title_right || jsonObj.content_head || jsonObj.content_items.length > 0) && (
                             <div className='title-right'>
                                 {jsonObj.title_right}
-                                {(jsonObj.content_head || jsonObj.content_items.length > 0) && (<button className='elaborate' onClick={toggleContent}>
-                                    {showContent ? <MinusIcon /> : <PlusIcon />}
-                                </button>)}
+                                {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
+                                    <button className="elaborate" onClick={toggleContent}>
+                                        {showContent ? 
+                                        (
+                                            <img src="/assets/action-icons/minus.svg" alt="minus" />
+                                        ) : (
+                                            <img src="/assets/action-icons/plus.svg" alt="plus" />
+                                        )}
+                                    </button>
+                                )}
+
                             </div>)}
                     </div>
                     {(jsonObj.subtitle_list) && jsonObj.subtitle_list.map((subtitle, index) => (

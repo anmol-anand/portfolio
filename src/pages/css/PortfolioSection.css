@@ -1,6 +1,7 @@
 .portfolio-section {
-    width: max(40%, 570px);
+    width: 100%;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .visible-section {
@@ -78,6 +79,7 @@
     font-weight: 400;
     font-family: inherit;
     color: rgb(93, 93, 93);
+    margin-right: 5px;
 }
 
 .period-delimiter {
@@ -88,6 +90,10 @@
 .elaborate {
     background-color: inherit;
     border: 0;
+}
+
+.elaborate:hover {
+    cursor: pointer;
 }
 
 .content-container {
@@ -127,4 +133,8 @@
     font-size: 13px;
     font-weight: 400;
     font-family: inherit;
+}
+
+.portfolio-section:hover {
+    background-color: rgb(217, 217, 217);
 }
