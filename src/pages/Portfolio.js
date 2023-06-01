@@ -1,36 +1,100 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './css/Portfolio.css';
 import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
 import portfolio_json from './content/Portfolio.json';
 
-function Portfolio(filter_tags) {
-  console.log(portfolio_json);
+function Portfolio({filter_tags}) {
 
-  const section_tags = Object.keys(portfolio_json).map((key, index) => (
-    portfolio_json[key]
-      .flatMap((element) => element.tags)
-      .join(', ')
-  ));
+  const navigate = useNavigate();
 
-  console.log(section_tags);
+  const renderAgain = (updated_filter_tags) => {
+    navigate(`/portfolio?filter_tags=${updated_filter_tags.join(',')}`);
+  };
+  
+  const unselectTag = (tag) => {
+    console.log("Need to unselect tag: " + tag);
+    const updated_filter_tags = Array.from(filter_tags).filter((t) => t !== tag);
+    renderAgain(updated_filter_tags);
+  };
+  
+  const selectTag = (tag) => {
+    console.log("Need to select tag: " + tag);
+    const updated_filter_tags = Array.from(filter_tags);
+    updated_filter_tags.push(tag);
+    renderAgain(updated_filter_tags);
+  };  
+
+  const all_tags = Object.values(portfolio_json)
+    .map(section =>
+      section.flatMap(entry => entry.tags)
+    )
+    .reduce((acc, tags) => {
+      for (const tag of tags) {
+        if (!acc.includes(tag)) {
+          acc.push(tag);
+        }
+      }
+      return acc;
+    }, []);
+
+  const filtered_section_keys = filter_tags.length === 0 ? 
+    Object.keys(portfolio_json): 
+    Object.keys(portfolio_json).filter((key) =>
+      portfolio_json[key].some((element) =>
+        element.tags.some((tag) => filter_tags.includes(tag))
+      )
+    );
 
   return (
     <div className='portfolio-container'>
+      <div className="section-heading">
+        Tags Cloud
+      </div>
+      <div className="tags-cloud">
+        {all_tags.map((tag, index) => {
+          if (filter_tags.includes(tag)) {
+            return (
+              <div className="selected-tag" key={index} onClick={() => unselectTag(tag)}>
+                #{tag}
+              </div>
+            );
+          } else {
+            return (
+              <div className="unselected-tag" key={index} onClick={() => selectTag(tag)}>
+                #{tag}
+              </div>
+            );
+          }
+        })}
+      </div>
       {
-        Object.keys(portfolio_json).map((key, index) => (
-          <div className="section">
-            <div className='section-heading'> 
-              {key}
-            </div>
+        filtered_section_keys.map((key, index) => (
+          <div className="section" key={index}>
+            <div className="section-heading">{key}</div>
             {key === "Projects" ? (
-              portfolio_json[key].map((element, index) => (
-                <ProjectSection jsonObj={element} />
-              ))
+              portfolio_json[key].map((element, index) => {
+                if (
+                  filter_tags.length === 0 ||
+                  element.tags.some(tag => filter_tags.includes(tag))
+                ) {
+                  return <ProjectSection jsonObj={element} key={index} />;
+                } else {
+                  return null;
+                }
+              })
             ) : (
-              portfolio_json[key].map((element, index) => (
-                <PortfolioSection jsonObj={element} />
-              ))
+              portfolio_json[key].map((element, index) => {
+                if (
+                  filter_tags.length === 0 ||
+                  element.tags.some(tag => filter_tags.includes(tag))
+                ) {
+                  return <PortfolioSection jsonObj={element} key={index} />;
+                } else {
+                  return null;
+                }
+              })
             )}
           </div>
         ))
