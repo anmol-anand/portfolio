@@ -57,6 +57,7 @@
 }
 
 .clear-tags-filter {
+    width: 100%;
     background-color: transparent;
     border: none;
     margin: 2px;

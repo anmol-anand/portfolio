@@ -161,7 +161,8 @@
             "hrefs": [
                 {"text": "Report", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
             ],
-            "content": "TBD",
+            "content_head": "TBD",
+            "content_items": ["TBD"],
             "tags": ["TBD"]
         },
         {
@@ -172,7 +173,8 @@
                 {"text": "Report", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
                 {"text": "GitRepo", "url": "TBD"}
             ],
-            "content": "TBD",
+            "content_head": "TBD",
+            "content_items": ["TBD"],
             "tags": ["TBD"]
         },
         {
@@ -182,7 +184,8 @@
                 {"text": "WebApp", "url": "https://codejudge-prod-app.herokuapp.com/"},
                 {"text": "GitRepo", "url": "TBD"}
             ],
-            "content": "TBD",
+            "content_head": "TBD",
+            "content_items": ["TBD"],
             "tags": ["TBD"]
         }
     ]    

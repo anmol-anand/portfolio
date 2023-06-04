@@ -6,6 +6,10 @@
     backdrop-filter: blur(20px);
 }
 
+.hover-pointer:hover {
+    cursor: pointer;
+}
+
 .visible-section {
     width: 100%;
     display: flex;

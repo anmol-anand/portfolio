@@ -1,9 +1,22 @@
 .footer {
-  height: 60px;
+  height: 80px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-email {
+  margin: 0;
+  height: 20px;
+  text-align: center;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 100px;
+  color: black;
 }
 
 .footer-content {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +24,7 @@
 }
 
 .social-icon {
-  width: 24px;
-  height: 24px;
+  color: black;
 }
 
 .icon-wrapper {

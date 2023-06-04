@@ -13,7 +13,7 @@ function PortfolionSection({ jsonObj }) {
     const imagePath = ASSETS_FOLDER + jsonObj.logo;
 
     return (
-        <div className='portfolio-section'>
+        <div className={`portfolio-section ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}  onClick={toggleContent}>
             <div className='visible-section'>
                 <div className='logo-container'>
                     <img src={imagePath} alt='LOGO' className='logo'/>
@@ -27,7 +27,7 @@ function PortfolionSection({ jsonObj }) {
                             <div className='title-right'>
                                 {jsonObj.title_right}
                                 {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
-                                    <button className="elaborate" onClick={toggleContent}>
+                                    <button className="elaborate">
                                         {showContent ? 
                                         (
                                             <img src="/assets/action-icons/minus.svg" alt="minus" />
