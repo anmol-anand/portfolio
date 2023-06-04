@@ -4,6 +4,7 @@ import './css/Portfolio.css';
 import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
 import portfolio_json from './content/Portfolio.json';
+import { render } from '@testing-library/react';
 
 function Portfolio({filter_tags}) {
 
@@ -11,6 +12,11 @@ function Portfolio({filter_tags}) {
 
   const renderAgain = (updated_filter_tags) => {
     navigate(`/portfolio?filter_tags=${updated_filter_tags.join(',')}`);
+  };
+
+  const clearTagsFilter = () => {
+    console.log("Clearing tags filter");
+    renderAgain([]);
   };
   
   const unselectTag = (tag) => {
@@ -24,7 +30,7 @@ function Portfolio({filter_tags}) {
     const updated_filter_tags = Array.from(filter_tags);
     updated_filter_tags.push(tag);
     renderAgain(updated_filter_tags);
-  };  
+  };
 
   const all_tags = Object.values(portfolio_json)
     .map(section =>
@@ -50,7 +56,7 @@ function Portfolio({filter_tags}) {
   return (
     <div className='portfolio-container'>
       <div className="section-heading">
-        Tags Cloud
+        Filter by skills
       </div>
       <div className="tags-cloud">
         {all_tags.map((tag, index) => {
@@ -69,6 +75,9 @@ function Portfolio({filter_tags}) {
           }
         })}
       </div>
+      <button className="clear-tags-filter" onClick={clearTagsFilter}>
+        clear
+      </button>
       {
         filtered_section_keys.map((key, index) => (
           <div className="section" key={index}>

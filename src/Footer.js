@@ -1,11 +1,7 @@
 import './css/Footer.css';
 import React from 'react';
-// import LinkedInIcon from './assets/social-icons/linkedin.png';
-// import GitHubIcon from './assets/social-icons/github.png';
-// import CodeforcesIcon from './assets/social-icons/cf.png';
-// import GmailIcon from './assets/social-icons/gmail.png';
-// import DiscordIcon from './assets/social-icons/discord.png';
-// import InstagramIcon from './assets/social-icons/instagram.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (

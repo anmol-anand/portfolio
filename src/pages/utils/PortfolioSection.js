@@ -9,7 +9,7 @@ function PortfolionSection({ jsonObj }) {
     const toggleContent = () => {
         setShowContent(!showContent);
     };
-    
+
     const imagePath = ASSETS_FOLDER + jsonObj.logo;
 
     return (
