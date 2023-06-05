@@ -11,6 +11,10 @@ function ProjectSection({ jsonObj }) {
     const toggleContent = () => {
         setShowContent(!showContent);
     };
+
+    const handleTagClick = (event) => {
+        event.stopPropagation();
+    };
     
     const imagePath = ASSETS_FOLDER + jsonObj.thumbnail;
 
@@ -21,7 +25,7 @@ function ProjectSection({ jsonObj }) {
             {jsonObj.hrefs.length > 0 && (
                 <div className='hrefs-container'>
                     {jsonObj.hrefs.map((href, index) => (
-                        <a href={href.url} target="_blank" rel="noopener noreferrer" className='project-href'> {href.text} </a>
+                        <a href={href.url} target="_blank" rel="noopener noreferrer" className='project-href' onClick={handleTagClick}>{href.text}</a>
                     ))}
                 </div>
             )}
