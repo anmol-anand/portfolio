@@ -27,6 +27,42 @@
             "logo": "logos/iitr.png"
         }
     ],
+    "Projects": [
+        {
+            "thumbnail": "project-thumb/codejudge.png",
+            "title": "CodeJudge - Competitive Programming WebApp",
+            "hrefs": [
+                {"text": "WebApp", "url": "https://codejudge-prod-app.herokuapp.com/"},
+                {"text": "GitRepo", "url": "TBD"}
+            ],
+            "content_head": "TBD",
+            "content_items": ["TBD"],
+            "tags": ["TBD"]
+        },
+        {
+            "thumbnail": "project-thumb/resnet.png",
+            "link": "TBD",
+            "title": "Fast image classification using ResNet variant",
+            "hrefs": [
+                {"text": "Report", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
+                {"text": "GitRepo", "url": "TBD"}
+            ],
+            "content_head": "TBD",
+            "content_items": ["TBD"],
+            "tags": ["TBD"]
+        },
+        {
+            "thumbnail": "project-thumb/kway.png",
+            "link": "https://anmol-anand.github.io/paper/kWayConductance.pdf",
+            "title": "A novel graph clustering method",
+            "hrefs": [
+                {"text": "Report", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
+            ],
+            "content_head": "TBD",
+            "content_items": ["TBD"],
+            "tags": ["TBD"]
+        }
+    ],
     "Professional Experience": [
         {
             "title_left": "Magna International",
@@ -152,41 +188,5 @@
             "tags": [],
             "logo": "logos/iitr.png"
         }
-    ],
-    "Projects": [
-        {
-            "thumbnail": "project-thumb/kway.png",
-            "link": "https://anmol-anand.github.io/paper/kWayConductance.pdf",
-            "title": "A novel graph clustering method",
-            "hrefs": [
-                {"text": "Report", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
-            ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
-            "tags": ["TBD"]
-        },
-        {
-            "thumbnail": "project-thumb/resnet.png",
-            "link": "TBD",
-            "title": "Fast image classification using ResNet variant",
-            "hrefs": [
-                {"text": "Report", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
-                {"text": "GitRepo", "url": "TBD"}
-            ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
-            "tags": ["TBD"]
-        },
-        {
-            "thumbnail": "project-thumb/codejudge.png",
-            "title": "CodeJudge - Competitive Programming WebApp",
-            "hrefs": [
-                {"text": "WebApp", "url": "https://codejudge-prod-app.herokuapp.com/"},
-                {"text": "GitRepo", "url": "TBD"}
-            ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
-            "tags": ["TBD"]
-        }
-    ]    
+    ]  
 }
