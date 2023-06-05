@@ -1,8 +1,8 @@
 .portfolio-container {
     width: max(40%, 570px);
     display: flex;
-    flex-wrap: wrap;
-    overflow-y: auto;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     font-family: inherit;
     margin-top: 60px;
