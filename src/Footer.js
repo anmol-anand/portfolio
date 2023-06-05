@@ -7,9 +7,11 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function Footer() {
   return (
     <footer className="footer">
-      <a href="mailto:aanand@tamu.edu" target="_blank" rel="noopener noreferrer" className="footer-email">
-        aanand@tamu.edu
-      </a>
+      <div className="footer-email">
+        <a href="mailto:aanand@tamu.edu" className="email-text">
+          aanand@tamu.edu
+        </a>
+      </div>
       <div className="footer-content">
           <div class="icon-wrapper">
             <a href="https://www.linkedin.com/in/anmolaanand/" target="_blank" rel="noopener noreferrer">

@@ -7,8 +7,10 @@
 
 .footer-email {
   margin: 0;
-  height: 20px;
   text-align: center;
+}
+
+.email-text {
   font-family: "Arial Black", Arial, sans-serif;
   font-size: 22px;
   font-weight: 100px;
