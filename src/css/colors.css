@@ -1,0 +1,20 @@
+:root {
+    --bg_navbar: rgba(0, 0, 0, 0.75);
+    --bg_purple: #710075;
+    --bg_blue: #05009c;
+    --bg_formula: #1a191d;
+        /* radial-gradient(ellipse at 100% 80%, var(--bg_purple) 50%, transparent),
+        radial-gradient(ellipse at 0% 40%, var(--bg_blue) 40%, rgb(0, 0, 0)),
+        radial-gradient(ellipse at 50% 50%, #000000 40%, transparent); */
+    --bg_section: rgba(0, 0, 0, 0.6);
+    --bg_section_hover: rgba(0, 0, 0, 0.7);
+    --bg_tags: rgba(0, 0, 0, 0.6);
+    --bg_tags_hover: rgba(0, 0, 0, 0.8);
+
+    --text_navbar: #af00b5;
+    --text_footer: var(--bg_purple);
+    --text_primary: rgb(223, 223, 223);
+    --text_tags_sel: white;
+    --text_tags_unsel: var(--text_navbar);
+        /* rgb(54, 185, 255); */
+}

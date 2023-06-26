@@ -4,6 +4,7 @@ import './css/Portfolio.css';
 import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
 import portfolio_json from './content/Portfolio.json';
+import about_json from './content/About.json';
 import { render } from '@testing-library/react';
 
 function Portfolio({filter_tags}) {
@@ -55,29 +56,63 @@ function Portfolio({filter_tags}) {
 
   return (
     <div className='portfolio-container'>
-      <div className="section-heading">
-        Filter by skills
+      <div className='section'>
+        <div className='introduction'>
+            <div className='headshot-container'>
+                <img src={"/assets/headshot/headshot.jpg"} alt='HEADSHOT' className='headshot'/>
+            </div>
+            <div className='about-container'>
+                {about_json.intro.map((item, index) => (
+                    <p key={index}>{item}</p>
+                ))}
+            </div>
+        </div>
       </div>
-      <div className="tags-cloud">
-        {all_tags.map((tag, index) => {
-          if (filter_tags.includes(tag)) {
-            return (
-              <div className="selected-tag" key={index} onClick={() => unselectTag(tag)}>
-                #{tag}
+      <div className='section'>
+        <div className='roles-container'>
+          <div className='role'>
+              <div className='role-title'>
+                  Software Engineering
               </div>
-            );
-          } else {
-            return (
-              <div className="unselected-tag" key={index} onClick={() => selectTag(tag)}>
-                #{tag}
+              <div className='role-content'>
+                  {about_json.roles.swe}
               </div>
-            );
-          }
-        })}
+          </div>
+          <div className='role'>
+              <div className='role-title'>
+                  Machine Learning / Data Science
+              </div>
+              <div className='role-content'>
+                  {about_json.roles.ml}
+              </div>
+          </div>
+        </div>
       </div>
-      <button className="clear-tags-filter" onClick={clearTagsFilter}>
-        clear
-      </button>
+      <div className="section">
+        <div className="section-heading">
+          Filter by skills
+        </div>
+        <div className="tags-cloud">
+          {all_tags.map((tag, index) => {
+            if (filter_tags.includes(tag)) {
+              return (
+                <div className="selected-tag" key={index} onClick={() => unselectTag(tag)}>
+                  #{tag}
+                </div>
+              );
+            } else {
+              return (
+                <div className="unselected-tag" key={index} onClick={() => selectTag(tag)}>
+                  #{tag}
+                </div>
+              );
+            }
+          })}
+        </div>
+        <button className="clear-tags-filter" onClick={clearTagsFilter}>
+          clear
+        </button>
+      </div>
       {
         filtered_section_keys.map((key, index) => (
           <div className="section" key={index}>

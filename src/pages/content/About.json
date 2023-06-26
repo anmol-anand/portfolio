@@ -1,0 +1,10 @@
+{
+    "intro": [
+        "I am currently pursuing a Master's degree in Computer Science at Texas A&M University, with a research focusing on Graph Neural Networks for algorithmic problem-solving. Prior to my studies, I worked as a Big Data Engineer at Goldman Sachs, where I utilized frameworks like Apache Hadoop and implemented Natural Language techniques to improve search results. Recently, I interned as a Data Scientist at Magna, focusing on vision problems in the automotive industry. I developed a comprehensive application using Node.js and React, empowering users to capture, label, and train their own models. Additionally, I excel in Algorithms and Data Structures, evident through my participation in competitive contests like ACM ICPC."
+    ],
+
+    "roles": {
+        "swe": "I possess proficiency in app development utilizing various frameworks, including Ruby on Rails, React, and Node.js. Additionally, I am well-versed in utilizing cloud platforms and databases such as Postgres, Azure Blob, and AWS S3. Furthermore, I have experience working with deployment tools like Heroku and Docker to streamline the app development and deployment processes.",
+        "ml": "I have developed expertise in utilizing libraries such as PyTorch and implementing Deep Learning algorithms for both Graph and Image datasets. This proficiency has been cultivated through my thesis research and practical experience in the industry. Moreover, I have accumulated three years of work experience in building a natural language search engine at Goldman Sachs."
+    }
+}

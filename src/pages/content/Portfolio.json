@@ -23,7 +23,7 @@
             ],
             "content_head": "Coursework:",
             "content_items": ["Machine Learning", "Data Structures", "Software Engineering", "Database Management Systems", "Network Programming"],
-            "tags": ["under grad"],
+            "tags": [],
             "logo": "logos/iitr.png"
         }
     ],
@@ -37,7 +37,7 @@
             ],
             "content_head": "TBD",
             "content_items": ["TBD"],
-            "tags": ["TBD"]
+            "tags": ["ruby", "rails", "heroku", "postgres", "databases", "software", "docker"]
         },
         {
             "thumbnail": "project-thumb/resnet.png",
@@ -49,7 +49,7 @@
             ],
             "content_head": "TBD",
             "content_items": ["TBD"],
-            "tags": ["TBD"]
+            "tags": ["deep learning", "pytorch", "convolutional neural nets", "vision", "neural nets"]
         },
         {
             "thumbnail": "project-thumb/kway.png",
@@ -60,7 +60,7 @@
             ],
             "content_head": "TBD",
             "content_items": ["TBD"],
-            "tags": ["TBD"]
+            "tags": ["advanced algorithms", "graphs"]
         }
     ],
     "Professional Experience": [
@@ -71,7 +71,9 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["TBD"],
+            "tags": ["deep learning", "pytorch",
+                "convolutional neural nets", "data science", "Azure", "databases",
+                "react", "NodeJS", "software"],
             "logo": "logos/magna.png"
         },
         {
@@ -82,7 +84,8 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["TBD"],
+            "tags": ["information retrieval", "search engines",
+                "distributed computing", "Big Data", "MapReduce"],
             "logo": "logos/gs.png"
         },
         {
@@ -92,7 +95,7 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["TBD"],
+            "tags": ["Big Data", "MapReduce", "cron", "multi-threading"],
             "logo": "logos/gs.png"
         }
     ],
@@ -103,7 +106,7 @@
                 {"designation": "Teaching Assistant: Machine Learning", "date": "Fall 2023"}
             ],
             "content_items": [],
-            "tags": ["TBD"],
+            "tags": ["machine learning", "deep learning", "pytorch", "teaching"],
             "logo": "logos/tamu.png"
         },
         {
@@ -113,7 +116,7 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["TBD"],
+            "tags": ["graph neural nets", "deep learning", "pytorch", "pytorch-geometric", "data augmentation"],
             "logo": "logos/dive.png"
         },
         {
@@ -122,7 +125,7 @@
                 {"designation": "Teaching Assistant: Discrete Structures", "date": "Spring 2019"}
             ],
             "content_items": [],
-            "tags": [],
+            "tags": ["discrete structures", "graphs", "number theory", "teaching"],
             "logo": "logos/iitr.png"
         },
         {
@@ -132,7 +135,7 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["TBD"],
+            "tags": ["algorithms", "data structures", "competitive programming"],
             "logo": "logos/pag.png"
         }
     ],
@@ -167,7 +170,7 @@
                 {"designation": "International Graduate Student Scholarship", "date": "2022 - 2023"}
             ],
             "content_items": [],
-            "tags": [],
+            "tags": ["scholarship"],
             "logo": "logos/tamu.png"
         },
         {
@@ -176,7 +179,7 @@
                 {"designation": "Represented IIT @ ACM-ICPC India on-site regionals", "date": "Dec 2016"}
             ],
             "content_items": [],
-            "tags": [],
+            "tags": ["algorithms", "data structures", "competitive programming"],
             "logo": "logos/icpc.png"
         },
         {
@@ -185,7 +188,7 @@
                 {"designation": "All India Rank 502 out of 1.2 million candidates", "date": "May 2015"}
             ],
             "content_items": [],
-            "tags": [],
+            "tags": ["competition"],
             "logo": "logos/iitr.png"
         }
     ]  
