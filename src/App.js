@@ -16,14 +16,7 @@ function App() {
     <div className="outer-wrapper">
       <Navbar />
       <div className="content-section">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="portfolio"
-            element={<Portfolio filter_tags={filterTagsArray} />}
-          />
-          <Route path="/blogs" element={<Blogs />} />
-        </Routes>
+        <Portfolio filter_tags={filterTagsArray} />
         <Footer />
       </div>
     </div>

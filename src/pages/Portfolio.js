@@ -56,7 +56,7 @@ function Portfolio({filter_tags}) {
 
   return (
     <div className='portfolio-container'>
-      <div className='section'>
+      <div className='section' id="Introduction">
         <div className='introduction'>
             <div className='headshot-container'>
                 <img src={"/assets/headshot/headshot.jpg"} alt='HEADSHOT' className='headshot'/>
@@ -115,7 +115,7 @@ function Portfolio({filter_tags}) {
       </div>
       {
         filtered_section_keys.map((key, index) => (
-          <div className="section" key={index}>
+          <div className="section" key={index} id={key}>
             <div className="section-heading">{key}</div>
             {key === "Projects" ? (
               portfolio_json[key].map((element, index) => {

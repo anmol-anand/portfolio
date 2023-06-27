@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer" id="Contact">
       <div className="footer-email">
         <a href="mailto:aanand@tamu.edu" className="email-text">
           aanand@tamu.edu

@@ -139,7 +139,7 @@
             "logo": "logos/pag.png"
         }
     ],
-    "Licenses & Certifications": [
+    "Certifications": [
         {
             "title_left": "Amazon Web Services",
             "title_right": "",
@@ -163,7 +163,7 @@
             "logo": "logos/kubernetes.png"
         }
     ],
-    "Honors & Awards": [
+    "Achievements": [
         {
             "title_left": "Texas A&M University",
             "subtitle_list": [
@@ -191,5 +191,5 @@
             "tags": ["competition"],
             "logo": "logos/iitr.png"
         }
-    ]  
+    ]
 }
