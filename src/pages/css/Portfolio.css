@@ -16,6 +16,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-radius: 10px;
+}
+
+.highlight {
+    background-color: var(--bg_nav_target);
 }
 
 .section-heading {

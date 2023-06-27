@@ -6,8 +6,20 @@ import portfolio_json from './pages/content/Portfolio.json';
 import './css/Navbar.css';
 
 function Navbar() {
-  const offset = -60;
+  const offset = -70;
   const duration = 500;
+
+  const handleClick = (section) => {
+    const element = document.getElementById(section);
+    if (element) {
+      element.classList.add('highlight'); // Apply the "highlight" class to the element
+  
+      setTimeout(() => {
+        element.classList.remove('highlight'); // Remove the "highlight" class after 1 second
+      }, 1.1 * duration);
+    }
+  }; 
+
   return (
     <nav className="navbar">
       <ul className="nav-menu">
@@ -20,6 +32,7 @@ function Navbar() {
             offset={offset}
             duration={duration}
             className="nav-link"
+            // onClick={() => handleClick('Portfolio')}
           >
             <FontAwesomeIcon icon={faHome} />
           </Link>
@@ -34,6 +47,7 @@ function Navbar() {
               offset={offset}
               duration={duration}
               className="nav-link"
+              onClick={() => handleClick(key)}
             >
               {index + 1}. {key}
             </Link>
@@ -48,6 +62,7 @@ function Navbar() {
             offset={offset}
             duration={duration}
             className="nav-link"
+            onClick={() => handleClick('Contact')}
           >
             {Object.keys(portfolio_json).length + 1}. Contact
           </Link>

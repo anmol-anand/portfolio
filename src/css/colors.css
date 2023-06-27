@@ -7,6 +7,7 @@
     --bg_section_hover: rgba(0, 0, 0, 0.7);
     --bg_tags: rgba(0, 0, 0, 0.6);
     --bg_tags_hover: rgba(0, 0, 0, 0.8);
+    --bg_nav_target: rgba(255, 255, 255, 0.1);
 
     --text_navbar: #af00b5;
     --text_footer: var(--bg_purple);
