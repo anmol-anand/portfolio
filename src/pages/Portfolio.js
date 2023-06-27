@@ -55,7 +55,7 @@ function Portfolio({filter_tags}) {
     );
 
   return (
-    <div className='portfolio-container'>
+    <div className='portfolio-container' id="Portfolio">
       <div className='section' id="Introduction">
         <div className='introduction'>
             <div className='headshot-container'>

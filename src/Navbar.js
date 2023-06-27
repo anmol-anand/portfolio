@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import portfolio_json from './pages/content/Portfolio.json';
 import './css/Navbar.css';
 
@@ -12,14 +14,14 @@ function Navbar() {
         <li className="nav-item">
           <Link
             activeClass="active"
-            to="Introduction"
+            to="Portfolio"
             spy={true}
             smooth={true}
             offset={offset}
             duration={duration}
             className="nav-link"
           >
-            0. Home
+            <FontAwesomeIcon icon={faHome} />
           </Link>
         </li>
         {Object.keys(portfolio_json).map((key, index) => (
