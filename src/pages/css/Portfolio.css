@@ -1,14 +1,50 @@
 @import '../../css/colors.css';
 
+.double-pane {
+    width: 100%;
+    margin-top: var(--navbar_height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: inherit;
+    color: var(--text_primary);
+}
+
 .portfolio-container {
-    width: max(40%, 570px);
+    width: max(45%, 570px);
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.tags-cloud {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: var(--navbar_height);
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags-cloud-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: inherit;
-    margin-top: var(--navbar_height);
-    color: var(--text_primary);
+    font-size: 24px;
+    font-weight: 500;
+    color: va;
+}
+
+.tags-cloud-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .section {
@@ -63,14 +99,6 @@
 .unselected-tag:hover {
     cursor: pointer;
     background-color: var(--bg_tags_hover);
-}
-
-.tags-cloud {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
 }
 
 .clear-tags-filter {

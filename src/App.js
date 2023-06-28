@@ -1,10 +1,8 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
-import Blogs from './pages/Blogs';
 import './css/App.css';
 
 function App() {
