@@ -1,5 +1,14 @@
 @import './colors.css';
 
+.outer-wrapper {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  min-width: 600px;
+  background: var(--bg_formula);
+  background-attachment: fixed;
+}
+
 .content-section {
   display: flex;
   flex-direction: column;
@@ -10,11 +19,12 @@
   font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.outer-wrapper {
-  position: absolute;
-  min-height: 100vh;
+.double-pane {
   width: 100%;
-  min-width: 600px;
-  background: var(--bg_formula);
-  background-attachment: fixed;
+  margin-top: var(--navbar_height);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: inherit;
+  color: var(--text_primary);
 }

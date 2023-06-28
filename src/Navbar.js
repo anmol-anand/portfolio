@@ -5,7 +5,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import portfolio_json from './pages/content/Portfolio.json';
 import './css/Navbar.css';
 
-function Navbar() {
+function Navbar({filtered_section_keys}) {
   const offset = -70;
   const duration = 500;
 
@@ -46,7 +46,7 @@ function Navbar() {
               smooth={true}
               offset={offset}
               duration={duration}
-              className="nav-link"
+              className={filtered_section_keys.includes(key) ? "nav-link" : "nav-link-dead"}
               onClick={() => handleClick(key)}
             >
               {index + 1}. {key}

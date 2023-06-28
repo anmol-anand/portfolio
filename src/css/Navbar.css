@@ -10,7 +10,6 @@
     width: 100%;
     min-width: 600px;
     background-color: var(--bg_navbar);
-    color: var(--text_navbar);
     backdrop-filter: blur(2px);
 }
 
@@ -27,6 +26,10 @@
 .nav-item {
     margin-left: 24px;
     margin-right: 24px;
+    font-family: 'sohne', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
 }
 
 .nav-external {
@@ -34,11 +37,19 @@
 }
 
 .nav-link {
-    font-family: 'sohne', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: none;
-    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    color: var(--text_navbar);
+}
+
+.nav-link-dead {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    color: var(--text_navbar-dead);
 }
 
 .nav-link:hover {

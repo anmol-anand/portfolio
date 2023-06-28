@@ -1,0 +1,72 @@
+.tags-cloud {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: var(--navbar_height);
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags-cloud-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 500;
+    color: va;
+}
+
+.tags-cloud-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.selected-tag {
+    border-radius: 100px;
+    background-color: var(--bg_tags);
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--text_tags_sel);
+    white-space: nowrap;
+}
+
+.unselected-tag {
+    border-radius: 100px;
+    background-color: var(--bg_tags);
+    padding: 4px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    color: var(--text_tags_unsel);
+    white-space: nowrap;
+}
+
+.selected-tag:hover {
+    cursor: pointer;
+    background-color: var(--bg_tags_hover);
+}
+
+.unselected-tag:hover {
+    cursor: pointer;
+    background-color: var(--bg_tags_hover);
+}
+
+.clear-tags-filter {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    margin: 2px;
+    text-decoration: underline;
+    color: var(--text_primary);
+}
+
+.clear-tags-filter:hover {
+    cursor: pointer;
+}

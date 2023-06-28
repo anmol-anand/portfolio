@@ -10,6 +10,7 @@
     --bg_nav_target: rgba(255, 255, 255, 0.1);
 
     --text_navbar: #af00b5;
+    --text_navbar-dead: #653366;
     --text_footer: var(--bg_purple);
     --text_primary: rgb(223, 223, 223);
     --text_tags_sel: white;
