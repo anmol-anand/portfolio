@@ -1,7 +1,7 @@
 @import '../../css/colors.css';
 
 .portfolio-container {
-    width: max(45%, 570px);
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,65 +30,4 @@
     font-family: inherit;
     font-size: 24px;
     font-weight: 500;
-}
-
-.introduction {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.headshot-container {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.headshot {
-    height: 150px;
-    width: 150px;
-    border: 2px solid var(--text_primary);
-    border-radius: 50%;
-    margin-right: 30px;
-}
-
-.about-container {
-    text-align: justify;
-}
-
-.roles-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.role {
-    width: 48%;
-    border-radius: 10px;
-    background-color: var(--bg_section);
-}
-
-.role-title {
-    width: 100%;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: inherit;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: var(--text_tags_unsel);
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.role-content {
-    text-align: justify;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }

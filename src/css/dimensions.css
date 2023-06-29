@@ -1,3 +1,6 @@
 :root {
     --navbar_height: 60px;
+    --about-height: 350px;
+    --footer-height: 80px;
+    --margin-bottom-px: 20px;
 }

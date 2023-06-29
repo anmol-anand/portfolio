@@ -26,7 +26,7 @@ function Navbar({filtered_section_keys}) {
         <li className="nav-item">
           <Link
             activeClass="active"
-            to="Portfolio"
+            to="About"
             spy={true}
             smooth={true}
             offset={offset}

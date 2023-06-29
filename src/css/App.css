@@ -1,4 +1,5 @@
 @import './colors.css';
+@import './dimensions.css';
 
 .outer-wrapper {
   position: absolute;
@@ -22,9 +23,48 @@
 .double-pane {
   width: 100%;
   margin-top: var(--navbar_height);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   font-family: inherit;
   color: var(--text_primary);
+}
+
+.big-pane {
+  margin-left: 40%;
+  margin-bottom: var(--margin_bottom_px);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.small-pane {
+  position: fixed;
+  left: 10%;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.headshot-container {
+  height: var(--about-height);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot {
+  height: 150px;
+  width: 150px;
+  border: 2px solid var(--text_primary);
+  border-radius: 50%;
+}
+
+.name {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 450;
+  text-align: center;
 }

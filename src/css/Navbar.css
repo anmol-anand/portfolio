@@ -5,6 +5,7 @@
     z-index: 1;
     position: fixed;
     justify-content: center;
+    align-items: center;
     top: 0;
     height: var(--navbar_height);
     width: 100%;
