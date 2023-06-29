@@ -30,7 +30,7 @@
 .big-pane {
   margin-left: 40%;
   margin-bottom: var(--margin_bottom_px);
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
 }

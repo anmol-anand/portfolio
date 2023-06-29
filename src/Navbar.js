@@ -53,7 +53,7 @@ function Navbar({filtered_section_keys}) {
             </Link>
           </li>
         ))}
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link
             activeClass="active"
             to="Contact"
@@ -66,7 +66,7 @@ function Navbar({filtered_section_keys}) {
           >
             {Object.keys(portfolio_json).length + 1}. Contact
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
