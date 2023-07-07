@@ -1,6 +1,8 @@
 @import '../../css/colors.css';
+@import '../../css/font.css';
 
 .project-section {
+    margin: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -81,11 +83,11 @@
 
 .tag {
     border-radius: 100px;
-    background-color: var(--bg_tags_unsel);
+    background-color: var(--bg_tags);
     padding: 2px 8px;
-    font-size: 14px;
+    font-size: var(--tags_fs);
     font-weight: 500;
     font-family: inherit;
-    color: var(--text_tags_unsel);
+    color: var(--text_tags_sel);
     white-space: nowrap;
 }

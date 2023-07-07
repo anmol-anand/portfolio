@@ -1,6 +1,8 @@
 @import '../../css/colors.css';
+@import '../../css/font.css';
 
 .portfolio-section {
+    margin: 2px;
     width: 100%;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -26,7 +28,6 @@
     width: 40px;
     margin: 5px;
     border-radius: 6px;
-
 }
 
 .visible-text {
@@ -138,12 +139,12 @@
 
 .tag {
     border-radius: 100px;
-    background-color: var(--bg_tags_unsel);
+    background-color: var(--bg_tags);
     padding: 2px 8px;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: var(--tags_fs);
+    font-weight: var(--tags_fw);
     font-family: inherit;
-    color: var(--text_tags_unsel);
+    color: var(--text_tags_sel);
     white-space: nowrap;
 }
 

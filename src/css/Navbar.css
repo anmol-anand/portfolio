@@ -1,5 +1,6 @@
 @import './colors.css';
 @import './dimensions.css';
+@import './font.css';
 
 .navbar {
     z-index: 1;
@@ -28,8 +29,8 @@
     margin-left: 24px;
     margin-right: 24px;
     font-family: 'sohne', "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: var(--navbar_fs);
+    font-weight: var(--navbar_fw);
     text-decoration: none;
 }
 

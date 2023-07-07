@@ -1,0 +1,24 @@
+:root {
+    --primary-fs: 16px;
+    --primary-fw: 400;
+    
+    --tags-cloud-heading-fs: 20px;
+    --tags-cloud-heading-fw: 500;
+    
+    --tags_fs: 15px;
+    --tags_fw: 400;
+    
+    --tags_clear_fs: 15px;
+    --tags_clear_fw: 500;
+    
+    --navbar_fs: 16px;
+    --navbar_fw: 450;
+    
+    --expertise_fs: 50px;
+    --expertise_fw: 400;
+    --expertise_ff: 'gt-super, Georgia, Cambria, "Times New Roman", Times, serif';
+
+    --name_fs: 40px;
+    --name_fw: 400;
+    --name_ff: var(--expertise_ff);
+}

@@ -1,8 +1,12 @@
+@import '../../css/font.css';
+
 .tags-cloud {
     width: 100%;
     top: var(--navbar_height);
     display: flex;
     flex-direction: column;
+    font-size: var(--tags_fs);
+    font-weight: var(--tags_fw);
 }
 
 .tags-cloud-heading {
@@ -11,9 +15,8 @@
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: inherit;
-    font-size: 24px;
-    font-weight: 500;
-    color: va;
+    font-size: var(--tags-cloud-heading-fs);
+    font-weight: var(--tags-cloud-heading-fw);
 }
 
 .tags-cloud-container {
@@ -21,15 +24,16 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+
 }
 
 .selected-tag {
     border-radius: 100px;
     background-color: var(--bg_tags);
     padding: 4px 12px;
-    font-size: 14px;
-    font-weight: 500;
     font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
     color: var(--text_tags_sel);
     white-space: nowrap;
 }
@@ -38,9 +42,9 @@
     border-radius: 100px;
     background-color: var(--bg_tags);
     padding: 4px 12px;
-    font-size: 14px;
-    font-weight: 500;
     font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
     color: var(--text_tags_unsel);
     white-space: nowrap;
 }
@@ -59,9 +63,13 @@
     width: 100%;
     background-color: transparent;
     border: none;
-    margin: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     text-decoration: underline;
-    color: var(--text_primary);
+    color: var(--text_small_pane);
+    font-family: inherit;
+    font-size: var(--tags_clear_fs);
+    font-weight: var(--tags_clear_fw);
 }
 
 .clear-tags-filter:hover {
