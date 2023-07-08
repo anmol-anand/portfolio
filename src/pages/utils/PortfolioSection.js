@@ -75,7 +75,7 @@ function PortfolionSection({ jsonObj }) {
                 <div className='tags-container'>
                     {jsonObj.tags.map((tag, index) => (
                         <div className='tag' key={index}>
-                            #{tag}
+                            #{tag.name}
                         </div>
                     ))}
                 </div>

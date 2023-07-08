@@ -17,7 +17,7 @@ function App() {
     Object.keys(portfolio_json): 
     Object.keys(portfolio_json).filter((key) =>
       portfolio_json[key].some((element) =>
-        element.tags.some((tag) => filter_tags.includes(tag))
+        element.tags.some((tag) => filter_tags.includes(tag.name))
       )
     );
 

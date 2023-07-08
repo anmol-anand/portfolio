@@ -16,7 +16,7 @@ function Portfolio({filter_tags, filtered_section_keys}) {
               portfolio_json[key].map((element, index) => {
                 if (
                   filter_tags.length === 0 ||
-                  element.tags.some(tag => filter_tags.includes(tag))
+                  element.tags.some(tag => filter_tags.includes(tag.name))
                 ) {
                   return <ProjectSection jsonObj={element} key={index} />;
                 } else {
@@ -27,7 +27,7 @@ function Portfolio({filter_tags, filtered_section_keys}) {
               portfolio_json[key].map((element, index) => {
                 if (
                   filter_tags.length === 0 ||
-                  element.tags.some(tag => filter_tags.includes(tag))
+                  element.tags.some(tag => filter_tags.includes(tag.name))
                 ) {
                   return <PortfolioSection jsonObj={element} key={index} />;
                 } else {

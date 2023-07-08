@@ -30,20 +30,23 @@ function TagsCloud({filter_tags}) {
       renderAgain(updated_filter_tags);
     };
 
-    const all_tags = Object.values(portfolio_json)
+    const tags_by_categories = Object.values(portfolio_json)
       .map(section =>
         section.flatMap(entry => entry.tags)
       )
       .reduce((acc, tags) => {
         for (const tag of tags) {
-          if (!acc.includes(tag)) {
-            acc.push(tag);
+          for (const category of tag.categories) {
+            if (!acc.hasOwnProperty(category)) {
+              acc[category] = [];
+            }
+            if (!acc[category].includes(tag.name)) {
+              acc[category].push(tag.name);
+            }
           }
         }
         return acc;
-      }, []);
-
-    console.log(all_tags);
+      }, {});
 
     return (
         <div className="tags-cloud">
@@ -51,21 +54,23 @@ function TagsCloud({filter_tags}) {
             Filter by skills
           </div>
           <div className="tags-cloud-container">
-            {all_tags.map((tag, index) => {
-              if (filter_tags.includes(tag)) {
-                return (
-                  <div className="selected-tag" key={index} onClick={() => unselectTag(tag)}>
-                    #{tag}
-                  </div>
-                );
-              } else {
-                return (
-                  <div className="unselected-tag" key={index} onClick={() => selectTag(tag)}>
-                    #{tag}
-                  </div>
-                );
-              }
-            })}
+            {Object.entries(tags_by_categories).map(([category, all_tags]) => (
+              all_tags.map((tag, index) => {
+                if (filter_tags.includes(tag)) {
+                  return (
+                    <div className="selected-tag" key={index} onClick={() => unselectTag(tag)}>
+                      #{tag}
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div className="unselected-tag" key={index} onClick={() => selectTag(tag)}>
+                      #{tag}
+                    </div>
+                  );
+                }
+              })
+            ))}
           </div>
           <button className="clear-tags-filter" onClick={clearTagsFilter}>
             clear

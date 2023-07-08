@@ -37,7 +37,15 @@
             ],
             "content_head": "TBD",
             "content_items": ["TBD"],
-            "tags": ["ruby", "rails", "heroku", "postgres", "databases", "software", "docker"]
+            "tags": [
+                {"name": "ruby", "categories": ["swe"]},
+                {"name": "rails", "categories": ["swe"]},
+                {"name": "heroku", "categories": ["swe"]},
+                {"name": "postgres", "categories": ["swe"]},
+                {"name": "databases", "categories": ["swe"]},
+                {"name": "software", "categories": ["swe"]},
+                {"name": "docker", "categories": ["swe"]}
+            ]
         },
         {
             "thumbnail": "project-thumb/resnet.png",
@@ -49,7 +57,13 @@
             ],
             "content_head": "TBD",
             "content_items": ["TBD"],
-            "tags": ["deep learning", "pytorch", "convolutional neural nets", "vision", "neural nets"]
+            "tags": [
+                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "pytorch", "categories": ["ml"]}, 
+                {"name": "convolutional neural nets", "categories": ["ml"]}, 
+                {"name": "vision", "categories": ["ml"]}, 
+                {"name": "neural nets", "categories": ["ml"]}
+            ]
         },
         {
             "thumbnail": "project-thumb/kway.png",
@@ -60,7 +74,10 @@
             ],
             "content_head": "TBD",
             "content_items": ["TBD"],
-            "tags": ["advanced algorithms", "graphs"]
+            "tags": [
+                {"name": "advanced algorithms", "categories": ["th"]}, 
+                {"name": "graphs", "categories": ["th"]}
+            ]
         }
     ],
     "Professional Experience": [
@@ -71,9 +88,17 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["deep learning", "pytorch",
-                "convolutional neural nets", "data science", "Azure", "databases",
-                "react", "NodeJS", "software"],
+            "tags": [
+                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "pytorch", "categories": ["ml"]},
+                {"name": "convolutional neural nets", "categories": ["ml"]}, 
+                {"name": "data science", "categories": ["ml"]}, 
+                {"name": "Azure", "categories": ["swe"]}, 
+                {"name": "databases", "categories": ["swe"]},
+                {"name": "react", "categories": ["swe"]}, 
+                {"name": "NodeJS", "categories": ["swe"]}, 
+                {"name": "software", "categories": ["swe"]}
+            ],
             "logo": "logos/magna.png"
         },
         {
@@ -84,8 +109,13 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["information retrieval", "search engines",
-                "distributed computing", "Big Data", "MapReduce"],
+            "tags": [
+                {"name": "information retrieval", "categories": ["ml"]}, 
+                {"name": "search engines", "categories": ["ml"]},
+                {"name": "distributed computing", "categories": ["ml"]}, 
+                {"name": "Big Data", "categories": ["ml"]}, 
+                {"name": "MapReduce", "categories": ["ml"]}
+            ],
             "logo": "logos/gs.png"
         },
         {
@@ -95,7 +125,12 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["Big Data", "MapReduce", "cron", "multi-threading"],
+            "tags": [
+                {"name": "Big Data", "categories": ["ml"]}, 
+                {"name": "MapReduce", "categories": ["ml"]}, 
+                {"name": "cron", "categories": ["swe"]}, 
+                {"name": "multi-threading", "categories": ["swe"]}
+            ],
             "logo": "logos/gs.png"
         }
     ],
@@ -106,7 +141,12 @@
                 {"designation": "Teaching Assistant: Machine Learning", "date": "Fall 2023"}
             ],
             "content_items": [],
-            "tags": ["machine learning", "deep learning", "pytorch", "teaching"],
+            "tags": [
+                {"name": "machine learning", "categories": ["ml"]}, 
+                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "pytorch", "categories": ["ml"]}, 
+                {"name": "teaching", "categories": ["act"]}
+            ],
             "logo": "logos/tamu.png"
         },
         {
@@ -116,7 +156,13 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["graph neural nets", "deep learning", "pytorch", "pytorch-geometric", "data augmentation"],
+            "tags": [
+                {"name": "graph neural nets", "categories": ["ml"]}, 
+                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "pytorch", "categories": ["ml"]}, 
+                {"name": "pytorch-geometric", "categories": ["ml"]}, 
+                {"name": "data augmentation", "categories": ["ml"]}
+            ],
             "logo": "logos/dive.png"
         },
         {
@@ -125,7 +171,12 @@
                 {"designation": "Teaching Assistant: Discrete Structures", "date": "Spring 2019"}
             ],
             "content_items": [],
-            "tags": ["discrete structures", "graphs", "number theory", "teaching"],
+            "tags": [
+                {"name": "discrete structures", "categories": ["th"]}, 
+                {"name": "graphs", "categories": ["th"]}, 
+                {"name": "number theory", "categories": ["th"]}, 
+                {"name": "teaching", "categories": ["act"]}
+            ],
             "logo": "logos/iitr.png"
         },
         {
@@ -135,7 +186,11 @@
             ],
             "content_head": "TBD: ",
             "content_items": ["TBD"],
-            "tags": ["algorithms", "data structures", "competitive programming"],
+            "tags": [
+                {"name": "algorithms", "categories": ["th"]}, 
+                {"name": "data structures", "categories": ["th"]}, 
+                {"name": "competitive programming", "categories": ["act"]}
+            ],
             "logo": "logos/pag.png"
         }
     ],
@@ -148,7 +203,10 @@
             ],
             "content_head": "TODO: add link",
             "content_items": [],
-            "tags": ["AWS", "certification"],
+            "tags": [
+                {"name": "AWS", "categories": ["swe"]}, 
+                {"name": "certifications", "categories": ["act"]}
+            ],
             "logo": "logos/aws.png"
         },
         {
@@ -159,7 +217,10 @@
             ],
             "content_head": "TODO: add link",
             "content_items": [],
-            "tags": ["kubernetes", "certification"],
+            "tags": [
+                {"name": "kubernetes", "categories": ["swe"]}, 
+                {"name": "certifications", "categories": ["act"]}
+            ],
             "logo": "logos/kubernetes.png"
         }
     ],
@@ -170,7 +231,9 @@
                 {"designation": "International Graduate Student Scholarship", "date": "2022 - 2023"}
             ],
             "content_items": [],
-            "tags": ["scholarship"],
+            "tags": [
+                {"name": "scholarships", "categories": ["act"]}
+            ],
             "logo": "logos/tamu.png"
         },
         {
@@ -179,7 +242,11 @@
                 {"designation": "Represented IIT @ ACM-ICPC India on-site regionals", "date": "Dec 2016"}
             ],
             "content_items": [],
-            "tags": ["algorithms", "data structures", "competitive programming"],
+            "tags": [
+                {"name": "algorithms", "categories": ["th"]}, 
+                {"name": "data structures", "categories": ["th"]}, 
+                {"name": "competitive programming", "categories": ["act"]}
+            ],
             "logo": "logos/icpc.png"
         },
         {
@@ -188,7 +255,9 @@
                 {"designation": "All India Rank 502 out of 1.2 million candidates", "date": "May 2015"}
             ],
             "content_items": [],
-            "tags": ["competition"],
+            "tags": [
+                {"name": "competition", "categories": ["act"]}
+            ],
             "logo": "logos/iitr.png"
         }
     ]
