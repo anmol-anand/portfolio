@@ -1,6 +1,6 @@
 :root {
-    --primary-fs: 16px;
-    --primary-fw: 400;
+    --primary_fs: 17px;
+    --primary_fw: 400;
     
     --tags-cloud-heading-fs: 20px;
     --tags-cloud-heading-fw: 500;
@@ -21,4 +21,20 @@
     --name_fs: 40px;
     --name_fw: 400;
     --name_ff: var(--expertise_ff);
+
+    --portfolio_title_left_fs: 20px;
+    --portfolio_title_left_fw: 700;
+
+    --portfolio_title_right_fs: 16px;
+    --portfolio_title_right_fw: 500;
+
+    --portfolio_subtitle_left_fs: 18px;
+    --portfolio_subtitle_left_fw: 400;
+
+    --portfolio_subtitle_right_fs: 15px;
+    --portfolio_subtitle_right_fw: 400;
+
+    --project_href_fs: 18px;
+    --project_href_fw: var(--primary_fw);
+        
 }

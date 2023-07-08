@@ -1,11 +1,11 @@
 :root {
     --bg_navbar: rgba(0, 0, 0, 0.75);
     --bg_formula: #ffffff;
-    --bg_section: #ffffff;
+    --bg_section: transparent;
     --bg_section_hover: var(--bg_section);
     --bg_tags: rgba(0, 0, 0, 0.6);
     --bg_tags_hover: rgba(0, 0, 0, 0.8);
-    --bg_nav_target: rgba(0, 0, 0, 0.7);
+    --bg_nav_target: #ffc117ce;
 
     --text-pytorch: #ee4c2c;
     --text-react: #61dafb;

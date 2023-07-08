@@ -29,8 +29,8 @@
 .title {
     width: 90%;
     text-align: center;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: var(--portfolio_title_left_fs);
+    font-weight: var(--portfolio_title_left_fw);
     font-family: inherit;
     margin-bottom: 10px;
 }
@@ -45,19 +45,23 @@
 
 .content-container {
     width: 100%;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: var(--primary_fs);
+    font-weight: var(--primary_fw);
     margin: 0;
     margin-left: 10px;
 }
 
 .content-head {
     width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .content-list {
     list-style-type: disc;
     margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .content-item {
@@ -68,6 +72,8 @@
     margin-left: 5px;
     margin-right: 5px;
     color: var(--text_primary);
+    font-size: var(--project_href_fs);
+    font-weight: var(--project_href_fw);
 }
 
 .project-href:hover {

@@ -4,7 +4,7 @@
 .portfolio-section {
     margin: 2px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 10px;
     background-color: var(--bg_section);
     backdrop-filter: blur(20px);
@@ -45,8 +45,8 @@
 
 .title-left {
     width: 75%;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: var(--portfolio_title_left_fs);
+    font-weight: var(--portfolio_title_left_fw);
     font-family: inherit;
 }
 
@@ -57,8 +57,8 @@
     justify-content: flex-end;
     align-items: center;
     text-align: right;
-    font-size: 14px;
-    font-weight: 450;
+    font-size: var(--portfolio_title_right_fs);
+    font-weight: var(--portfolio_title_right_fw);
     font-family: inherit;
 }
 
@@ -76,8 +76,8 @@
 .designation {
     position: relative;
     left: 0;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: var(--portfolio_subtitle_left_fs);
+    font-weight: var(--portfolio_subtitle_left_fw);
     font-family: inherit;
 }  
 
@@ -87,8 +87,8 @@
     flex-direction: row;
     right: 0;
     text-align: right;
-    font-size: 13px;
-    font-weight: 400;
+    font-size: var(--portfolio_subtitle_right_fs);
+    font-weight: var(--portfolio_subtitle_right_fw);
     font-family: inherit;
     margin-right: 5px;
 }
@@ -109,19 +109,23 @@
 
 .content-container {
     width: 100%;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: var(--primary_fs);
+    font-weight: var(--primary_fw);
     margin: 0;
     margin-left: 10px;
 }
 
 .content-head {
     width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .content-list {
     list-style-type: disc;
     margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .content-item {

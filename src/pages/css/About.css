@@ -73,6 +73,8 @@
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: var(--primary_fs);
+    font-weight: var(--primary_fw);
 }
 
 #swe-role {

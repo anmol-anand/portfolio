@@ -43,6 +43,8 @@ function TagsCloud({filter_tags}) {
         return acc;
       }, []);
 
+    console.log(all_tags);
+
     return (
         <div className="tags-cloud">
           <div className="tags-cloud-heading">

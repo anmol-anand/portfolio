@@ -4,7 +4,7 @@
     ],
 
     "roles": {
-        "swe": "I possess proficiency in app development utilizing various frameworks, including Ruby on Rails, React, and Node.js. Additionally, I am well-versed in utilizing cloud platforms and databases such as Postgres, Azure Blob, and AWS S3. Furthermore, I have experience working with deployment tools like Heroku and Docker to streamline the app development and deployment processes.",
-        "ml": "I have developed expertise in utilizing libraries such as PyTorch and implementing Deep Learning algorithms for both Graph and Image datasets. This proficiency has been cultivated through my thesis research and practical experience in the industry. Moreover, I have accumulated three years of work experience in building a natural language search engine at Goldman Sachs."
+        "swe": "I have a strong skill set in developing applications using different frameworks like Ruby on Rails, React, and Node.js. Moreover, I am adept at utilizing cloud platforms and databases such as Postgres, Azure Blob, and AWS S3. Additionally, I have hands-on experience with deployment tools like Heroku and Docker to enhance efficiency in the app development and deployment workflows.",
+        "ml": "Through my thesis research and practical experience in the industry, I have acquired a strong command in utilizing libraries like PyTorch and implementing Deep Learning algorithms for both Graph and Image datasets. Additionally, I have accumulated three years of valuable work experience at Goldman Sachs, where I focused on developing a natural language search engine."
     }
 }
