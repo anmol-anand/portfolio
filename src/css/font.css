@@ -18,8 +18,8 @@
 
     /* Nav Bar */
     
-    --navbar_fs: 14px;
-    --navbar_fw: 400;
+    --navbar_fs: 13px;
+    --navbar_fw: 600;
 
     /* Name */
 
@@ -29,11 +29,11 @@
     
     /* Tags cloud */
 
-    --tags_cloud_heading_fs: 16px;
+    --tags_cloud_heading_fs: 18px;
     --tags_cloud_heading_fw: 500;
 
     --tags_category_fs: 14px;
-    --tags_category_fw: 500;
+    --tags_category_fw: 350;
     
     --tags_fs: 11px;
     --tags_fw: 400;

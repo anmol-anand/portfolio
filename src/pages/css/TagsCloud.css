@@ -14,7 +14,7 @@
     width: 100%;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: inherit;
     font-size: var(--tags_cloud_heading_fs);
     font-weight: var(--tags_cloud_heading_fw);
@@ -30,8 +30,8 @@
 
 .skill-category-container {
     width: 96%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
     display: flex;
     flex-direction: column;
 }
