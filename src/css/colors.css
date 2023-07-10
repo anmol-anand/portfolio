@@ -1,19 +1,42 @@
 :root {
+
+    /* NavBar */
+
     --bg_navbar: rgba(0, 0, 0, 0.75);
-    --bg_formula: #ffffff;
-    --bg_section: transparent;
-    --bg_section_hover: var(--bg_section);
-    --bg_tags: rgba(0, 0, 0, 0.6);
-    --bg_tags_hover: rgba(0, 0, 0, 0.8);
-    --bg_nav_target: #ffc117ce;
+    --text_navbar: var(--bg_small_pane);
+    --text_navbar-dead: #8d4030;
+
+    /* Main background */
+
+    --bg_formula: #fefbe9;
+    --text_primary: rgb(67, 67, 67);
+
+    /* Small pane */
+
+    --bg_small_pane: #e1eedd;
+    --text_small_pane: #183a1d;
+    --text_skill_category: black;
+
+    /* Footer */
+
+    --text_footer: var(--text_small_pane);
+
+    /* About section */
 
     --text-pytorch: #ee4c2c;
     --text-react: #61dafb;
-    --text_navbar: #ee4c2c;
-    --text_navbar-dead: #8d4030;
-    --text_footer: white;
-    --text_primary: rgb(67, 67, 67);
+
+    /* Portfolio */
+
+    --bg_section: transparent;
+    --bg_section_hover: var(--bg_section);
+    --bg_highlight: #ffc117ce;
+
+    /* Tags */
+
+    --bg_tags: rgba(0, 0, 0, 0.6);
+    --bg_tags_hover: rgba(0, 0, 0, 0.8);
     --text_tags_sel: white;
-    --text_tags_unsel: var(--text_navbar);
-    --text_small_pane: white;
+    --text_tags_unsel: white;
+    --text_section_tags: white;
 }

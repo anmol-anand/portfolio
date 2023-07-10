@@ -15,13 +15,13 @@ function Footer() {
       <div className="footer-content">
           <div class="icon-wrapper">
             <a href="https://www.linkedin.com/in/anmolaanand/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="2x" className="social-icon" />
+              <FontAwesomeIcon icon={faLinkedin} size="lg" className="social-icon" />
               {/* <span className="tooltip">LinkedIn</span> */}
             </a>
           </div>
           <div class="icon-wrapper">
             <a href="https://github.com/anmol-anand" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} size="2x" className="social-icon" />
+              <FontAwesomeIcon icon={faGithub} size="lg" className="social-icon" />
               {/* <span className="tooltip">GitHub</span> */}
             </a>
           </div>
@@ -39,7 +39,7 @@ function Footer() {
           </div> */}
           <div class="icon-wrapper">
             <a href="https://www.instagram.com/_anmol_anand_/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faInstagram} size="2x" className="social-icon" />
+              <FontAwesomeIcon icon={faInstagram} size="lg" className="social-icon" />
               {/* <span className="tooltip">Instagram</span> */}
             </a>
           </div>

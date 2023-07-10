@@ -28,7 +28,6 @@
 .nav-item {
     margin-left: 24px;
     margin-right: 24px;
-    font-family: 'sohne', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: var(--navbar_fs);
     font-weight: var(--navbar_fw);
     text-decoration: none;

@@ -1,40 +1,67 @@
 :root {
-    --primary_fs: 17px;
-    --primary_fw: 400;
-    
-    --tags-cloud-heading-fs: 20px;
-    --tags-cloud-heading-fw: 500;
-    
-    --tags_fs: 15px;
-    --tags_fw: 400;
-    
-    --tags_clear_fs: 15px;
-    --tags_clear_fw: 500;
-    
-    --navbar_fs: 16px;
-    --navbar_fw: 450;
-    
-    --expertise_fs: 50px;
-    --expertise_fw: 400;
-    --expertise_ff: 'gt-super, Georgia, Cambria, "Times New Roman", Times, serif';
 
-    --name_fs: 40px;
+    --primary_ff: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+    /* About Section */
+    
+    --expertise_fs: 30px;
+    --expertise_fw: 400;
+    --expertise_ff: Cervo-Light, serif;
+
+    --role_title_fs: 20px;
+    --role_title_fw: 400;
+
+    --primary_fs: 14px;
+    --primary_fw: 400;
+
+    /* Nav Bar */
+    
+    --navbar_fs: 14px;
+    --navbar_fw: 400;
+
+    /* Name */
+
+    --name_fs: 24px;
     --name_fw: 400;
     --name_ff: var(--expertise_ff);
+    
+    /* Tags cloud */
 
-    --portfolio_title_left_fs: 20px;
+    --tags_cloud_heading_fs: 16px;
+    --tags_cloud_heading_fw: 500;
+
+    --tags_category_fs: 14px;
+    --tags_category_fw: 500;
+    
+    --tags_fs: 11px;
+    --tags_fw: 400;
+    
+    --tags_clear_fs: 12px;
+    --tags_clear_fw: 500;
+
+    /* Footer */
+
+    --footer_email_ff: "Arial Black", Arial, sans-serif;
+    --footer_email_fs: 18px;
+    --footer_email_fw: 300;
+
+    /* Portfolio section */
+
+    --portfolio_title_left_fs: 16px;
     --portfolio_title_left_fw: 700;
 
-    --portfolio_title_right_fs: 16px;
+    --portfolio_title_right_fs: 13px;
     --portfolio_title_right_fw: 500;
 
-    --portfolio_subtitle_left_fs: 18px;
+    --portfolio_subtitle_left_fs: 14px;
     --portfolio_subtitle_left_fw: 400;
 
-    --portfolio_subtitle_right_fs: 15px;
+    --portfolio_subtitle_right_fs: 11px;
     --portfolio_subtitle_right_fw: 400;
 
-    --project_href_fs: 18px;
+    --project_href_fs: 14px;
     --project_href_fw: var(--primary_fw);
         
 }

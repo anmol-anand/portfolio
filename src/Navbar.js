@@ -49,7 +49,8 @@ function Navbar({filtered_section_keys}) {
               className={filtered_section_keys.includes(key) ? "nav-link" : "nav-link-dead"}
               onClick={() => handleClick(key)}
             >
-              {index + 1}. {key}
+              {/* Numbering nav item */} {/* {index + 1}.  */}
+              {key}
             </Link>
           </li>
         ))}

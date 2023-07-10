@@ -1,4 +1,5 @@
 @import '../../css/font.css';
+@import '../../css/colors.css';
 
 .tags-cloud {
     width: 100%;
@@ -15,16 +16,41 @@
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: inherit;
-    font-size: var(--tags-cloud-heading-fs);
-    font-weight: var(--tags-cloud-heading-fw);
+    font-size: var(--tags_cloud_heading_fs);
+    font-weight: var(--tags_cloud_heading_fw);
 }
 
 .tags-cloud-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-category-container {
+    width: 96%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-category-title {
+    width: 100%;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: var(--tags_category_fs);
+    font-weight: var(--tags_category_fw);
+    color: var(--text_skill_category);
+}
+
+.skill-category-tags {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .selected-tag {

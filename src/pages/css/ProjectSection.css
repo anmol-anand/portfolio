@@ -95,6 +95,6 @@
     font-size: var(--tags_fs);
     font-weight: 500;
     font-family: inherit;
-    color: var(--text_tags_sel);
+    color: var(--text_section_tags);
     white-space: nowrap;
 }

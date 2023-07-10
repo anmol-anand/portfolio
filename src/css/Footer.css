@@ -1,11 +1,11 @@
 @import './colors.css';
 @import './dimensions.css';
+@import './font.css';
 
 .footer {
   position: inherit;
   bottom: 0;
-  height: var(--footer_height);
-  margin-bottom: var(--margin-bottom-px);
+  margin-bottom: var(--footer_bottom_margin);
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -19,9 +19,9 @@
 }
 
 .email-text {
-  font-family: "Arial Black", Arial, sans-serif;
-  font-size: 22px;
-  font-weight: 100px;
+  font-family: var(--footer_email_ff);
+  font-size: var(--footer_email_fs);
+  font-weight: var(--footer_email_fw);
   color: var(--text_footer);
 }
 
@@ -38,10 +38,11 @@
 }
 
 .icon-wrapper {
-  margin-left: 8px;
-  margin-right: 8px;
-}
-
-.highlight {
-    background-color: var(--bg_nav_target);
+  height: var(--social_icon_size);
+  width: var(--social_icon_size);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--social_icon_margin_top);
+  margin-left: var(--social_icon_margin_lr);
+  margin-right: var(--social_icon_margin_lr);
 }

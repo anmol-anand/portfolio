@@ -1,7 +1,26 @@
 :root {
-    --navbar_height: 60px;
-    --about-height: 350px;
-    --footer-height: 80px;
-    --margin-bottom-px: 20px;
-    --role-icon-size: 64px;
+
+    /* NavBar */
+
+    --navbar_height: 50px;
+
+    /* About */
+
+    --role-icon-size: 48px;
+
+    /* Headshot */
+
+    --headshot_margin: 40px;
+    --headshot_height: 120px;
+
+    /* Footer */
+    
+    --footer_bottom_margin: 20px;
+    --social_icon_size: 24px; /* Also change icon sizes in Footer.js and codeforces.svg */
+    --social_icon_margin_top: 4px;
+    --social_icon_margin_lr: 6px;
+
+    /* Portfolio */
+
+    --logo_width: 35px;
 }
