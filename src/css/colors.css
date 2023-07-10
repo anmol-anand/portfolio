@@ -4,11 +4,11 @@
 
     --bg_navbar: rgba(0, 0, 0, 0.75);
     --text_navbar: var(--bg_small_pane);
-    --text_navbar-dead: #8d4030;
+    --text_navbar-dead: #6d726b;
 
     /* Main background */
 
-    --bg_formula: #fefbe9;
+    --bg_formula: #fffefb;
     --text_primary: rgb(67, 67, 67);
 
     /* Small pane */
@@ -30,13 +30,14 @@
 
     --bg_section: transparent;
     --bg_section_hover: var(--bg_section);
-    --bg_highlight: #ffc117ce;
+    --bg_highlight: #e1eedd;
 
     /* Tags */
 
-    --bg_tags: rgba(0, 0, 0, 0.6);
-    --bg_tags_hover: rgba(0, 0, 0, 0.8);
-    --text_tags_sel: white;
-    --text_tags_unsel: white;
-    --text_section_tags: white;
+    --bg_tags: transparent;
+    --bg_tags_hover: rgba(0, 0, 0, 0.2);
+    --bg_tags_sel: var(--bg_tags_hover);
+    --text_tags_unsel: var(--text_skill_category);
+    --text_tags_sel: var(--text_tags_unsel);
+    --text_section_tags: var(--text_tags_unsel);
 }

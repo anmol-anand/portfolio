@@ -6,7 +6,7 @@ function About() {
     return (
         <div className="about-container" id="About">
             <div className='about-title'>
-                My Expertise
+                MY EXPERTISE
             </div>
             <div className='about-subtitle'>
                 {/* SOFTWARE DEVELOPER, MACHINE LEARNING & DATA SCIENTIST */}

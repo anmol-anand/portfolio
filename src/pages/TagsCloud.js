@@ -81,7 +81,7 @@ function TagsCloud({filter_tags}) {
             ))}
           </div>
           <button className="clear-tags-filter" onClick={clearTagsFilter}>
-            clear
+            clear selection
           </button>
         </div>
     );
