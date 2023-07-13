@@ -94,23 +94,32 @@
   display: none;
 }
 
-#expand-navbar-button {
+.expand-button {
   z-index: 1;
   display: flex;
   position: fixed;
   height: 45px;
   width: 45px;
-  top: 20px;
-  right: 20px;
   background-color: var(--bg_navbar);
   border-radius: 5px;
   border: 0;
   color: var(--text_navbar);
   align-items: center;
   justify-content: center;
+
 }
 
-#expand-navbar-button:hover {
+#expand-navbar-button {
+  top: 10px;
+  right: 20px;
+}
+
+#expand-tags-cloud-button {
+  top: 10px;
+  left: 20px;
+}
+
+.expand-button:hover {
   cursor: pointer;
 }
 
@@ -123,6 +132,7 @@
 }
 
 #tags-cloud-cute-wrapper {
+  display: none;
   z-index: 1;
   width: var(--tags_cloud_cute_width);
   height: 100%;

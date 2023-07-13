@@ -9,7 +9,7 @@ import TagsCloud from './pages/TagsCloud';
 import portfolio_json from './pages/content/Portfolio.json';
 import './css/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faFilter } from '@fortawesome/free-solid-svg-icons';
 
 function collapseNavbar() {
   const navbar = document.getElementById('navbar-cute-wrapper');
@@ -33,23 +33,51 @@ function showNavbar() {
   }
 }
 
-/**
- * Hook that alerts clicks outside of the passed ref
- */
-function useOutsideAlerter(ref) {
+function collapseTagsCloud() {
+  const tags_cloud = document.getElementById('tags-cloud-cute-wrapper');
+  if (tags_cloud) {
+    tags_cloud.style.display = 'none';
+  }
+  const expand_button = document.getElementById('expand-tags-cloud-button');
+  if (expand_button) {
+    expand_button.style.display = 'flex';
+  }
+}
+
+function showTagsCloud() {
+  const tags_cloud = document.getElementById('tags-cloud-cute-wrapper');
+  if (tags_cloud) {
+    tags_cloud.style.display = 'block';
+  }
+  const expand_button = document.getElementById('expand-tags-cloud-button');
+  if (expand_button) {
+    expand_button.style.display = 'none';
+  }
+}
+
+function useOutsideNavbar(ref) {
   useEffect(() => {
-    /**
-     * Alert if clicked on outside of element
-     */
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
         collapseNavbar();
       }
     }
-    // Bind the event listener
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
+}
+
+function useOutsideTagsCloud(ref) {
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        collapseTagsCloud();
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [ref]);
@@ -67,7 +95,10 @@ function App() {
   const filter_tags = filter_tags_param ? filter_tags_param.split(',') : [];
 
   const navbarRef = useRef(null);
-  useOutsideAlerter(navbarRef);
+  useOutsideNavbar(navbarRef);
+
+  const tagsCloudRef = useRef(null);
+  useOutsideTagsCloud(tagsCloudRef);
 
   const filtered_section_keys = filter_tags.length === 0 ? 
     Object.keys(portfolio_json): 
@@ -82,13 +113,16 @@ function App() {
   return (
     <div className="outer-wrapper">
       {is_small_screen && <div className='small-screen'>
-        <button id="expand-navbar-button" onClick={showNavbar}>
+        <button className="expand-button" id="expand-navbar-button" onClick={showNavbar}>
           <FontAwesomeIcon icon={faBars} style={{ height: '25px', width: '25px' }} /> 
         </button>
         <div id='navbar-cute-wrapper' ref={navbarRef}>
           <Navbar is_small_screen={true} filtered_section_keys={filtered_section_keys} />
         </div>
-        <div id='tags-cloud-cute-wrapper'>
+        <button className="expand-button" id="expand-tags-cloud-button" onClick={showTagsCloud}>
+          <FontAwesomeIcon icon={faFilter} style={{ height: '25px', width: '25px' }} /> 
+        </button>
+        <div id='tags-cloud-cute-wrapper' ref={tagsCloudRef}>
           <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
         </div>
         <div className='single-pane'>
