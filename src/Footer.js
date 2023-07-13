@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-function Footer() {
+function Footer({is_small_screen}) {
   return (
-    <div className="footer" id="Contact">
+    <div className={is_small_screen ? "footer-cute" : "footer"} id="Contact">
       <div className="footer-email">
         <a href="mailto:aanand@tamu.edu" className="email-text">
           aanand@tamu.edu

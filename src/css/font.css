@@ -7,7 +7,7 @@
     /* About Section */
     
     --expertise_fs: 24px;
-    --expertise_fw: 6x00;
+    --expertise_fw: 400;
     /* --expertise_ff: Cervo-Light, serif; */
     --expertise_ff: "Exo 2", sans-serif;
 
@@ -19,7 +19,7 @@
 
     /* Nav Bar */
     
-    --navbar_fs: 13px;
+    --navbar_fs: 13.5px;
     --navbar_fw: 600;
 
     /* Name */

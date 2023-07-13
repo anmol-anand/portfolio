@@ -1,5 +1,7 @@
 :root {
 
+    --min_width: 600px;
+
     /* NavBar */
 
     --navbar_height: 50px;
@@ -7,6 +9,8 @@
     /* About */
 
     --role-icon-size: 48px;
+    --about_top_margin: 30px;
+    --about_bottom_margin: 30px;
 
     /* Headshot */
 
@@ -23,4 +27,16 @@
     /* Portfolio */
 
     --logo_width: 35px;
+
+    /*------------------------- Cute -------------------------*/
+
+    /* NavBar */
+
+    --navbar_cute_width: 250px;
+
+    --navbar_cute_side_margin: 40px;
+
+    --small_pane_cute_width: 35%;
+
+    --about_container_cute_width: 60%;
 }

@@ -2,17 +2,18 @@ import React from 'react';
 import about_json from './content/About.json';
 import './css/About.css';
 
-function About() {
+function About({is_small_screen}) {
+    console.log("is small screen?: ", is_small_screen);
     return (
-        <div className="about-container" id="About">
+        <div className={is_small_screen ? 'about-container-cute' : 'about-container'} id="About">
             <div className='about-title'>
                 MY EXPERTISE
             </div>
             <div className='about-subtitle'>
                 {/* SOFTWARE DEVELOPER, MACHINE LEARNING & DATA SCIENTIST */}
             </div>
-            <div className='roles-container'>
-                <div className='role'>
+            <div className={is_small_screen ? 'roles-container-vertical' : 'roles-container'}>
+                <div className={is_small_screen ? 'role-full' : 'role'}>
                     <div className='header'>
                         <div className='role-icon-container'>
                             <img src="/assets/role-icons/react.svg" alt="react" className="role-icon" />
@@ -25,7 +26,7 @@ function About() {
                         {about_json.roles.swe}
                     </div>
                 </div>
-                <div className='role'>
+                <div className={is_small_screen ? 'role-full' : 'role'}>
                     <div className='header'>
                         <div className='role-icon-container'>
                             <img src="/assets/role-icons/pytorch.svg" alt="pytorch" className="role-icon" />

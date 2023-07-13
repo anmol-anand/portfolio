@@ -6,23 +6,22 @@
   position: absolute;
   min-height: 100vh;
   width: 100%;
-  min-width: 600px;
+  min-width: var(--min_width);
   background: var(--bg_formula);
   background-attachment: fixed;
   font-family: var(--primary_ff);
 }
 
-.content-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
+.single-pane {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
 }
 
 .double-pane {
   width: 100%;
+  height: 100%;
+  overflow: auto;
   margin-top: var(--navbar_height);
   font-family: inherit;
   color: var(--text_primary);
@@ -47,9 +46,27 @@
   color: var(--text_small_pane);
 }
 
+.small-pane-cute {
+  width: var(--small_pane_cute_width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--text_navbar);
+  color: var(--text_small_pane);
+}
+
 .headshot-container {
   margin-top: var(--headshot_margin);
   margin-bottom: var(--headshot_margin);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headshot-container-cute {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -71,4 +88,36 @@
   font-size: var(--name_fs);
   font-weight: var(--name_fw);
   text-align: center;
+}
+
+#navbar-cute-wrapper {
+  display: none;
+}
+
+#expand-navbar-button {
+  z-index: 1;
+  display: flex;
+  position: fixed;
+  height: 45px;
+  width: 45px;
+  top: 20px;
+  right: 20px;
+  background-color: var(--bg_navbar);
+  border-radius: 5px;
+  border: 0;
+  color: var(--text_navbar);
+  align-items: center;
+  justify-content: center;
+}
+
+#expand-navbar-button:hover {
+  cursor: pointer;
+}
+
+.cute-intro-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--about_bottom_margin);
 }
