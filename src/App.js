@@ -9,7 +9,7 @@ import TagsCloud from './pages/TagsCloud';
 import portfolio_json from './pages/content/Portfolio.json';
 import './css/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faFilter } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 
 function collapseNavbar() {
   const navbar = document.getElementById('navbar-cute-wrapper');
@@ -120,7 +120,7 @@ function App() {
           <Navbar is_small_screen={true} filtered_section_keys={filtered_section_keys} />
         </div>
         <button className="expand-button" id="expand-tags-cloud-button" onClick={showTagsCloud}>
-          <FontAwesomeIcon icon={faFilter} style={{ height: '25px', width: '25px' }} /> 
+          <FontAwesomeIcon icon={faSlidersH} style={{ height: '25px', width: '25px' }} /> 
         </button>
         <div id='tags-cloud-cute-wrapper' ref={tagsCloudRef}>
           <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
