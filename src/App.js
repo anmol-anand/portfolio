@@ -88,6 +88,9 @@ function App() {
         <div id='navbar-cute-wrapper' ref={navbarRef}>
           <Navbar is_small_screen={true} filtered_section_keys={filtered_section_keys} />
         </div>
+        <div id='tags-cloud-cute-wrapper'>
+          <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
+        </div>
         <div className='single-pane'>
           <div className='cute-intro-header'>
             <div className='small-pane-cute'>
@@ -110,7 +113,7 @@ function App() {
                 <img src={"/assets/headshot/headshot.jpg"} alt='HEADSHOT' className='headshot'/>
                 <div className='name'> Anmol Anand </div>
             </div>
-            <TagsCloud filter_tags={filter_tags} />
+            <TagsCloud filter_tags={filter_tags}  is_small_screen={false}/>
             <Footer is_small_screen={false} />
           </div>
           <div className='big-pane'>

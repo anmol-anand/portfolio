@@ -14,7 +14,7 @@
 
     /* Headshot */
 
-    --headshot_margin: 40px;
+    --headshot_margin: 50px;
     --headshot_height: 120px;
 
     /* Footer */
@@ -39,4 +39,8 @@
     --small_pane_cute_width: 35%;
 
     --about_container_cute_width: 60%;
+
+    /* Tags cloud */
+
+    --tags_cloud_cute_width: 325px;
 }

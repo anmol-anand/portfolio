@@ -121,3 +121,18 @@
   justify-content: space-between;
   margin-bottom: var(--about_bottom_margin);
 }
+
+#tags-cloud-cute-wrapper {
+  z-index: 1;
+  width: var(--tags_cloud_cute_width);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--bg_navbar);
+  backdrop-filter: blur(2px);
+}
+
+#tags-cloud-cute-wrapper * {
+  color: var(--text_navbar) !important;
+}

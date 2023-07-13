@@ -40,4 +40,10 @@
     --text_tags_unsel: var(--text_skill_category);
     --text_tags_sel: var(--text_tags_unsel);
     --text_section_tags: var(--text_tags_unsel);
+
+    /*------------------------- Cute -------------------------*/
+
+    /* Tags */
+    --bg_tags_cute_hover: #e1eedd52;
+    --bg_tags_cute_sel: var(--bg_tags_cute_hover);
 }

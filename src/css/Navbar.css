@@ -18,10 +18,10 @@
 .navbar-cute {
     z-index: 1;
     width: var(--navbar_cute_width);
+    height: 100%;
     position: fixed;
     top: 0;
     right: 0;
-    height: 100%;
     background-color: var(--bg_navbar);
     backdrop-filter: blur(2px);
 }

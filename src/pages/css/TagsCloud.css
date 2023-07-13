@@ -1,6 +1,7 @@
 @import '../../css/font.css';
 @import '../../css/colors.css';
 
+
 .tags-cloud {
     width: 100%;
     top: var(--navbar_height);
@@ -13,7 +14,6 @@
 .tags-cloud-heading {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 10px;
     font-family: inherit;
     font-size: var(--tags_cloud_heading_fs);
@@ -54,36 +54,64 @@
     flex-wrap: wrap;
 }
 
-.selected-tag {
+.selected-tag-common {
     border-radius: 100px;
     background-color: var(--bg_tags_sel);
     padding: 4px 12px;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
-    color: var(--text_tags_sel);
     white-space: nowrap;
 }
 
-.unselected-tag {
+.unselected-tag-common {
     border-radius: 100px;
     background-color: var(--bg_tags);
     padding: 4px 12px;
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
-    color: var(--text_tags_unsel);
     white-space: nowrap;
 }
 
-.selected-tag:hover {
+.selected-tag-common:hover {
     cursor: pointer;
+}
+
+.unselected-tag-common:hover {
+    cursor: pointer;
+}
+
+.selected-tag-color {
+    color: var(--text_tags_sel);
+}
+
+.unselected-tag-color {
+    color: var(--text_tags_unsel);
+}
+
+.selected-tag-color:hover {
     background-color: var(--bg_tags_hover);
 }
 
-.unselected-tag:hover {
-    cursor: pointer;
+.unselected-tag-color:hover {
     background-color: var(--bg_tags_hover);
+}
+
+.selected-tag-cute-color {
+    background-color: var(--bg_tags_cute_sel);
+}
+
+.unselected-tag-cute-color {
+    
+}
+
+.selected-tag-cute-color:hover {
+    background-color: var(--bg_tags_cute_hover);
+}
+
+.unselected-tag-cute-color:hover {
+    background-color: var(--bg_tags_cute_hover);
 }
 
 .clear-tags-filter {
@@ -101,4 +129,8 @@
 
 .clear-tags-filter:hover {
     cursor: pointer;
+}
+
+.tags-cloud-cute-margin {
+    margin-top: 40px;
 }
