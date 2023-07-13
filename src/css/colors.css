@@ -2,7 +2,7 @@
 
     /* NavBar */
 
-    --bg_navbar: rgba(0, 0, 0, 0.75);
+    --bg_navbar: rgba(0, 0, 0, 0.85);
     --text_navbar: var(--bg_small_pane);
     --text_navbar-dead: #6d726b;
 
