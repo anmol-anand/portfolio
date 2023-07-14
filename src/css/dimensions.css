@@ -43,4 +43,8 @@
     /* Tags cloud */
 
     --tags_cloud_cute_width: 325px;
+
+    /*------------------------ Middle ------------------------*/
+
+    --max_single_pane_width: 720px;
 }

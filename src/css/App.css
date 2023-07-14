@@ -16,11 +16,12 @@
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
-  max-width: 720px;
 }
 
 .single-pane-with-navbar {
   margin-top: var(--navbar_height);
+  max-width: var(--max_single_pane_width);
+  margin-left: calc((100% - var(--max_single_pane_width)) / 2);
 }
 
 .double-pane {
