@@ -87,6 +87,8 @@
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-family: inherit;
+    color: var(--text_primary);
     font-size: var(--primary_fs);
     font-weight: var(--primary_fw);
 }
