@@ -50,6 +50,7 @@
 .nav-item-font {
     font-size: var(--navbar_fs);
     font-weight: var(--navbar_fw);
+    text-align: center;
     text-decoration: none;
 }
 
