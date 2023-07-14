@@ -27,59 +27,6 @@
             "logo": "logos/iitr.png"
         }
     ],
-    "Projects": [
-        {
-            "thumbnail": "project-thumb/codejudge.png",
-            "title": "CodeJudge - Competitive Programming WebApp",
-            "hrefs": [
-                {"text": "WebApp", "url": "https://codejudge-prod-app.herokuapp.com/"},
-                {"text": "GitRepo", "url": "TBD"}
-            ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
-            "tags": [
-                {"name": "ruby", "categories": ["swe"]},
-                {"name": "rails", "categories": ["swe"]},
-                {"name": "heroku", "categories": ["swe"]},
-                {"name": "postgres", "categories": ["swe"]},
-                {"name": "databases", "categories": ["swe"]},
-                {"name": "software", "categories": ["swe"]},
-                {"name": "docker", "categories": ["swe"]}
-            ]
-        },
-        {
-            "thumbnail": "project-thumb/resnet.png",
-            "link": "TBD",
-            "title": "Fast image classification using ResNet variant",
-            "hrefs": [
-                {"text": "Report", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
-                {"text": "GitRepo", "url": "TBD"}
-            ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
-            "tags": [
-                {"name": "deep learning", "categories": ["ml"]}, 
-                {"name": "pytorch", "categories": ["ml"]}, 
-                {"name": "convolutional neural nets", "categories": ["ml"]}, 
-                {"name": "vision", "categories": ["ml"]}, 
-                {"name": "neural nets", "categories": ["ml"]}
-            ]
-        },
-        {
-            "thumbnail": "project-thumb/kway.png",
-            "link": "https://anmol-anand.github.io/paper/kWayConductance.pdf",
-            "title": "A novel graph clustering method",
-            "hrefs": [
-                {"text": "Report", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
-            ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
-            "tags": [
-                {"name": "advanced algorithms", "categories": ["th"]}, 
-                {"name": "graphs", "categories": ["th"]}
-            ]
-        }
-    ],
     "Professional Experience": [
         {
             "title_left": "Magna International",

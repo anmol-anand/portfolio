@@ -10,7 +10,6 @@
     top: 0;
     height: var(--navbar_height);
     width: 100%;
-    min-width: 600px;
     background-color: var(--bg_navbar);
     backdrop-filter: blur(2px);
 }
@@ -27,6 +26,8 @@
 }
 
 .nav-menu {
+    height: 100%;
+    margin-top: 0;
     margin-left: 12%;
     margin-right: 12%;
     list-style-type: none;

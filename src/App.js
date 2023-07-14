@@ -84,11 +84,11 @@ function useOutsideTagsCloud(ref) {
 }
 
 function App() {
-  const first_breakpoint = 700;
+  const first_breakpoint = 800;
   const second_breakpoint = 1300;
-  const is_small_screen = useMediaQuery({ maxWidth: first_breakpoint });
+  const is_small_screen = useMediaQuery({ maxWidth: first_breakpoint - 1 });
   const is_medium_screen = useMediaQuery({ minWidth: first_breakpoint, maxWidth: second_breakpoint });
-  const is_large_screen = useMediaQuery({ minWidth: second_breakpoint });
+  const is_large_screen = useMediaQuery({ minWidth: second_breakpoint + 1 });
 
   const location = useLocation();
   const filter_tags_param = new URLSearchParams(location.search).get('filter_tags');
@@ -135,6 +135,28 @@ function App() {
               <Footer is_small_screen={true} />
             </div>
             <About is_small_screen={is_small_screen} />
+          </div>
+          <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} />
+        </div>
+      </div>}
+      {is_medium_screen && <div className='medium-screen'>
+        <button className="expand-button" id="expand-tags-cloud-button" onClick={showTagsCloud}>
+          <FontAwesomeIcon icon={faSlidersH} style={{ height: '25px', width: '25px' }} /> 
+        </button>
+        <div id='tags-cloud-cute-wrapper' ref={tagsCloudRef}>
+          <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
+        </div>
+        <Navbar is_small_screen={false} filtered_section_keys={filtered_section_keys} />
+        <div className='single-pane single-pane-with-navbar'>
+          <div className='cute-intro-header'>
+            <div className='small-pane-cute'>
+              <div className='headshot-container-cute'>
+                  <img src={"/assets/headshot/headshot.jpg"} alt='HEADSHOT' className='headshot'/>
+                  <div className='name'> Anmol Anand </div>
+              </div>
+              <Footer is_small_screen={true} />
+            </div>
+            <About is_small_screen={true} />
           </div>
           <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} />
         </div>

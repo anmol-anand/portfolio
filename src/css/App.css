@@ -16,6 +16,11 @@
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
+  max-width: 720px;
+}
+
+.single-pane-with-navbar {
+  margin-top: var(--navbar_height);
 }
 
 .double-pane {
