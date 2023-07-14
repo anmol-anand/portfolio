@@ -110,29 +110,29 @@
 
 .content-container {
     width: 100%;
-    font-size: var(--primary_fs);
-    font-weight: var(--primary_fw);
-    font-family: var(--primary_ff);
-    color: var(--text_primary);
     margin: 0;
     margin-left: 10px;
 }
 
 .content-head {
     width: 100%;
-    font-size: inherit;
-    font-weight: inherit;
+    font-size: var(--primary_fs);
+    font-weight: var(--primary_fw);
+    font-family: var(--primary_ff);
+    color: var(--text_primary);
 }
 
 .content-list {
     list-style-type: disc;
     margin: 0;
-    font-size: inherit;
-    font-weight: inherit;
 }
 
 .content-item {
     width: 100%;
+    font-size: var(--primary_fs);
+    font-weight: var(--primary_fw);
+    font-family: var(--primary_ff);
+    color: var(--text_primary);
 }
 
 .tags-container {
