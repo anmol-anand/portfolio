@@ -112,6 +112,8 @@
     width: 100%;
     font-size: var(--primary_fs);
     font-weight: var(--primary_fw);
+    font-family: var(--primary_ff);
+    color: var(--text_primary);
     margin: 0;
     margin-left: 10px;
 }

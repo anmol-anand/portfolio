@@ -140,10 +140,10 @@ function App() {
         </div>
       </div>}
       {is_medium_screen && <div className='medium-screen'>
-        <button className="expand-button" id="expand-tags-cloud-button" onClick={showTagsCloud}>
+        <button className="expand-button expand-button-with-navbar" id="expand-tags-cloud-button" onClick={showTagsCloud}>
           <FontAwesomeIcon icon={faSlidersH} style={{ height: '25px', width: '25px' }} /> 
         </button>
-        <div id='tags-cloud-cute-wrapper' ref={tagsCloudRef}>
+        <div id='tags-cloud-cute-wrapper' className='tags-cloud-with-navbar' ref={tagsCloudRef}>
           <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
         </div>
         <Navbar is_small_screen={false} filtered_section_keys={filtered_section_keys} />
