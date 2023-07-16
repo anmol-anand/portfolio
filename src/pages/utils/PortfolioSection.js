@@ -1,9 +1,35 @@
 import React, { useState } from 'react';
 import '../css/PortfolioSection.css';
+// ACTION ICONS
+import ACTION_PLUS from '../../assets/action-icons/plus.svg';
+import ACTION_MINUS from '../../assets/action-icons/minus.svg';
+// LOGOS
+import LOGO_AWS from '../../assets/logos/aws.png';
+import LOGO_DIVE from '../../assets/logos/dive.png';
+import LOGO_GS from '../../assets/logos/gs.png';
+import LOGO_ICPC from '../../assets/logos/icpc.png';
+import LOGO_IITR from '../../assets/logos/iitr.png';
+import LOGO_KUBERNETES from '../../assets/logos/kubernetes.png';
+import LOGO_MAGNA from '../../assets/logos/magna.png';
+import LOGO_PAG from '../../assets/logos/pag.png';
+import LOGO_TAMU from '../../assets/logos/tamu.png';
 
 const ASSETS_FOLDER = "/assets/";
 
-function PortfolionSection({ jsonObj }) {
+function PortfolioSection({ jsonObj }) {
+
+    const logos = {
+        "aws": LOGO_AWS,
+        "dive": LOGO_DIVE,
+        "gs": LOGO_GS,
+        "icpc": LOGO_ICPC,
+        "iitr": LOGO_IITR,
+        "kubernetes": LOGO_KUBERNETES,
+        "magna": LOGO_MAGNA,
+        "pag": LOGO_PAG,
+        "tamu": LOGO_TAMU
+    };
+
     const [showContent, setShowContent] = useState(false);
 
     const toggleContent = () => {
@@ -16,7 +42,7 @@ function PortfolionSection({ jsonObj }) {
         <div className={`portfolio-section ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}  onClick={toggleContent}>
             <div className='visible-section'>
                 <div className='logo-container'>
-                    <img src={imagePath} alt='LOGO' className='logo'/>
+                    <img src={logos[jsonObj.logo]} alt='LOGO' className='logo'/>
                 </div>
                 <div className='visible-text'>
                     <div className='title-container'>
@@ -30,9 +56,9 @@ function PortfolionSection({ jsonObj }) {
                                     <button className="elaborate">
                                         {showContent ? 
                                         (
-                                            <img src="/assets/action-icons/minus.svg" alt="minus" />
+                                            <img src={ACTION_MINUS} alt="minus" />
                                         ) : (
-                                            <img src="/assets/action-icons/plus.svg" alt="plus" />
+                                            <img src={ACTION_PLUS} alt="plus" />
                                         )}
                                     </button>
                                 )}
@@ -84,4 +110,4 @@ function PortfolionSection({ jsonObj }) {
     );
 }
 
-export default PortfolionSection;
+export default PortfolioSection;

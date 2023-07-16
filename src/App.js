@@ -10,6 +10,8 @@ import portfolio_json from './pages/content/Portfolio.json';
 import './css/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faSlidersH } from '@fortawesome/free-solid-svg-icons';
+// HEADSHOT
+import HEADSHOT from './assets/headshot/headshot.JPG';
 
 function collapseNavbar() {
   const navbar = document.getElementById('navbar-cute-wrapper');
@@ -129,7 +131,7 @@ function App() {
           <div className='cute-intro-header'>
             <div className='small-pane-cute'>
               <div className='headshot-container-cute'>
-                  <img src={"/assets/headshot/headshot.jpg"} alt='HEADSHOT' className='headshot'/>
+                  <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
                   <div className='name'> Anmol Anand </div>
               </div>
               <Footer is_small_screen={true} />
@@ -151,7 +153,7 @@ function App() {
           <div className='cute-intro-header'>
             <div className='small-pane-cute'>
               <div className='headshot-container-cute'>
-                  <img src={"/assets/headshot/headshot.jpg"} alt='HEADSHOT' className='headshot'/>
+                  <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
                   <div className='name'> Anmol Anand </div>
               </div>
               <Footer is_small_screen={true} />
@@ -166,7 +168,7 @@ function App() {
         <div className='double-pane'>
           <div className='small-pane'>
             <div className='headshot-container'>
-                <img src={"/assets/headshot/headshot.jpg"} alt='HEADSHOT' className='headshot'/>
+                <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
                 <div className='name'> Anmol Anand </div>
             </div>
             <TagsCloud filter_tags={filter_tags}  is_small_screen={false}/>

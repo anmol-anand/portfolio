@@ -3,6 +3,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+// SOCIAL ICON
+import SOCIAL_CODEFORCES from './assets/social-icons/codeforces.svg';
 
 function Footer({is_small_screen}) {
   return (
@@ -27,7 +29,7 @@ function Footer({is_small_screen}) {
           </div>
           <div class="icon-wrapper">
             <a href="https://codeforces.com/profile/space-pirate" target="_blank" rel="noopener noreferrer">
-              <img src="/assets/social-icons/codeforces.svg" alt="codeforces" className="social-icon" />
+              <img src={SOCIAL_CODEFORCES} alt="codeforces" className="social-icon" />
               {/* <span className="tooltip">Codeforces</span> */}
             </a>
           </div>

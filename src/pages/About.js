@@ -1,6 +1,9 @@
 import React from 'react';
 import about_json from './content/About.json';
 import './css/About.css';
+// ROLE ICONS
+import ROLE_SWE from '../assets/role-icons/react.svg';
+import ROLE_ML from '../assets/role-icons/pytorch.svg';
 
 function About({is_small_screen}) {
     console.log("is small screen?: ", is_small_screen);
@@ -16,7 +19,7 @@ function About({is_small_screen}) {
                 <div className={is_small_screen ? 'role-full' : 'role'}>
                     <div className='header'>
                         <div className='role-icon-container'>
-                            <img src="/assets/role-icons/react.svg" alt="react" className="role-icon" />
+                            <img src={ROLE_SWE} alt="react" className="role-icon" />
                         </div>
                         <div className='role-title' id='swe-role'>
                             Software Engineering
@@ -29,7 +32,7 @@ function About({is_small_screen}) {
                 <div className={is_small_screen ? 'role-full' : 'role'}>
                     <div className='header'>
                         <div className='role-icon-container'>
-                            <img src="/assets/role-icons/pytorch.svg" alt="pytorch" className="role-icon" />
+                            <img src={ROLE_ML} alt="pytorch" className="role-icon" />
                         </div>
                         <div className='role-title' id='ml-role'>
                             Machine Learning
