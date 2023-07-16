@@ -10,7 +10,7 @@ function About({is_small_screen}) {
     return (
         <div className={is_small_screen ? 'about-container-cute' : 'about-container'} id="About">
             <div className='about-title'>
-                MY EXPERTISE
+                EXPERTISE
             </div>
             <div className='about-subtitle'>
                 {/* SOFTWARE DEVELOPER, MACHINE LEARNING & DATA SCIENTIST */}
