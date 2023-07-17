@@ -6,5 +6,6 @@ TODO:
 
 Bugs in mobile version:
 
-    - Dropdown font is too big
+    - Tab header
     - Page should open to fit screen width
+    - Dropdown font is too big
