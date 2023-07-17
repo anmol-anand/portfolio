@@ -7,4 +7,4 @@ TODO:
 Bugs in mobile version:
 
     - Dropdown font is too big
-    - Page should open to fit screen
+    - Page should open to fit screen width

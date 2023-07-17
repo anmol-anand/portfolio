@@ -31,12 +31,15 @@ function TagsCloud({filter_tags, is_small_screen}) {
       )
       .reduce((acc, tags) => {
         for (const tag of tags) {
-          for (const category of tag.categories) {
-            if (!acc.hasOwnProperty(category)) {
-              acc[category] = [];
+          for (const category_key of tag.categories) {
+            if (!acc.hasOwnProperty(category_key)) {
+              if (!skill_categories_json.hasOwnProperty(category_key)) {
+                throw new Error(`Undefined skill category: '${category_key}'`);
+              }
+              acc[category_key] = [];
             }
-            if (!acc[category].includes(tag.name)) {
-              acc[category].push(tag.name);
+            if (!acc[category_key].includes(tag.name)) {
+              acc[category_key].push(tag.name);
             }
           }
         }
@@ -49,36 +52,35 @@ function TagsCloud({filter_tags, is_small_screen}) {
             Filter by skills
           </div>
           <div className="tags-cloud-container">
-            {Object.entries(tags_by_categories).map(([category, all_tags]) => (
-              <div className={`skill-category-container ${is_small_screen ? 'tags-cloud-cute-margin' : ''}`}>
+            {Object.entries(skill_categories_json).map(([key, category]) => {
+              const all_tags = tags_by_categories[key];
+              return (
+                <div className={`skill-category-container ${is_small_screen ? 'tags-cloud-cute-margin' : ''}`}>
 
-                <div className='skill-category-title'>
-                  {skill_categories_json.hasOwnProperty(category)
-                    ? skill_categories_json[category]
-                    : (() => {
-                        throw new Error(`Undefined skill category: '${category}'`);
-                      })()}
-                </div>
+                  <div className='skill-category-title'>
+                    {category}
+                  </div>
 
-                <div className='skill-category-tags'>
-                  {all_tags.map((tag, index) => {
-                    if (filter_tags.includes(tag)) {
-                      return (
-                        <div className={`selected-tag-common ${is_small_screen ? 'selected-tag-cute-color' : 'selected-tag-color'}`} key={index} onClick={() => unselectTag(tag)}>
-                          #{tag}
-                        </div>
-                      );
-                    } else {
-                      return (
-                        <div className={`unselected-tag-common ${is_small_screen ? 'unselected-tag-cute-color' : 'unselected-tag-color'}`} key={index} onClick={() => selectTag(tag)}>
-                          #{tag}
-                        </div>
-                      );
-                    }
-                  })}
+                  <div className='skill-category-tags'>
+                    {all_tags.map((tag, index) => {
+                      if (filter_tags.includes(tag)) {
+                        return (
+                          <div className={`selected-tag-common ${is_small_screen ? 'selected-tag-cute-color' : 'selected-tag-color'}`} key={index} onClick={() => unselectTag(tag)}>
+                            #{tag}
+                          </div>
+                        );
+                      } else {
+                        return (
+                          <div className={`unselected-tag-common ${is_small_screen ? 'unselected-tag-cute-color' : 'unselected-tag-color'}`} key={index} onClick={() => selectTag(tag)}>
+                            #{tag}
+                          </div>
+                        );
+                      }
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
     );
