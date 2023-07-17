@@ -51,9 +51,15 @@ function TagsCloud({filter_tags, is_small_screen}) {
           <div className="tags-cloud-container">
             {Object.entries(tags_by_categories).map(([category, all_tags]) => (
               <div className={`skill-category-container ${is_small_screen ? 'tags-cloud-cute-margin' : ''}`}>
+
                 <div className='skill-category-title'>
-                  {skill_categories_json[category]}
+                  {skill_categories_json.hasOwnProperty(category)
+                    ? skill_categories_json[category]
+                    : (() => {
+                        throw new Error(`Undefined skill category: '${category}'`);
+                      })()}
                 </div>
+
                 <div className='skill-category-tags'>
                   {all_tags.map((tag, index) => {
                     if (filter_tags.includes(tag)) {
