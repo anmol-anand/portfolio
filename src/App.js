@@ -110,8 +110,6 @@ function App() {
       )
     );
 
-  console.log(filtered_section_keys);
-
   return (
     <div className="outer-wrapper">
       {is_small_screen && <div className='small-screen'>

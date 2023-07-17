@@ -6,7 +6,6 @@ import ROLE_SWE from '../assets/role-icons/react.svg';
 import ROLE_ML from '../assets/role-icons/pytorch.svg';
 
 function About({is_small_screen}) {
-    console.log("is small screen?: ", is_small_screen);
     return (
         <div className={is_small_screen ? 'about-container-cute' : 'about-container'} id="About">
             <div className='about-title'>
