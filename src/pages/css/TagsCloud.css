@@ -114,23 +114,6 @@
     background-color: var(--bg_tags_cute_hover);
 }
 
-.clear-tags-filter {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-decoration: underline;
-    color: var(--text_small_pane);
-    font-family: inherit;
-    font-size: var(--tags_clear_fs);
-    font-weight: var(--tags_clear_fw);
-}
-
-.clear-tags-filter:hover {
-    cursor: pointer;
-}
-
 .tags-cloud-cute-margin {
     margin-top: 40px;
 }

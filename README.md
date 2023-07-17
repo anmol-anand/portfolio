@@ -1,7 +1,5 @@
 TODO:
 
-    - Add external link to resume.
-    - Add header to clear filters.
     - Complete content
     - Add projects
     - Add all languages in skills.

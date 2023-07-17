@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { render } from '@testing-library/react';
 import portfolio_json from './content/Portfolio.json';
 import skill_categories_json from './content/SkillCategories.json';
 import './css/TagsCloud.css';
@@ -10,12 +9,7 @@ function TagsCloud({filter_tags, is_small_screen}) {
     const navigate = useNavigate();
 
     const renderAgain = (updated_filter_tags) => {
-      navigate(`/?filter_tags=${updated_filter_tags.join(',')}`);
-    };
-  
-    const clearTagsFilter = () => {
-      console.log("Clearing tags filter");
-      renderAgain([]);
+      navigate(`/portfolio?filter_tags=${updated_filter_tags.join(',')}`);
     };
   
     const unselectTag = (tag) => {
@@ -80,9 +74,6 @@ function TagsCloud({filter_tags, is_small_screen}) {
               </div>
             ))}
           </div>
-          <button className={`clear-tags-filter ${is_small_screen ? 'tags-cloud-cute-margin' : ''}`} onClick={clearTagsFilter}>
-            clear selection
-          </button>
         </div>
     );
 }
