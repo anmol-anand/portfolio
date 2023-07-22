@@ -6,12 +6,7 @@
             "subtitle_list": [
                 {"designation": "Master of Science in Computer Science", "period": "2 yrs", "date": "Aug 2022 - May 2024"}
             ],
-            "content_head": "Coursework: ",
-            "content_items": ["Deep Learning", 
-                "Software Engineering",
-                "Advanced Graph Algorithms", 
-                "Analysis of Algorithms",
-                "Quantum Algorithms"],
+            "content_items": [],
             "tags": [],
             "logo": "tamu"
         },
@@ -21,10 +16,65 @@
             "subtitle_list": [
                 {"designation": "Bachelor's in Computer Science", "period": "4 yrs", "date": "Jul 2015 - May 2019"}
             ],
-            "content_head": "Coursework:",
-            "content_items": ["Machine Learning", "Data Structures", "Software Engineering", "Database Management Systems", "Network Programming"],
+            "content_items": [],
             "tags": [],
             "logo": "iitr"
+        }
+    ],
+    "Projects": [
+        {
+            "thumbnail": "codejudge",
+            "title": "CodeJudge - Competitive Programming WebApp",
+            "hrefs": [
+                {"text": "WebApp", "url": "https://codejudge-prod-app.herokuapp.com/"},
+                {"text": "GitRepo", "url": "TBD"}
+            ],
+            "content_head": "TBD",
+            "content_items": ["TBD"],
+            "tags": [
+                {"name": "ruby", "categories": ["swe"]},
+                {"name": "rails", "categories": ["swe"]},
+                {"name": "heroku", "categories": ["swe"]},
+                {"name": "postgres", "categories": ["swe"]},
+                {"name": "databases", "categories": ["swe"]},
+                {"name": "software", "categories": ["swe"]},
+                {"name": "docker", "categories": ["swe"]}
+            ],
+            "layout": 0
+        },
+        {
+            "thumbnail": "resnet",
+            "link": "TBD",
+            "title": "Fast image classification using ResNet variant",
+            "hrefs": [
+                {"text": "Report", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
+                {"text": "GitRepo", "url": "TBD"}
+            ],
+            "content_head": "TBD",
+            "content_items": ["TBD"],
+            "tags": [
+                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "pytorch", "categories": ["ml"]}, 
+                {"name": "convolutional neural nets", "categories": ["ml"]}, 
+                {"name": "vision", "categories": ["ml"]}, 
+                {"name": "neural nets", "categories": ["ml"]}
+            ],
+            "layout": 1
+        },
+        {
+            "thumbnail": "kway",
+            "link": "https://anmol-anand.github.io/paper/kWayConductance.pdf",
+            "title": "A novel graph clustering method",
+            "hrefs": [
+                {"text": "Report", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
+            ],
+            "content_head": "TBD",
+            "content_items": ["TBD"],
+            "tags": [
+                {"name": "advanced algorithms", "categories": ["th"]}, 
+                {"name": "graphs", "categories": ["th"]}
+            ],
+            "layout": 0
         }
     ],
     "Professional Experience": [

@@ -4,10 +4,11 @@
 .project-section {
     margin: 2px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 48%;
-    margin-bottom: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: var(--bg_section);
     text-decoration: none;
     color: inherit;
@@ -20,14 +21,18 @@
 }
 
 .thumbnail {
-    width: 100%;
+    width: 48%;
     margin-bottom: 10px;
     border-radius: 10px;
-    border: 1px solid var(--text_primary);
+    /* border: 1px solid var(--text_primary); */
+}
+
+.project-text {
+    width: 50%;
 }
 
 .title {
-    width: 90%;
+    width: 100%;
     text-align: center;
     font-size: var(--portfolio_title_left_fs);
     font-weight: var(--portfolio_title_left_fw);
@@ -40,7 +45,10 @@
 }
 
 .hrefs-container {
+    width: 100%;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .content-container {

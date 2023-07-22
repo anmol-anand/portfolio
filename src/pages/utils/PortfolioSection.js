@@ -36,8 +36,6 @@ function PortfolioSection({ jsonObj }) {
         setShowContent(!showContent);
     };
 
-    const imagePath = ASSETS_FOLDER + jsonObj.logo;
-
     return (
         <div className={`portfolio-section ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}  onClick={toggleContent}>
             <div className='visible-section'>
