@@ -24,13 +24,13 @@
     "Projects": [
         {
             "thumbnail": "codejudge",
-            "title": "CodeJudge - Competitive Programming WebApp",
+            "title": "CodeJudge - Competitive Programming Platform",
             "hrefs": [
                 {"text": "WebApp", "url": "https://codejudge-prod-app.herokuapp.com/"},
                 {"text": "GitRepo", "url": "TBD"}
             ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
+            "content_head": "CodeJudge is a Competitive Programming Platform. It is a Ruby on Rails-based web application, deployed using Docker and Heroku. Instructors can create problems, and students can solve them in their preferred programming language. The platform offers real-time code evaluation, a leaderboard for healthy competition, and a collaborative discussion forum. With automated test case evaluation and analytics, it fosters an engaging and supportive learning environment for students aspiring to excel in data strcutures and algorithms.",
+            "content_items": [],
             "tags": [
                 {"name": "ruby", "categories": ["swe"]},
                 {"name": "rails", "categories": ["swe"]},
@@ -44,14 +44,13 @@
         },
         {
             "thumbnail": "resnet",
-            "link": "TBD",
             "title": "Fast image classification using ResNet variant",
             "hrefs": [
                 {"text": "Report", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
                 {"text": "GitRepo", "url": "TBD"}
             ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
+            "content_head": "In this project, I have created an advanced image classification model that harnesses the potential of ResNet in conjunction with shortcut networks, achieving exceptional precision and efficiency during training. The introduction of a novel ResNet variant, carefully optimized in terms of layer depth, channel sizes, and skip connections, strikes an ideal balance between complexity and performance. The model showcased remarkable results, attaining an impressive accuracy of 93.56% within just 90 epochs, a testament to its strategic approach in overcoming challenges like vanishing gradients and slow convergence. ",
+            "content_items": [],
             "tags": [
                 {"name": "deep learning", "categories": ["ml"]}, 
                 {"name": "pytorch", "categories": ["ml"]}, 
@@ -68,8 +67,8 @@
             "hrefs": [
                 {"text": "Report", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
             ],
-            "content_head": "TBD",
-            "content_items": ["TBD"],
+            "content_head": "Dividing a graph into k-clusters can be defined as partitioning the vertex set into k mutually-disjoint subsets, such that each induced subgraph is dense, and it is sparsely connected to the rest of the original graph. This paper introduces and explores a novel k-way conductance function that measures the quality of a k-clustering. Additionally, we define and prove an equivalent of Cheeger's inequality for this k-way conductance function.",
+            "content_items": [],
             "tags": [
                 {"name": "advanced algorithms", "categories": ["th"]}, 
                 {"name": "graphs", "categories": ["th"]}
@@ -104,8 +103,15 @@
                 {"designation": "Software Engineer II", "period": "6 mos", "date": "Jan 2022 - Jun 2022"},
                 {"designation": "Software Engineer I", "period": "2 yrs 7 mos", "date": "Jun 2019 - Dec 2021"}
             ],
-            "content_head": "TBD: ",
-            "content_items": ["TBD"],
+            "content_head": "I worked in the Search Engineering team on a natural language, petabyte-scale, distributed search engine that powers search for almost every use-case of the firm. My major contributions to the product were:",
+            "content_items": [
+                "Improved the complexity of the retrieval algorithm, reducing the average retrieval latency by a factor of 50.",
+                "Improved the detection of meaningful n-grams in search queries, increasing precision from 0.45 to 0.85 and recall from 0.30 to 0.59.",
+                "Redesigned the document scoring algorithm, improving query-document relevance by 30%.",
+                "Introduced a score to consider the positions of relevant terms in documents, further improving query-document relevance by 16%.",
+                "Worked on summarizing search results (which could go up to a billion documents).",
+                "Generated the inverted index for two corpora."
+            ],
             "tags": [
                 {"name": "information retrieval", "categories": ["ml"]}, 
                 {"name": "search engines", "categories": ["ml"]},
@@ -120,8 +126,8 @@
             "subtitle_list": [
                 {"designation": "Big Data Intern", "date": "Summer 2018"}
             ],
-            "content_head": "TBD: ",
-            "content_items": ["TBD"],
+            "content_head": "During my internship, I successfully developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Through this project, I achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program. This experience honed my skills in software development, automation, and provided valuable insights into large-scale data processing systems.",
+            "content_items": [],
             "tags": [
                 {"name": "Big Data", "categories": ["ml"]}, 
                 {"name": "MapReduce", "categories": ["ml"]}, 
@@ -181,8 +187,8 @@
             "subtitle_list": [
                 {"designation": "Core member", "period": "2 yrs", "date": "Jul 2016 - May 2018"}
             ],
-            "content_head": "TBD: ",
-            "content_items": ["TBD"],
+            "content_head": "Led lectures on Data Structures and Algorithms and organized on-campus coding contests - Insomnia, CodeBlitz, and CodeCipher. Fostering a culture of learning and competition, I contributed to the group's growth and facilitated students' development in programming and problem-solving. Strong leadership and organizational skills ensured successful events and a supportive community.",
+            "content_items": [],
             "tags": [
                 {"name": "algorithms", "categories": ["th"]}, 
                 {"name": "data structures", "categories": ["th"]}, 
@@ -205,20 +211,6 @@
                 {"name": "certifications", "categories": ["act"]}
             ],
             "logo": "aws"
-        },
-        {
-            "title_left": "The Linux Foundation",
-            "title_right": "",
-            "subtitle_list": [
-                {"designation": "Certified Kubernetes Application Developer (CKAD)", "date": "TBD"}
-            ],
-            "content_head": "TODO: add link",
-            "content_items": [],
-            "tags": [
-                {"name": "kubernetes", "categories": ["swe"]}, 
-                {"name": "certifications", "categories": ["act"]}
-            ],
-            "logo": "kubernetes"
         }
     ],
     "Achievements": [
