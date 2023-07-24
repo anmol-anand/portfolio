@@ -32,13 +32,13 @@
             "content_head": "CodeJudge is a Competitive Programming Platform. It is a Ruby on Rails-based web application, deployed using Docker and Heroku. Instructors can create problems, and students can solve them in their preferred programming language. The platform offers real-time code evaluation, a leaderboard for healthy competition, and a collaborative discussion forum. With automated test case evaluation and analytics, it fosters an engaging and supportive learning environment for students aspiring to excel in data strcutures and algorithms.",
             "content_items": [],
             "tags": [
+                {"name": "software engineering", "categories": ["swe"]},
                 {"name": "ruby", "categories": ["swe"]},
                 {"name": "rails", "categories": ["swe"]},
+                {"name": "docker", "categories": ["swe"]},
                 {"name": "heroku", "categories": ["swe"]},
-                {"name": "postgres", "categories": ["swe"]},
                 {"name": "databases", "categories": ["swe"]},
-                {"name": "software", "categories": ["swe"]},
-                {"name": "docker", "categories": ["swe"]}
+                {"name": "postgres", "categories": ["swe"]}
             ],
             "layout": 0
         },
@@ -52,11 +52,11 @@
             "content_head": "In this project, I have created an advanced image classification model that harnesses the potential of ResNet in conjunction with shortcut networks, achieving exceptional precision and efficiency during training. The introduction of a novel ResNet variant, carefully optimized in terms of layer depth, channel sizes, and skip connections, strikes an ideal balance between complexity and performance. The model showcased remarkable results, attaining an impressive accuracy of 93.56% within just 90 epochs, a testament to its strategic approach in overcoming challenges like vanishing gradients and slow convergence. ",
             "content_items": [],
             "tags": [
-                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "deep learning", "categories": ["ml"]},
+                {"name": "python", "categories": ["ml"]}, 
                 {"name": "pytorch", "categories": ["ml"]}, 
                 {"name": "convolutional neural nets", "categories": ["ml"]}, 
-                {"name": "vision", "categories": ["ml"]}, 
-                {"name": "neural nets", "categories": ["ml"]}
+                {"name": "vision", "categories": ["ml"]}
             ],
             "layout": 1
         },
@@ -70,8 +70,10 @@
             "content_head": "Dividing a graph into k-clusters can be defined as partitioning the vertex set into k mutually-disjoint subsets, such that each induced subgraph is dense, and it is sparsely connected to the rest of the original graph. This paper introduces and explores a novel k-way conductance function that measures the quality of a k-clustering. Additionally, we define and prove an equivalent of Cheeger's inequality for this k-way conductance function.",
             "content_items": [],
             "tags": [
-                {"name": "advanced algorithms", "categories": ["th"]}, 
-                {"name": "graphs", "categories": ["th"]}
+                {"name": "theory", "categories": ["th"]},
+                {"name": "algorithms", "categories": ["th"]},
+                {"name": "graphs", "categories": ["th"]},
+                {"name": "advanced algorithms", "categories": ["th"]}
             ],
             "layout": 0
         }
@@ -85,15 +87,16 @@
             "content_head": "Engaged in a vision-oriented project encompassing image segmentation and classification, I developed a comprehensive application capable of capturing images from a camera and saving them either locally or on Azure. The application offers a user-friendly interface to label the captured images and utilizes well-known models like ResNet, AlexNet, GoogLeNet, among others, for training on the annotated data. After training, these models can be easily deployed from the UI. To create the web interface, I employed NodeJS and libraries such as React, while PyTorch was utilized for crafting the deep learning models.",
             "content_items": [],
             "tags": [
-                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "deep learning", "categories": ["ml"]},
+                {"name": "software engineering", "categories": ["swe"]},
+                {"name": "vision", "categories": ["ml"]}, 
+                {"name": "python", "categories": ["ml"]}, 
                 {"name": "pytorch", "categories": ["ml"]},
                 {"name": "convolutional neural nets", "categories": ["ml"]}, 
-                {"name": "data science", "categories": ["ml"]}, 
-                {"name": "Azure", "categories": ["swe"]}, 
-                {"name": "databases", "categories": ["swe"]},
+                {"name": "nodejs", "categories": ["swe"]}, 
                 {"name": "react", "categories": ["swe"]}, 
-                {"name": "NodeJS", "categories": ["swe"]}, 
-                {"name": "software", "categories": ["swe"]}
+                {"name": "azure", "categories": ["swe"]}, 
+                {"name": "docker", "categories": ["swe"]}
             ],
             "logo": "magna"
         },
@@ -114,10 +117,14 @@
             ],
             "tags": [
                 {"name": "information retrieval", "categories": ["ml"]}, 
-                {"name": "search engines", "categories": ["ml"]},
-                {"name": "distributed computing", "categories": ["ml"]}, 
-                {"name": "Big Data", "categories": ["ml"]}, 
-                {"name": "MapReduce", "categories": ["ml"]}
+                {"name": "search engines", "categories": ["swe"]},
+                {"name": "distributed computing", "categories": ["swe"]}, 
+                {"name": "big data", "categories": ["ml"]}, 
+                {"name": "map reduce", "categories": ["ml"]}, 
+                {"name": "apache hadoop", "categories": ["ml"]}, 
+                {"name": "antlr", "categories": ["ml"]}, 
+                {"name": "protocol buffers", "categories": ["swe"]},
+                {"name": "software engineering", "categories": ["swe"]}
             ],
             "logo": "gs"
         },
@@ -129,10 +136,12 @@
             "content_head": "During my internship, I successfully developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Through this project, I achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program. This experience honed my skills in software development, automation, and provided valuable insights into large-scale data processing systems.",
             "content_items": [],
             "tags": [
-                {"name": "Big Data", "categories": ["ml"]}, 
-                {"name": "MapReduce", "categories": ["ml"]}, 
+                {"name": "big data", "categories": ["ml"]}, 
+                {"name": "map reduce", "categories": ["ml"]}, 
+                {"name": "apache hadoop", "categories": ["ml"]}, 
                 {"name": "cron", "categories": ["swe"]}, 
-                {"name": "multi-threading", "categories": ["swe"]}
+                {"name": "multi-threading", "categories": ["swe"]},
+                {"name": "software engineering", "categories": ["swe"]}
             ],
             "logo": "gs"
         }
@@ -145,8 +154,8 @@
             ],
             "content_items": [],
             "tags": [
-                {"name": "machine learning", "categories": ["ml"]}, 
                 {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "python", "categories": ["ml"]}, 
                 {"name": "pytorch", "categories": ["ml"]}, 
                 {"name": "teaching", "categories": ["act"]}
             ],
@@ -164,10 +173,12 @@
                 "Improved graph classification performance by generating label-invariant augmentations."
             ],
             "tags": [
-                {"name": "graph neural nets", "categories": ["ml"]}, 
                 {"name": "deep learning", "categories": ["ml"]}, 
-                {"name": "pytorch", "categories": ["ml"]}, 
-                {"name": "pytorch-geometric", "categories": ["ml"]}, 
+                {"name": "python", "categories": ["ml"]}, 
+                {"name": "pytorch", "categories": ["ml"]},
+                {"name": "pytorch geometric", "categories": ["ml"]},
+                {"name": "graph neural nets", "categories": ["ml"]}, 
+                {"name": "graphs", "categories": ["ml"]}, 
                 {"name": "data augmentation", "categories": ["ml"]}
             ],
             "logo": "dive"
@@ -179,6 +190,9 @@
             ],
             "content_items": [],
             "tags": [
+                {"name": "theory", "categories": ["th"]}, 
+                {"name": "algorithms", "categories": ["th"]}, 
+                {"name": "data structures", "categories": ["th"]}, 
                 {"name": "discrete structures", "categories": ["th"]}, 
                 {"name": "graphs", "categories": ["th"]}, 
                 {"name": "number theory", "categories": ["th"]}, 
@@ -194,9 +208,11 @@
             "content_head": "Led lectures on Data Structures and Algorithms and organized on-campus coding contests - Insomnia, CodeBlitz, and CodeCipher. Fostering a culture of learning and competition, I contributed to the group's growth and facilitated students' development in programming and problem-solving. Strong leadership and organizational skills ensured successful events and a supportive community.",
             "content_items": [],
             "tags": [
+                {"name": "theory", "categories": ["th"]}, 
                 {"name": "algorithms", "categories": ["th"]}, 
                 {"name": "data structures", "categories": ["th"]}, 
-                {"name": "competitive programming", "categories": ["act"]}
+                {"name": "competitive programming", "categories": ["act"]}, 
+                {"name": "teaching", "categories": ["act"]}
             ],
             "logo": "pag"
         }
@@ -211,8 +227,9 @@
             "content_head": "TODO: add link",
             "content_items": [],
             "tags": [
-                {"name": "AWS", "categories": ["swe"]}, 
-                {"name": "certifications", "categories": ["act"]}
+                {"name": "aws", "categories": ["swe"]}, 
+                {"name": "certifications", "categories": ["act"]}, 
+                {"name": "software engineering", "categories": ["swe"]}
             ],
             "logo": "aws"
         }
@@ -236,6 +253,7 @@
             ],
             "content_items": [],
             "tags": [
+                {"name": "theory", "categories": ["th"]},
                 {"name": "algorithms", "categories": ["th"]}, 
                 {"name": "data structures", "categories": ["th"]}, 
                 {"name": "competitive programming", "categories": ["act"]}
