@@ -82,8 +82,8 @@
             "subtitle_list": [
                 {"designation": "Data Scientist Intern", "date": "Summer 2023"}
             ],
-            "content_head": "TBD: ",
-            "content_items": ["TBD"],
+            "content_head": "Engaged in a vision-oriented project encompassing image segmentation and classification, I developed a comprehensive application capable of capturing images from a camera and saving them either locally or on Azure. The application offers a user-friendly interface to label the captured images and utilizes well-known models like ResNet, AlexNet, GoogLeNet, among others, for training on the annotated data. After training, these models can be easily deployed from the UI. To create the web interface, I employed NodeJS and libraries such as React, while PyTorch was utilized for crafting the deep learning models.",
+            "content_items": [],
             "tags": [
                 {"name": "deep learning", "categories": ["ml"]}, 
                 {"name": "pytorch", "categories": ["ml"]},
@@ -157,8 +157,12 @@
             "subtitle_list": [
                 {"designation": "Researcher & Open Source Contributor", "date": "Spring 2023"}
             ],
-            "content_head": "TBD: ",
-            "content_items": ["TBD"],
+            "content_head": "During my time as an open source contributor to DIVE Labs' deep learning Python library, \"DIVE into Graphs\" (DIG), I focused on leveraging my expertise in PyTorch, PyTorch Geometric, and Graph Neural Networks (GNNs) to enhance the library's capabilities. My contributions to the project included the following:",
+            "content_items": [
+                "Implemented the GraphAug method based on the paper \"Automated Data Augmentations for Graph Classification,\" using Graph Neural Networks (GNNs) for graph datasets.",
+                "Created user-friendly Python documentation for the GraphAug implementation.",
+                "Improved graph classification performance by generating label-invariant augmentations."
+            ],
             "tags": [
                 {"name": "graph neural nets", "categories": ["ml"]}, 
                 {"name": "deep learning", "categories": ["ml"]}, 
@@ -202,7 +206,7 @@
             "title_left": "Amazon Web Services",
             "title_right": "",
             "subtitle_list": [
-                {"designation": "AWS Certified Developer - Associate", "date": "TBD"}
+                {"designation": "AWS Certified Cloud Practitioner", "date": "TBD"}
             ],
             "content_head": "TODO: add link",
             "content_items": [],
