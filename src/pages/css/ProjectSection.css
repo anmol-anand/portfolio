@@ -56,7 +56,6 @@
     font-size: var(--primary_fs);
     font-weight: var(--primary_fw);
     margin: 0;
-    margin-left: 10px;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -76,6 +75,10 @@
 
 .content-item {
     width: 100%;
+    font-size: var(--primary_fs);
+    font-weight: var(--primary_fw);
+    font-family: var(--primary_ff);
+    color: var(--text_primary);
 }
 
 .project-href {
