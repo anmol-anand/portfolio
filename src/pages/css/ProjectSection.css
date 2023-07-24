@@ -57,6 +57,8 @@
     font-weight: var(--primary_fw);
     margin: 0;
     margin-left: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .content-head {
