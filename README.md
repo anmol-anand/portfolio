@@ -1,7 +1,7 @@
 TODO:
-
-    - Add all languages in skills.
-
-Bugs in mobile version:
-
-    - Page should open to fit screen width
+    - Update tags style
+    - Make section headings prominent,
+      Demarcation for sections
+    - Fix projects dropdown
+    - Update urls for projects
+    ? Update color scheme
