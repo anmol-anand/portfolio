@@ -6,7 +6,7 @@
   position: absolute;
   min-height: 100vh;
   width: 100%;
-  min-width: var(--min_width);
+  /* min-width: var(--min_width); */
   background: var(--bg_formula);
   background-attachment: fixed;
   font-family: var(--primary_ff);
@@ -61,13 +61,24 @@
 }
 
 .small-pane-cute {
-  width: var(--small_pane_cute_width);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: var(--text_navbar);
   color: var(--text_small_pane);
+}
+
+.small-pane-cute-header {
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.small-pane-cute-footer {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .headshot-container {
@@ -86,6 +97,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: var(--footer_vertical_margin);
+  margin-bottom: var(--footer_vertical_margin);
 }
 
 .headshot {

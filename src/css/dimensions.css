@@ -1,6 +1,6 @@
 :root {
 
-    --min_width: 570px;
+    --min_width: 250px;
 
     /* NavBar */
 
@@ -19,7 +19,7 @@
 
     /* Footer */
     
-    --footer_bottom_margin: 20px;
+    --footer_vertical_margin: 10px;
     --social_icon_size: 24px; /* Also change icon sizes in Footer.js and codeforces.svg */
     --social_icon_margin_top: 4px;
     --social_icon_margin_lr: 6px;
@@ -38,7 +38,7 @@
 
     --small_pane_cute_width: 35%;
 
-    --about_container_cute_width: 60%;
+    --about_container_cute_width: 100%;
 
     /* Tags cloud */
 

@@ -16,7 +16,7 @@ import LOGO_TAMU from '../../assets/logos/tamu.png';
 
 const ASSETS_FOLDER = "/assets/";
 
-function PortfolioSection({ jsonObj }) {
+function PortfolioSection({ jsonObj, cute_layout }) {
 
     const logos = {
         "aws": LOGO_AWS,
@@ -64,8 +64,10 @@ function PortfolioSection({ jsonObj }) {
                             </div>)}
                     </div>
                     {(jsonObj.subtitle_list) && jsonObj.subtitle_list.map((subtitle, index) => (
-                        <div className='subtitle-container'>
-                            <div className='designation'> {subtitle.designation} </div>
+                        <div className={`${cute_layout ? 'subtitle-container-cute' : 'subtitle-container'}`}>
+                            <div className='designation'> 
+                                {subtitle.designation}
+                            </div>
                             {subtitle.period ? (
                                 <div className='date'>
                                     {subtitle.period} <span className='period-delimiter'> &#183; </span> {subtitle.date}

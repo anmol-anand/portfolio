@@ -45,14 +45,12 @@
 }
 
 .title-left {
-    width: 75%;
     font-size: var(--portfolio_title_left_fs);
     font-weight: var(--portfolio_title_left_fw);
     font-family: inherit;
 }
 
 .title-right {
-    width: 25%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -74,13 +72,19 @@
     justify-content: space-between;
 }
 
+.subtitle-container-cute {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .designation {
     position: relative;
     left: 0;
     font-size: var(--portfolio_subtitle_left_fs);
     font-weight: var(--portfolio_subtitle_left_fw);
     font-family: inherit;
-}  
+}
 
 .date {
     position: relative;
@@ -91,7 +95,6 @@
     font-size: var(--portfolio_subtitle_right_fs);
     font-weight: var(--portfolio_subtitle_right_fw);
     font-family: inherit;
-    margin-right: 5px;
 }
 
 .period-delimiter {
@@ -140,7 +143,7 @@
 
 .tags-container {
     margin-top: 5px;
-    margin-left: 30%;    
+    margin-left: 30%;
     width: 70%;
     display: flex;
     flex-wrap: wrap;

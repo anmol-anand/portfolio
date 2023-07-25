@@ -7,7 +7,19 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--bg_section);
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+
+.project-section-cute {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     margin-bottom: 30px;
     background-color: var(--bg_section);
     text-decoration: none;
@@ -27,8 +39,19 @@
     /* border: 1px solid var(--text_primary); */
 }
 
+.thumbnail-cute {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    /* border: 1px solid var(--text_primary); */
+}
+
 .project-text {
     width: 50%;
+}
+
+.project-text-cute {
+    width: 100%;
 }
 
 .title {

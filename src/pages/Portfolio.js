@@ -5,7 +5,7 @@ import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
 import portfolio_json from './content/Portfolio.json';
 
-function Portfolio({filter_tags, filtered_section_keys}) {
+function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
 
   const navigate = useNavigate();
   
@@ -31,7 +31,7 @@ function Portfolio({filter_tags, filtered_section_keys}) {
                   filter_tags.length === 0 ||
                   element.tags.some(tag => filter_tags.includes(tag.name))
                 ) {
-                  return <ProjectSection jsonObj={element} key={index} />;
+                  return <ProjectSection jsonObj={element} cute_layout={cute_layout} key={index} />;
                 } else {
                   return null;
                 }
@@ -42,7 +42,7 @@ function Portfolio({filter_tags, filtered_section_keys}) {
                   filter_tags.length === 0 ||
                   element.tags.some(tag => filter_tags.includes(tag.name))
                 ) {
-                  return <PortfolioSection jsonObj={element} key={index} />;
+                  return <PortfolioSection jsonObj={element} cute_layout={cute_layout} key={index} />;
                 } else {
                   return null;
                 }

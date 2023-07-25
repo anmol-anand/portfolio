@@ -8,7 +8,7 @@ import THUMB_KWAY from '../../assets/project-thumb/kway.png';
 
 const ASSETS_FOLDER = "/assets/";
 
-function ProjectSection({ jsonObj }) {
+function ProjectSection({ jsonObj, cute_layout}) {
 
     const thumbs = {
         "codejudge": THUMB_CODEJUDGE,
@@ -29,9 +29,12 @@ function ProjectSection({ jsonObj }) {
     const imagePath = ASSETS_FOLDER + jsonObj.thumbnail;
 
     return (
-        <div className={`project-section ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}  onClick={toggleContent}>
-            {jsonObj.layout == 0 && <img src={thumbs[jsonObj.thumbnail]} className='thumbnail' alt='THUMBNAIL' />}
-            <div className='project-text'>
+        <div className={`${cute_layout ? 'project-section-cute' : 'project-section'} 
+            ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}
+            onClick={toggleContent}>
+            {(cute_layout || jsonObj.layout == 0) && <img src={thumbs[jsonObj.thumbnail]} 
+            className={`${cute_layout ? 'thumbnail-cute' : 'thumbnail'}`} alt='THUMBNAIL' />}
+            <div className={`${cute_layout ? 'project-text-cute' : 'project-text'}`}>
                 <div className='title'>{jsonObj.title}</div>
                 {jsonObj.hrefs.length > 0 && (
                     <div className='hrefs-container'>
@@ -66,7 +69,7 @@ function ProjectSection({ jsonObj }) {
                     </div>
                 )}
             </div>
-            {jsonObj.layout == 1 && <img src={thumbs[jsonObj.thumbnail]} className='thumbnail' alt='THUMBNAIL' />}
+            {(!cute_layout && jsonObj.layout == 1) && <img src={thumbs[jsonObj.thumbnail]} className='thumbnail' alt='THUMBNAIL' />}
         </div>
     );
 }

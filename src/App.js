@@ -86,7 +86,7 @@ function useOutsideTagsCloud(ref) {
 }
 
 function App() {
-  const first_breakpoint = 800;
+  const first_breakpoint = 570;
   const second_breakpoint = 1300;
   const is_small_screen = useMediaQuery({ maxWidth: first_breakpoint - 1 });
   const is_medium_screen = useMediaQuery({ minWidth: first_breakpoint, maxWidth: second_breakpoint });
@@ -126,17 +126,17 @@ function App() {
           <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
         </div>
         <div className='single-pane'>
-          <div className='cute-intro-header'>
-            <div className='small-pane-cute'>
-              <div className='headshot-container-cute'>
-                  <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
-                  <div className='name'> Anmol Anand </div>
-              </div>
-              <Footer is_small_screen={true} />
+          <div className='small-pane-cute small-pane-cute-header'>
+            <div className='headshot-container-cute'>
+                <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
+                <div className='name'> Anmol Anand </div>
             </div>
-            <About is_small_screen={is_small_screen} />
           </div>
-          <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} />
+          <About is_small_screen={is_small_screen} />
+          <Portfolio filter_tags={filter_tags} cute_layout={true} filtered_section_keys={filtered_section_keys} />
+          <div className='small-pane-cute small-pane-cute-footer'>
+            <Footer is_small_screen={true} />
+          </div>
         </div>
       </div>}
       {is_medium_screen && <div className='medium-screen'>
