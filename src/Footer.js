@@ -6,9 +6,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 // SOCIAL ICONS
 import SOCIAL_CODEFORCES from './assets/social-icons/codeforces.svg';
 
-function Footer({is_small_screen}) {
+function Footer({cute_layout}) {
   return (
-    <div className={is_small_screen ? "footer-cute" : "footer"} id="Contact">
+    <div className={cute_layout ? "footer-cute" : "footer"} id="Contact">
       <div className="footer-email">
         <a href="mailto:aanand@tamu.edu" className="email-text">
           aanand@tamu.edu

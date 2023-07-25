@@ -87,10 +87,12 @@ function useOutsideTagsCloud(ref) {
 
 function App() {
   const first_breakpoint = 570;
-  const second_breakpoint = 1300;
-  const is_small_screen = useMediaQuery({ maxWidth: first_breakpoint - 1 });
-  const is_medium_screen = useMediaQuery({ minWidth: first_breakpoint, maxWidth: second_breakpoint });
-  const is_large_screen = useMediaQuery({ minWidth: second_breakpoint + 1 });
+  const second_breakpoint = 800;
+  const third_breakpoint = 1300;
+  const first_screen_size = useMediaQuery({ maxWidth: first_breakpoint - 1 });
+  const second_screen_size = useMediaQuery({ minWidth: first_breakpoint, maxWidth: second_breakpoint - 1});
+  const third_screen_size = useMediaQuery({ minWidth: second_breakpoint, maxWidth: third_breakpoint - 1 });
+  const fourth_screen_size = useMediaQuery({ minWidth: third_breakpoint });
 
   const location = useLocation();
   const filter_tags_param = new URLSearchParams(location.search).get('filter_tags');
@@ -112,68 +114,52 @@ function App() {
 
   return (
     <div className="outer-wrapper">
-      {is_small_screen && <div className='small-screen'>
-        <button className="expand-button" id="expand-navbar-button" onClick={showNavbar}>
-          <FontAwesomeIcon icon={faBars} style={{ height: '25px', width: '25px' }} /> 
-        </button>
-        <div id='navbar-cute-wrapper' ref={navbarRef}>
-          <Navbar is_small_screen={true} filtered_section_keys={filtered_section_keys} />
-        </div>
-        <button className="expand-button" id="expand-tags-cloud-button" onClick={showTagsCloud}>
+      {(first_screen_size || second_screen_size || third_screen_size) && <div className='small-screen'>
+        {third_screen_size ? (
+          <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} />
+        ) : (
+          <>
+            <button className="expand-button" id="expand-navbar-button" onClick={showNavbar}>
+              <FontAwesomeIcon icon={faBars} style={{ height: '25px', width: '25px' }} /> 
+            </button>
+            <div id='navbar-cute-wrapper' ref={navbarRef}>
+              <Navbar cute_layout={true} filtered_section_keys={filtered_section_keys} />
+            </div>
+          </>
+        )}
+        <button className={`expand-button ${third_screen_size ? 'add-margin-due-to-navbar' : ''}`} id="expand-tags-cloud-button" onClick={showTagsCloud}>
           <FontAwesomeIcon icon={faSlidersH} style={{ height: '25px', width: '25px' }} /> 
         </button>
-        <div id='tags-cloud-cute-wrapper' ref={tagsCloudRef}>
-          <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
+        <div id='tags-cloud-cute-wrapper' className={`${third_screen_size ? 'add-margin-due-to-navbar' : ''}`} ref={tagsCloudRef}>
+          <TagsCloud filter_tags={filter_tags} cute_layout={true}/>
         </div>
-        <div className='single-pane'>
+        <div className={`single-pane ${third_screen_size ? 'add-margin-due-to-navbar single-pane-restricted-width' : ''}`}>
           <div className='small-pane-cute small-pane-cute-header'>
             <div className='headshot-container-cute'>
                 <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
                 <div className='name'> Anmol Anand </div>
             </div>
           </div>
-          <About is_small_screen={is_small_screen} />
-          <Portfolio filter_tags={filter_tags} cute_layout={true} filtered_section_keys={filtered_section_keys} />
+          <About cute_layout={first_screen_size} />
+          <Portfolio filter_tags={filter_tags} cute_layout={first_screen_size} filtered_section_keys={filtered_section_keys} />
           <div className='small-pane-cute small-pane-cute-footer'>
-            <Footer is_small_screen={true} />
+            <Footer cute_layout={true} />
           </div>
         </div>
       </div>}
-      {is_medium_screen && <div className='medium-screen'>
-        <button className="expand-button expand-button-with-navbar" id="expand-tags-cloud-button" onClick={showTagsCloud}>
-          <FontAwesomeIcon icon={faSlidersH} style={{ height: '25px', width: '25px' }} /> 
-        </button>
-        <div id='tags-cloud-cute-wrapper' className='tags-cloud-with-navbar' ref={tagsCloudRef}>
-          <TagsCloud filter_tags={filter_tags} is_small_screen={true}/>
-        </div>
-        <Navbar is_small_screen={false} filtered_section_keys={filtered_section_keys} />
-        <div className='single-pane single-pane-with-navbar'>
-          <div className='cute-intro-header'>
-            <div className='small-pane-cute'>
-              <div className='headshot-container-cute'>
-                  <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
-                  <div className='name'> Anmol Anand </div>
-              </div>
-              <Footer is_small_screen={true} />
-            </div>
-            <About is_small_screen={true} />
-          </div>
-          <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} />
-        </div>
-      </div>}
-      {is_large_screen && <div className='large-screen'>
-        <Navbar is_small_screen={false} filtered_section_keys={filtered_section_keys} />
+      {fourth_screen_size && <div className='large-screen'>
+        <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} />
         <div className='double-pane'>
           <div className='small-pane'>
             <div className='headshot-container'>
                 <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
                 <div className='name'> Anmol Anand </div>
             </div>
-            <TagsCloud filter_tags={filter_tags}  is_small_screen={false}/>
-            <Footer is_small_screen={false} />
+            <TagsCloud filter_tags={filter_tags}  cute_layout={false}/>
+            <Footer cute_layout={false} />
           </div>
           <div className='big-pane'>
-            <About is_small_screen={is_small_screen} />
+            <About cute_layout={false} />
             <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} />
           </div>
         </div>

@@ -5,17 +5,17 @@ import './css/About.css';
 import ROLE_SWE from '../assets/role-icons/react.svg';
 import ROLE_ML from '../assets/role-icons/pytorch.svg';
 
-function About({is_small_screen}) {
+function About({cute_layout}) {
     return (
-        <div className={is_small_screen ? 'about-container-cute' : 'about-container'} id="About">
+        <div className={cute_layout ? 'about-container-cute' : 'about-container'} id="About">
             <div className='about-title'>
                 MY EXPERTISE
             </div>
             <div className='about-subtitle'>
                 {/* SOFTWARE DEVELOPER, MACHINE LEARNING & DATA SCIENTIST */}
             </div>
-            <div className={is_small_screen ? 'roles-container-vertical' : 'roles-container'}>
-                <div className={is_small_screen ? 'role-full' : 'role'}>
+            <div className={cute_layout ? 'roles-container-vertical' : 'roles-container'}>
+                <div className={cute_layout ? 'role-full' : 'role'}>
                     <div className='header'>
                         <div className='role-icon-container'>
                             <img src={ROLE_SWE} alt="react" className="role-icon" />
@@ -28,7 +28,7 @@ function About({is_small_screen}) {
                         {about_json.roles.swe}
                     </div>
                 </div>
-                <div className={is_small_screen ? 'role-full' : 'role'}>
+                <div className={cute_layout ? 'role-full' : 'role'}>
                     <div className='header'>
                         <div className='role-icon-container'>
                             <img src={ROLE_ML} alt="pytorch" className="role-icon" />

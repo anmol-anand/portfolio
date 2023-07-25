@@ -5,8 +5,8 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import portfolio_json from './pages/content/Portfolio.json';
 import './css/Navbar.css';
 
-function Navbar({is_small_screen, filtered_section_keys}) {
-  const offset = is_small_screen ? -10 : -70;
+function Navbar({cute_layout, filtered_section_keys}) {
+  const offset = cute_layout ? -10 : -70;
   const duration = 500;
 
   const handleClick = (section) => {
@@ -21,9 +21,9 @@ function Navbar({is_small_screen, filtered_section_keys}) {
   }; 
 
   return (
-    <nav className={is_small_screen ? 'navbar-cute' : 'navbar'}>
-      <ul className={is_small_screen ? 'nav-menu-cute' : 'nav-menu'}>
-        <li className={is_small_screen ? 'nav-item-font nav-item-cute-dim' : 'nav-item-font nav-item-dim'}>
+    <nav className={cute_layout ? 'navbar-cute' : 'navbar'}>
+      <ul className={cute_layout ? 'nav-menu-cute' : 'nav-menu'}>
+        <li className={cute_layout ? 'nav-item-font nav-item-cute-dim' : 'nav-item-font nav-item-dim'}>
           <Link
             activeClass="active"
             to="About"
@@ -38,7 +38,7 @@ function Navbar({is_small_screen, filtered_section_keys}) {
           </Link>
         </li>
         {Object.keys(portfolio_json).map((key, index) => (
-          <li className={is_small_screen ? 'nav-item-font nav-item-cute-dim' : 'nav-item-font nav-item-dim'}>
+          <li className={cute_layout ? 'nav-item-font nav-item-cute-dim' : 'nav-item-font nav-item-dim'}>
             <Link
               activeClass="active"
               to={key}
@@ -49,7 +49,7 @@ function Navbar({is_small_screen, filtered_section_keys}) {
               className={filtered_section_keys.includes(key) ? "nav-link-common nav-link" : "nav-link-common nav-link-dead"}
               onClick={() => handleClick(key)}
             >
-              {is_small_screen && <div className='blank-space' />}
+              {cute_layout && <div className='blank-space' />}
               {key}
             </Link>
           </li>
