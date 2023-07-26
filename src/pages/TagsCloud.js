@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import portfolio_json from './content/Portfolio.json';
 import skill_categories_json from './content/SkillCategories.json';
 import './css/TagsCloud.css';
+import { Code } from "@chakra-ui/react";
+import { getTagColor, getTagFS } from './utils/Hash';
 
 function TagsCloud({filter_tags, cute_layout}) {
 
@@ -65,15 +67,17 @@ function TagsCloud({filter_tags, cute_layout}) {
                     {all_tags.map((tag, index) => {
                       if (filter_tags.includes(tag)) {
                         return (
-                          <div className={`selected-tag-common ${cute_layout ? 'selected-tag-cute-color' : 'selected-tag-color'}`} key={index} onClick={() => unselectTag(tag)}>
-                            #{tag}
-                          </div>
+                          // <div className={`selected-tag-common ${cute_layout ? 'selected-tag-cute-color' : 'selected-tag-color'}`} key={index} onClick={() => unselectTag(tag)}>
+                          //   #{tag}
+                          // </div>
+                          <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag} />
                         );
                       } else {
                         return (
-                          <div className={`unselected-tag-common ${cute_layout ? 'unselected-tag-cute-color' : 'unselected-tag-color'}`} key={index} onClick={() => selectTag(tag)}>
-                            #{tag}
-                          </div>
+                          // <div className={`unselected-tag-common ${cute_layout ? 'unselected-tag-cute-color' : 'unselected-tag-color'}`} key={index} onClick={() => selectTag(tag)}>
+                          //   #{tag}
+                          // </div>
+                          <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag} />
                         );
                       }
                     })}

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../css/ProjectSection.css';
-import { json } from 'react-router-dom';
+import { Code } from "@chakra-ui/react";
+import { getTagColor, getTagFS } from './Hash';
 // THUMBS
 import THUMB_CODEJUDGE from '../../assets/project-thumb/codejudge.png';
 import THUMB_RESNET from '../../assets/project-thumb/resnet.png';
@@ -62,9 +63,10 @@ function ProjectSection({ jsonObj, cute_layout}) {
                 {jsonObj.tags.length > 0 && (
                     <div className='tags-container'>
                         {jsonObj.tags.map((tag, index) => (
-                            <div className='tag' key={index}>
-                                #{tag.name}
-                            </div>
+                            // <div className='tag' key={index}>
+                            //     #{tag.name}
+                            // </div>
+                            <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
                         ))}
                     </div>
                 )}
