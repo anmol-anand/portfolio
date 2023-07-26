@@ -1,0 +1,35 @@
+{
+    "Academic Experience": [
+        {
+            "title_left": "Texas A&M University",
+            "subtitle_list": [
+                {"designation": "Teaching Assistant: Machine Learning", "date": "Fall 2023"}
+            ],
+            "content_items": [],
+            "tags": [
+                {"name": "deep learning", "categories": ["ml"]}, 
+                {"name": "python", "categories": ["ml"]}, 
+                {"name": "pytorch", "categories": ["ml"]}, 
+                {"name": "teaching", "categories": ["act"]}
+            ],
+            "logo": "tamu"
+        }
+    ],
+    "Certifications": [
+        {
+            "title_left": "Amazon Web Services",
+            "title_right": "",
+            "subtitle_list": [
+                {"designation": "AWS Certified Cloud Practitioner", "date": "TBD"}
+            ],
+            "content_head": "TODO: add link",
+            "content_items": [],
+            "tags": [
+                {"name": "aws", "categories": ["swe"]}, 
+                {"name": "certifications", "categories": ["act"]}, 
+                {"name": "software engineering", "categories": ["swe"]}
+            ],
+            "logo": "aws"
+        }
+    ]
+}
