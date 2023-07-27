@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import {Code, Accordion} from '@chakra-ui/react'
+import {Code, Accordion, Heading} from '@chakra-ui/react'
 import './css/Portfolio.css';
 import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
@@ -37,7 +37,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
       {
         filtered_section_keys.map((key, index) => (
           <div className="section" key={index} id={key}>
-            <div className="section-heading">{key}</div>
+            <Heading size="lg" p="20px" justifyContent="center" width={"100%"} display="flex">{key}</Heading>
             {key === "Projects" ? (
               portfolio_json[key].map((element, index) => {
                 if (

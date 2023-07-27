@@ -4,23 +4,14 @@
 
 .about-container {
     width: 100%;
-    margin-top: var(--about_top_margin);
+    /* margin-top: var(--about_top_margin); */
     margin-bottom: var(--about_bottom_margin);
 }
 
 .about-container-cute {
     width: var(--about_container_cute_width);
-    margin-top: var(--about_top_margin);
+    /* margin-top: var(--about_top_margin); */
     margin-bottom: var(--about_bottom_margin);
-}
-
-.about-title {
-    width: 100%;
-    margin-bottom: 20px;
-    font-family: var(--expertise_ff);
-    font-size: var(--expertise_fs);
-    font-weight: var(--expertise_fw);
-    text-align: center;
 }
 
 .about-subtitle {

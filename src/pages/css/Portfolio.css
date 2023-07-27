@@ -22,17 +22,6 @@
     background-color: var(--bg_highlight);
 }
 
-.section-heading {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: inherit;
-    font-size: 22px;
-    font-weight: 500;
-    border-radius: 20px;
-}
-
 .filtering-by-skills {
     width: 100%;
     display: flex;
