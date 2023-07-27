@@ -4,7 +4,7 @@
 
     /* NavBar */
 
-    --navbar_height: 50px;
+    --navbar_height: 50px; /* Also change navbar_height in Navbar.js and Portfolio.js */
 
     /* About */
 

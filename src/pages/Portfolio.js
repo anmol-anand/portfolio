@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Code, Accordion, Heading} from '@chakra-ui/react'
 import './css/Portfolio.css';
@@ -7,7 +7,7 @@ import ProjectSection from './utils/ProjectSection';
 import portfolio_json from './content/Portfolio.json';
 import {getTagFS, getTagColor} from './utils/Hash';
 
-function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
+function Portfolio({filter_tags, filtered_section_keys, cute_layout, navbar_at_top}) {
 
   const navigate = useNavigate();
   
@@ -16,11 +16,27 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
     navigate(`/portfolio`);
   };
 
+  useEffect(() => {
+    if (filter_tags.length > 0) {
+      const element = document.getElementById('top-panel-tags');
+      const offset = 50; // in px
+      const navbar_height = 50; // in px
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if(navbar_at_top) {
+          window.scrollBy(0, rect.top - offset - navbar_height);
+        } else {
+          window.scrollBy(0, rect.top - offset);
+        }
+      }
+    }
+  }, [filter_tags]);
+
   return (
     <div className='portfolio-container' id="Portfolio">
     <Accordion allowToggle>
       {filter_tags.length > 0 && (
-        <div className='filtering-by-skills'>
+        <div className='filtering-by-skills' id='top-panel-tags'>
           <div>
             Filter by skills
           </div>

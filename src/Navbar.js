@@ -6,7 +6,8 @@ import portfolio_json from './pages/content/Portfolio.json';
 import './css/Navbar.css';
 
 function Navbar({cute_layout, filtered_section_keys, picture_on_the_side}) {
-  const offset = cute_layout ? -10 : -70;
+  const navbar_height = 50;
+  const offset = cute_layout ? -10 : -10 - navbar_height;
   const duration = 500;
 
   const handleClick = (section) => {

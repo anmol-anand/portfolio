@@ -141,7 +141,7 @@ function App() {
             </div>
           </div>
           <About cute_layout={first_screen_size} />
-          <Portfolio filter_tags={filter_tags} cute_layout={first_screen_size} filtered_section_keys={filtered_section_keys} />
+          <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} cute_layout={first_screen_size} navbar_at_top={third_screen_size}/>
           <div className='small-pane-cute small-pane-cute-footer'>
             <Footer cute_layout={true} />
           </div>
@@ -160,7 +160,7 @@ function App() {
           </div>
           <div className='big-pane'>
             <About cute_layout={false} />
-            <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} />
+            <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} cute_layout={false} navbar_at_top={true}/>
           </div>
         </div>
       </div>}
