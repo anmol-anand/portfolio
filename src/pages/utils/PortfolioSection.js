@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../css/PortfolioSection.css';
 import '../../css/font.css';
 import { Code } from "@chakra-ui/react";
-import { getTagColor, getTagFS } from './Hash';
+import { getTagColor, getTagFS, getSelectedTagBorder } from './Hash';
 // ACTION ICONS
 import ACTION_PLUS from '../../assets/action-icons/plus.svg';
 import ACTION_MINUS from '../../assets/action-icons/minus.svg';
@@ -19,7 +19,7 @@ import LOGO_TAMU from '../../assets/logos/tamu.png';
 
 const ASSETS_FOLDER = "/assets/";
 
-function PortfolioSection({ jsonObj, cute_layout }) {
+function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
 
     const tagsFS = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
 
@@ -65,7 +65,6 @@ function PortfolioSection({ jsonObj, cute_layout }) {
                                         )}
                                     </button>
                                 )}
-
                             </div>)}
                     </div>
                     {(jsonObj.subtitle_list) && jsonObj.subtitle_list.map((subtitle, index) => (
@@ -105,10 +104,7 @@ function PortfolioSection({ jsonObj, cute_layout }) {
             {jsonObj.tags.length > 0 && (
                 <div className='tags-container'>
                     {jsonObj.tags.map((tag, index) => (
-                        // <div className='tag' key={index}>
-                        //     #{tag.name}
-                        // </div>
-                        <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
+                        <Code m="5px" border={filter_tags.includes(tag.name) ? getSelectedTagBorder() : "none"}  fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
                     ))}
                 </div>
             )}

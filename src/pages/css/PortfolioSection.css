@@ -151,17 +151,6 @@
     justify-content: right;
 }
 
-.tag {
-    border-radius: 100px;
-    background-color: var(--bg_tags);
-    padding: 2px 8px;
-    font-size: var(--tags_fs);
-    font-weight: var(--tags_fw);
-    font-family: inherit;
-    color: var(--text_section_tags);
-    white-space: nowrap;
-}
-
 .portfolio-section:hover {
     background-color: var(--bg_section_hover);
 }

@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import {Code} from '@chakra-ui/react'
 import './css/Portfolio.css';
 import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
 import portfolio_json from './content/Portfolio.json';
+import {getTagFS, getTagColor} from './utils/Hash';
 
 function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
 
@@ -17,8 +19,18 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
   return (
     <div className='portfolio-container' id="Portfolio">
       {filter_tags.length > 0 && (
-        <div className='clear-skills-filter' onClick={clearSkillsFilter}>
-          clear skills filter
+        <div className='filtering-by-skills'>
+          <div>
+            Filter by skills
+          </div>
+          <div>
+            {filter_tags.map((tag, index) => (
+              <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag} />
+            ))}
+          </div>
+          <div className='clear-skills-filter' onClick={clearSkillsFilter}>
+            clear skills filter
+          </div>
         </div>
       )}
       {
@@ -31,7 +43,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
                   filter_tags.length === 0 ||
                   element.tags.some(tag => filter_tags.includes(tag.name))
                 ) {
-                  return <ProjectSection jsonObj={element} cute_layout={cute_layout} key={index} />;
+                  return <ProjectSection jsonObj={element} filter_tags={filter_tags} cute_layout={cute_layout} key={index} />;
                 } else {
                   return null;
                 }
@@ -42,7 +54,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
                   filter_tags.length === 0 ||
                   element.tags.some(tag => filter_tags.includes(tag.name))
                 ) {
-                  return <PortfolioSection jsonObj={element} cute_layout={cute_layout} key={index} />;
+                  return <PortfolioSection jsonObj={element} filter_tags={filter_tags} cute_layout={cute_layout} key={index} />;
                 } else {
                   return null;
                 }

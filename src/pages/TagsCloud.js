@@ -4,7 +4,7 @@ import portfolio_json from './content/Portfolio.json';
 import skill_categories_json from './content/SkillCategories.json';
 import './css/TagsCloud.css';
 import { Code } from "@chakra-ui/react";
-import { getTagColor, getTagFS } from './utils/Hash';
+import { getTagColor, getTagFS, getSelectedTagBorder } from './utils/Hash';
 
 function TagsCloud({filter_tags, cute_layout}) {
 
@@ -69,7 +69,7 @@ function TagsCloud({filter_tags, cute_layout}) {
                         // Selected tags
                         return (
                           <div className='clickable' onClick={() => unselectTag(tag)}>
-                            <Code m="5px" border={"2px solid"} fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag}/>
+                            <Code m="5px" border={getSelectedTagBorder(cute_layout)} fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag}/>
                           </div>
                         );
                       } else {

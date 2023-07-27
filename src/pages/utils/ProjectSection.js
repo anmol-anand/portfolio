@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../css/ProjectSection.css';
 import { Code } from "@chakra-ui/react";
-import { getTagColor, getTagFS } from './Hash';
+import { getTagColor, getTagFS, getSelectedTagBorder } from './Hash';
 // THUMBS
 import THUMB_CODEJUDGE from '../../assets/project-thumb/codejudge.png';
 import THUMB_RESNET from '../../assets/project-thumb/resnet.png';
@@ -9,7 +9,7 @@ import THUMB_KWAY from '../../assets/project-thumb/kway.png';
 
 const ASSETS_FOLDER = "/assets/";
 
-function ProjectSection({ jsonObj, cute_layout}) {
+function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
 
     const thumbs = {
         "codejudge": THUMB_CODEJUDGE,
@@ -63,10 +63,7 @@ function ProjectSection({ jsonObj, cute_layout}) {
                 {jsonObj.tags.length > 0 && (
                     <div className='tags-container'>
                         {jsonObj.tags.map((tag, index) => (
-                            // <div className='tag' key={index}>
-                            //     #{tag.name}
-                            // </div>
-                            <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
+                            <Code m="5px" border={filter_tags.includes(tag.name) ? getSelectedTagBorder(false) : "none"} fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
                         ))}
                     </div>
                 )}

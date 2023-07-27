@@ -17,4 +17,11 @@ function getTagFS() {
   return '10px';
 }
 
-export {getTagColor, getTagFS};
+function getSelectedTagBorder(cute_layout) {
+  if(cute_layout) {
+    return '3px dotted';
+  }
+  return '2px solid';
+}
+
+export {getTagColor, getTagFS, getSelectedTagBorder};

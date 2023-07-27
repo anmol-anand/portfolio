@@ -11,6 +11,7 @@
 .about-container-cute {
     width: var(--about_container_cute_width);
     margin-top: var(--about_top_margin);
+    margin-bottom: var(--about_bottom_margin);
 }
 
 .about-title {

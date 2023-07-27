@@ -33,6 +33,19 @@
     border-radius: 20px;
 }
 
+.filtering-by-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: inherit;
+    font-size: var(--tags_cloud_heading_fs);
+    font-weight: var(--tags_cloud_heading_fw);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .clear-skills-filter {
     width: 100%;
     height: 36px;
