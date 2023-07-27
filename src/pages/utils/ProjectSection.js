@@ -53,7 +53,7 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
                     )}
                 </div>
                 {jsonObj.tags.length > 0 && (
-                    <div className={`tags-container ${jsonObj.layout === 0 ? 'tags-container-right' : 'tags-container-left'}`}>
+                    <div className={`tags-container ${(cute_layout || jsonObj.layout === 0) ? 'tags-container-right' : 'tags-container-left'}`}>
                         {jsonObj.tags.map((tag, index) => (
                             <Code m="5px" border={filter_tags.includes(tag.name) ? getSelectedTagBorder(false) : "none"} fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
                         ))}
