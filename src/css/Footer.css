@@ -19,10 +19,9 @@
   margin-top: var(--footer_vertical_margin);
 }
 
-.footer-email {
+.footer-row {
   margin: 0;
   text-align: center;
-  text-decoration: underline;
 }
 
 .email-text {
@@ -30,6 +29,15 @@
   font-size: var(--footer_email_fs);
   font-weight: var(--footer_email_fw);
   color: var(--text_footer);
+  text-decoration: underline;
+}
+
+.resume-text {
+  font-family: var(--footer_resume_ff);
+  font-size: var(--footer_resume_fs);
+  font-weight: var(--footer_resume_fw);
+  color: var(--text_footer);
+  text-decoration: underline;
 }
 
 .footer-content {

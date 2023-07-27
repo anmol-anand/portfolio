@@ -4,7 +4,7 @@ import { Code } from "@chakra-ui/react";
 import { getTagColor, getTagFS, getSelectedTagBorder } from './Hash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import {  faLocationDot, faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons'
+import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
 // THUMBS
 import THUMB_CODEJUDGE from '../../assets/project-thumb/codejudge.png';
 import THUMB_RESNET from '../../assets/project-thumb/resnet.png';

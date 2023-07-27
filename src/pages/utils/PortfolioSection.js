@@ -104,7 +104,7 @@ function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
             {jsonObj.tags.length > 0 && (
                 <div className='tags-container'>
                     {jsonObj.tags.map((tag, index) => (
-                        <Code m="5px" border={filter_tags.includes(tag.name) ? getSelectedTagBorder() : "none"}  fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
+                        <Code m="5px" border={filter_tags.includes(tag.name) ? getSelectedTagBorder(false) : "none"}  fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
                     ))}
                 </div>
             )}

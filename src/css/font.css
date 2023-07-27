@@ -48,6 +48,10 @@
     --footer_email_fs: 18px;
     --footer_email_fw: 300;
 
+    --footer_resume_ff: var(--footer_email_ff);
+    --footer_resume_fs: 18px;
+    --footer_resume_fw: 300;
+
     /* Portfolio section */
 
     --portfolio_title_left_fs: 16px;

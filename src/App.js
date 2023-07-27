@@ -116,14 +116,14 @@ function App() {
     <div className="outer-wrapper">
       {(first_screen_size || second_screen_size || third_screen_size) && <div className='small-screen'>
         {third_screen_size ? (
-          <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} />
+          <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} picture_on_the_side={false}/>
         ) : (
           <>
             <button className="expand-button" id="expand-navbar-button" onClick={showNavbar}>
               <FontAwesomeIcon icon={faBars} style={{ height: '25px', width: '25px' }} /> 
             </button>
             <div id='navbar-cute-wrapper' ref={navbarRef}>
-              <Navbar cute_layout={true} filtered_section_keys={filtered_section_keys} />
+              <Navbar cute_layout={true} filtered_section_keys={filtered_section_keys} picture_on_the_side={false}/>
             </div>
           </>
         )}
@@ -134,7 +134,7 @@ function App() {
           <TagsCloud filter_tags={filter_tags} cute_layout={true}/>
         </div>
         <div className={`single-pane ${third_screen_size ? 'add-margin-due-to-navbar single-pane-restricted-width' : ''}`}>
-          <div className='small-pane-cute small-pane-cute-header'>
+          <div id='top-panel-1' className='small-pane-cute small-pane-cute-header'>
             <div className='headshot-container-cute'>
                 <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
                 <div className='name'> Anmol Anand </div>
@@ -148,7 +148,7 @@ function App() {
         </div>
       </div>}
       {fourth_screen_size && <div className='large-screen'>
-        <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} />
+        <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} picture_on_the_side={true}/>
         <div className='double-pane'>
           <div className='small-pane'>
             <div className='headshot-container'>

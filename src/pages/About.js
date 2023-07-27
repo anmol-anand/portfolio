@@ -7,7 +7,7 @@ import ROLE_ML from '../assets/role-icons/pytorch.svg';
 
 function About({cute_layout}) {
     return (
-        <div className={cute_layout ? 'about-container-cute' : 'about-container'} id="About">
+        <div className={cute_layout ? 'about-container-cute' : 'about-container'} id="top-panel-2">
             <div className='about-title'>
                 MY EXPERTISE
             </div>

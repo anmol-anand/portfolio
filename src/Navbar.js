@@ -5,7 +5,7 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 import portfolio_json from './pages/content/Portfolio.json';
 import './css/Navbar.css';
 
-function Navbar({cute_layout, filtered_section_keys}) {
+function Navbar({cute_layout, filtered_section_keys, picture_on_the_side}) {
   const offset = cute_layout ? -10 : -70;
   const duration = 500;
 
@@ -26,7 +26,7 @@ function Navbar({cute_layout, filtered_section_keys}) {
         <li className={cute_layout ? 'nav-item-font nav-item-cute-dim' : 'nav-item-font nav-item-dim'}>
           <Link
             activeClass="active"
-            to="About"
+            to={picture_on_the_side ? "top-panel-2" : "top-panel-1"}
             spy={true}
             smooth={true}
             offset={offset}
