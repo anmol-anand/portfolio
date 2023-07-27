@@ -23,10 +23,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
 .roles-container-vertical {
     width: 92%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
 }

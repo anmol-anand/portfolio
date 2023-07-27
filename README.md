@@ -5,4 +5,3 @@ TODO:
 
 Content:
   - update project urls
-  - update role descriptions
