@@ -9,13 +9,8 @@ import ROLE_ML from '../assets/role-icons/pytorch.svg';
 function About({cute_layout}) {
     return (
         <div className={cute_layout ? 'about-container-cute' : 'about-container'} id="top-panel-2">
-            {/* <div className='about-title'>
-                MY EXPERTISE
-            </div> */}
-            <Heading p="20px" justifyContent="center" display="flex">My Expertise</Heading>
-            <div className='about-subtitle'>
-                {/* SOFTWARE DEVELOPER, MACHINE LEARNING & DATA SCIENTIST */}
-            </div>
+            <Heading p="20px" justifyContent="center" display="flex" color="#323232">My Expertise</Heading>
+            
             <div className={cute_layout ? 'roles-container-vertical' : 'roles-container'}>
                 <div className={cute_layout ? 'role-full' : 'role'}>
                     <div className='header'>

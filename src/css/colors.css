@@ -23,7 +23,10 @@
     /* About section */
 
     --text-pytorch: #ee4c2c;
+    --border-pytorch: #323232;
+
     --text-react: #61dafb;
+    --border-react: var(--border-pytorch);
 
     /* Portfolio */
 
