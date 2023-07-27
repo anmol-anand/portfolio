@@ -58,7 +58,7 @@
                 {"name": "Convolutional Neural Nets", "categories": ["ml"]}, 
                 {"name": "Vision", "categories": ["ml"]}
             ],
-            "layout": 0
+            "layout": 1
         },
         {
             "thumbnail": "kway",

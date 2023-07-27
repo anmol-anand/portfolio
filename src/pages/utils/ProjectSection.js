@@ -39,16 +39,25 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
             {(cute_layout || jsonObj.layout == 0) && <img src={thumbs[jsonObj.thumbnail]} 
             className={`${cute_layout ? 'thumbnail-cute' : 'thumbnail'}`} alt='THUMBNAIL' />}
             <div className={`${cute_layout ? 'project-text-cute' : 'project-text'}`}>
-                <span className='title'>{jsonObj.title}</span>
-                {jsonObj.hrefs.length > 0 && (
-                    <span className='hrefs-container'>
-                        {jsonObj.hrefs.map((href, index) => (
-                            <a href={href.url} target="_blank" rel="noreferrer" className='project-href' onClick={handleTagClick}>
-                                {(href.icon == "external") && <FontAwesomeIcon icon={faSquareArrowUpRight} />}
-                                {(href.icon == "git") && <FontAwesomeIcon icon={faGithub} />}
-                            </a>
+                <div>
+                    <span className='title'>{jsonObj.title}</span>
+                    {jsonObj.hrefs.length > 0 && (
+                        <span className='hrefs-container'>
+                            {jsonObj.hrefs.map((href, index) => (
+                                <a href={href.url} target="_blank" rel="noreferrer" className='project-href' onClick={handleTagClick}>
+                                    {(href.icon == "external") && <FontAwesomeIcon icon={faSquareArrowUpRight} />}
+                                    {(href.icon == "git") && <FontAwesomeIcon icon={faGithub} />}
+                                </a>
+                            ))}
+                        </span>
+                    )}
+                </div>
+                {jsonObj.tags.length > 0 && (
+                    <div className={`tags-container ${jsonObj.layout === 0 ? 'tags-container-right' : 'tags-container-left'}`}>
+                        {jsonObj.tags.map((tag, index) => (
+                            <Code m="5px" border={filter_tags.includes(tag.name) ? getSelectedTagBorder(false) : "none"} fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
                         ))}
-                    </span>
+                    </div>
                 )}
                 {showContent && (jsonObj.content_head || jsonObj.content_items.length > 0) && (
                     <div className='content-container'>
@@ -64,13 +73,6 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
                                 </li>
                             ))}
                         </ul>
-                    </div>
-                )}
-                {jsonObj.tags.length > 0 && (
-                    <div className='tags-container'>
-                        {jsonObj.tags.map((tag, index) => (
-                            <Code m="5px" border={filter_tags.includes(tag.name) ? getSelectedTagBorder(false) : "none"} fontSize={getTagFS} colorScheme={getTagColor(tag.name)} children={tag.name} />
-                        ))}
                     </div>
                 )}
             </div>
