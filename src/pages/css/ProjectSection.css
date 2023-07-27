@@ -1,13 +1,19 @@
 @import '../../css/colors.css';
 @import '../../css/font.css';
 
+.project-section-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
 .project-section {
     margin: 2px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 30px;
     background-color: var(--bg_section);
     text-decoration: none;
     color: inherit;
@@ -20,7 +26,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 30px;
     background-color: var(--bg_section);
     text-decoration: none;
     color: inherit;

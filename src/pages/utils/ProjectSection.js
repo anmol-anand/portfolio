@@ -33,9 +33,10 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
     const imagePath = ASSETS_FOLDER + jsonObj.thumbnail;
 
     return (
-        <div className={`${cute_layout ? 'project-section-cute' : 'project-section'} 
-            ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}
-            onClick={toggleContent}>
+    <div className={`${'project-section-wrapper'} 
+        ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}
+        onClick={toggleContent}>
+        <div className={`${cute_layout ? 'project-section-cute' : 'project-section'}`}>
             {(cute_layout || jsonObj.layout == 0) && <img src={thumbs[jsonObj.thumbnail]} 
             className={`${cute_layout ? 'thumbnail-cute' : 'thumbnail'}`} alt='THUMBNAIL' />}
             <div className={`${cute_layout ? 'project-text-cute' : 'project-text'}`}>
@@ -59,25 +60,28 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
                         ))}
                     </div>
                 )}
-                {showContent && (jsonObj.content_head || jsonObj.content_items.length > 0) && (
-                    <div className='content-container'>
-                        {jsonObj.content_head && (
-                            <div className='content-head'>
-                                {jsonObj.content_head}
-                            </div>
-                        )}
-                        <ul className='content-list'>
-                            {jsonObj.content_items.map((content_item, index) => (
-                                <li className='content-item' key={index}>
-                                    {content_item}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
             </div>
             {(!cute_layout && jsonObj.layout == 1) && <img src={thumbs[jsonObj.thumbnail]} className='thumbnail' alt='THUMBNAIL' />}
         </div>
+
+        {showContent && (jsonObj.content_head || jsonObj.content_items.length > 0) && (
+            <div className='content-container'>
+                {jsonObj.content_head && (
+                    <div className='content-head'>
+                        {jsonObj.content_head}
+                    </div>
+                )}
+                <ul className='content-list'>
+                    {jsonObj.content_items.map((content_item, index) => (
+                        <li className='content-item' key={index}>
+                            {content_item}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        )}
+
+    </div>
     );
 }
 
