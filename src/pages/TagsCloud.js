@@ -4,14 +4,16 @@ import portfolio_json from './content/Portfolio.json';
 import skill_categories_json from './content/SkillCategories.json';
 import './css/TagsCloud.css';
 import { Code } from "@chakra-ui/react";
-import { getTagColor, getTagFS, getSelectedTagBorder } from './utils/Hash';
+import { getTagColor, getTagFS, getSelectedTagBorder, tagFilteringOn } from './utils/Hash';
 
 function TagsCloud({filter_tags, cute_layout}) {
 
     const navigate = useNavigate();
 
     const renderAgain = (updated_filter_tags) => {
-      navigate(`/portfolio?filter_tags=${updated_filter_tags.join(',')}`);
+      if (tagFilteringOn()) {
+        navigate(`/portfolio?filter_tags=${updated_filter_tags.join(',')}`);
+      }
     };
   
     const unselectTag = (tag) => {
@@ -51,7 +53,7 @@ function TagsCloud({filter_tags, cute_layout}) {
     return (
         <div className="tags-cloud">
           <div className={`tags-cloud-heading ${cute_layout ? 'tags-cloud-cute-margin' : ''}`}>
-            Filter by skills
+            {tagFilteringOn() ? "Filter by Skills" : "Skills"}
           </div>
           <div className="tags-cloud-container">
             {Object.entries(skill_categories_json).map(([key, category]) => {
@@ -75,7 +77,7 @@ function TagsCloud({filter_tags, cute_layout}) {
                       } else {
                         // Not selected tags
                         return (
-                          <div className='clickable' onClick={() => selectTag(tag)}>
+                          <div className='clickable' onClick={() => selectTag(tag)} style={tagFilteringOn() ? { cursor: 'pointer' } : {cursor: 'auto'}}>
                             <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag}/>
                           </div>
                         );
