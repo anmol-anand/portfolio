@@ -48,10 +48,12 @@
 
 .project-text {
     width: 50%;
+    text-align: center;
 }
 
 .project-text-cute {
     width: 100%;
+    text-align: center;
 }
 
 .title {
@@ -65,13 +67,6 @@
   
 .project-section:hover {
     background-color: var(--bg_section_hover);
-}
-
-.hrefs-container {
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .content-container {
@@ -105,9 +100,8 @@
 }
 
 .project-href {
-    margin-left: 5px;
-    margin-right: 5px;
-    color: var(--text_primary);
+    margin-left: 10px;
+    color: var(--project_href_color);
     font-size: var(--project_href_fs);
     font-weight: var(--project_href_fw);
 }

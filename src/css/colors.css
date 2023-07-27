@@ -33,6 +33,7 @@
     --bg_section: transparent;
     --bg_section_hover: var(--bg_section);
     --bg_highlight: #e1eedd;
+    --project_href_color: #ee4c2c;
 
     /* Tags */
 

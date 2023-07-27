@@ -26,8 +26,8 @@
             "thumbnail": "codejudge",
             "title": "CodeJudge - Competitive Programming Platform",
             "hrefs": [
-                {"text": "WebApp", "url": "https://codejudge-prod-app.herokuapp.com/"},
-                {"text": "GitRepo", "url": "TBD"}
+                {"icon": "external", "url": "https://codejudge-prod-app.herokuapp.com/"},
+                {"icon": "git", "url": "TBD"}
             ],
             "content_head": "CodeJudge is a Competitive Programming Platform. It is a Ruby on Rails-based web application, deployed using Docker and Heroku. Instructors can create problems, and students can solve them in their preferred programming language. The platform offers real-time code evaluation, a leaderboard for healthy competition, and a collaborative discussion forum. With automated test case evaluation and analytics, it fosters an engaging and supportive learning environment for students aspiring to excel in data strcutures and algorithms.",
             "content_items": [],
@@ -46,8 +46,8 @@
             "thumbnail": "resnet",
             "title": "Fast image classification using ResNet variant",
             "hrefs": [
-                {"text": "Report", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
-                {"text": "GitRepo", "url": "TBD"}
+                {"icon": "external", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
+                {"icon": "git", "url": "TBD"}
             ],
             "content_head": "In this project, I have created an advanced image classification model that harnesses the potential of ResNet in conjunction with shortcut networks, achieving exceptional precision and efficiency during training. The introduction of a novel ResNet variant, carefully optimized in terms of layer depth, channel sizes, and skip connections, strikes an ideal balance between complexity and performance. The model showcased remarkable results, attaining an impressive accuracy of 93.56% within just 90 epochs, a testament to its strategic approach in overcoming challenges like vanishing gradients and slow convergence. ",
             "content_items": [],
@@ -65,7 +65,7 @@
             "link": "https://anmol-anand.github.io/paper/kWayConductance.pdf",
             "title": "A novel graph clustering method",
             "hrefs": [
-                {"text": "Report", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
+                {"icon": "external", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
             ],
             "content_head": "Dividing a graph into k-clusters can be defined as partitioning the vertex set into k mutually-disjoint subsets, such that each induced subgraph is dense, and it is sparsely connected to the rest of the original graph. This paper introduces and explores a novel k-way conductance function that measures the quality of a k-clustering. Additionally, we define and prove an equivalent of Cheeger's inequality for this k-way conductance function.",
             "content_items": [],

@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import '../css/ProjectSection.css';
 import { Code } from "@chakra-ui/react";
 import { getTagColor, getTagFS, getSelectedTagBorder } from './Hash';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import {  faLocationDot, faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons'
 // THUMBS
 import THUMB_CODEJUDGE from '../../assets/project-thumb/codejudge.png';
 import THUMB_RESNET from '../../assets/project-thumb/resnet.png';
@@ -36,13 +39,16 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
             {(cute_layout || jsonObj.layout == 0) && <img src={thumbs[jsonObj.thumbnail]} 
             className={`${cute_layout ? 'thumbnail-cute' : 'thumbnail'}`} alt='THUMBNAIL' />}
             <div className={`${cute_layout ? 'project-text-cute' : 'project-text'}`}>
-                <div className='title'>{jsonObj.title}</div>
+                <span className='title'>{jsonObj.title}</span>
                 {jsonObj.hrefs.length > 0 && (
-                    <div className='hrefs-container'>
+                    <span className='hrefs-container'>
                         {jsonObj.hrefs.map((href, index) => (
-                            <a href={href.url} target="_blank" rel="noopener noreferrer" className='project-href' onClick={handleTagClick}>{href.text}</a>
+                            <a href={href.url} target="_blank" rel="noreferrer" className='project-href' onClick={handleTagClick}>
+                                {(href.icon == "external") && <FontAwesomeIcon icon={faSquareArrowUpRight} />}
+                                {(href.icon == "git") && <FontAwesomeIcon icon={faGithub} />}
+                            </a>
                         ))}
-                    </div>
+                    </span>
                 )}
                 {showContent && (jsonObj.content_head || jsonObj.content_items.length > 0) && (
                     <div className='content-container'>
