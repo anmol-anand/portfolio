@@ -1,7 +1,5 @@
 TODO:
     - website loading animation
-    - Make section headings prominent,
-      Demarcation for sections
     - custom cursor pointer
     ? Update color scheme
 
