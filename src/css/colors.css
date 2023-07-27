@@ -15,7 +15,6 @@
 
     --bg_small_pane: #e1eedd;
     --text_small_pane: #183a1d;
-    --text_skill_category: black;
 
     /* Footer */
 
@@ -40,7 +39,7 @@
     --bg_tags: transparent;
     --bg_tags_hover: rgba(0, 0, 0, 0.2);
     --bg_tags_sel: var(--bg_tags_hover);
-    --text_tags_unsel: var(--text_skill_category);
+    --text_tags_unsel: black;
     --text_tags_sel: var(--text_tags_unsel);
     --text_section_tags: var(--text_tags_unsel);
 
