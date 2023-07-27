@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import '../css/PortfolioSection.css';
 import '../../css/font.css';
-import { Code } from "@chakra-ui/react";
+import { Code, Icon,
+    AccordionItem,
+    AccordionButton,
+    AccordionPanel,
+    AccordionIcon } from "@chakra-ui/react";
 import { getTagColor, getTagFS, getSelectedTagBorder } from './Hash';
 // ACTION ICONS
 import ACTION_PLUS from '../../assets/action-icons/plus.svg';
@@ -35,71 +39,65 @@ function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
         "tamu": LOGO_TAMU
     };
 
-    const [showContent, setShowContent] = useState(false);
-
-    const toggleContent = () => {
-        setShowContent(!showContent);
-    };
-
     return (
-        <div className={`portfolio-section ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}  onClick={toggleContent}>
-            <div className='visible-section'>
-                <div className='logo-container'>
-                    <img src={logos[jsonObj.logo]} alt='LOGO' className='logo'/>
-                </div>
-                <div className='visible-text'>
-                    <div className='title-container'>
-                        <div className='title-left'>
-                            {jsonObj.title_left}
-                        </div>
-                        {(jsonObj.title_right || jsonObj.content_head || jsonObj.content_items.length > 0) && (
-                            <div className='title-right'>
-                                {jsonObj.title_right}
-                                {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
-                                    <button className="elaborate">
-                                        {showContent ? 
-                                        (
-                                            <img src={ACTION_MINUS} alt="minus" />
-                                        ) : (
-                                            <img src={ACTION_PLUS} alt="plus" />
-                                        )}
-                                    </button>
-                                )}
-                            </div>)}
+        <div className={`portfolio-section ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}>
+        <AccordionItem border="none">
+            <AccordionButton borderRadius={"10px"}>
+                <div className='visible-section'>
+                    <div className='logo-container'>
+                        <img src={logos[jsonObj.logo]} alt='LOGO' className='logo'/>
                     </div>
-                    {(jsonObj.subtitle_list) && jsonObj.subtitle_list.map((subtitle, index) => (
-                        <div className={`${cute_layout ? 'subtitle-container-cute' : 'subtitle-container'}`}>
-                            <div className='designation'> 
-                                {subtitle.designation}
+                    <div className='visible-text'>
+                        <div className='title-container'>
+                            <div className='title-left'>
+                                {jsonObj.title_left}
                             </div>
-                            {subtitle.period ? (
-                                <div className='date'>
-                                    {subtitle.period} <span className='period-delimiter'> &#183; </span> {subtitle.date}
-                                </div>
-                            ) : (
-                                <div className='date'>
-                                    {subtitle.date}
-                                </div>
-                            )}
-                        </div>))}
-                    
-                </div>
-            </div>
-            {showContent && (jsonObj.content_head || jsonObj.content_items.length > 0) && (
-                <div className='content-container'>
-                    {jsonObj.content_head && (
-                        <div className='content-head'>
-                            {jsonObj.content_head}
+                            {(jsonObj.title_right || jsonObj.content_head || jsonObj.content_items.length > 0) && (
+                                <div className='title-right'>
+                                    {jsonObj.title_right}
+                                    {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
+                                        <button className="elaborate">
+                                            <Icon as={AccordionIcon} />
+                                        </button>
+                                    )}
+                                </div>)}
                         </div>
-                    )}
-                    <ul className='content-list'>
-                        {jsonObj.content_items.map((content_item, index) => (
-                            <li className='content-item' key={index}>
-                                {content_item}
-                            </li>
-                        ))}
-                    </ul>
+                        {(jsonObj.subtitle_list) && jsonObj.subtitle_list.map((subtitle, index) => (
+                            <div className={`${cute_layout ? 'subtitle-container-cute' : 'subtitle-container'}`}>
+                                <div className='designation'> 
+                                    {subtitle.designation}
+                                </div>
+                                {subtitle.period ? (
+                                    <div className='date'>
+                                        {subtitle.period} <span className='period-delimiter'> &#183; </span> {subtitle.date}
+                                    </div>
+                                ) : (
+                                    <div className='date'>
+                                        {subtitle.date}
+                                    </div>
+                                )}
+                            </div>))}
+                        
+                    </div>
                 </div>
+            </AccordionButton>
+            {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
+                <AccordionPanel p={2}>
+                    <div className='content-container'>
+                        {jsonObj.content_head && (
+                            <div className='content-head'>
+                                {jsonObj.content_head}
+                            </div>
+                        )}
+                        <ul className='content-list'>
+                            {jsonObj.content_items.map((content_item, index) => (
+                                <li className='content-item' key={index}>
+                                    {content_item}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </AccordionPanel>
             )}
             {jsonObj.tags.length > 0 && (
                 <div className='tags-container'>
@@ -108,6 +106,7 @@ function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
                     ))}
                 </div>
             )}
+        </AccordionItem>
         </div>
     );
 }

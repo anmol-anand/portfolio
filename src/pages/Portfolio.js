@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import {Code} from '@chakra-ui/react'
+import {Code, Accordion} from '@chakra-ui/react'
 import './css/Portfolio.css';
 import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
@@ -18,6 +18,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
 
   return (
     <div className='portfolio-container' id="Portfolio">
+    <Accordion allowToggle>
       {filter_tags.length > 0 && (
         <div className='filtering-by-skills'>
           <div>
@@ -63,6 +64,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout}) {
           </div>
         ))
       }
+    </Accordion>
     </div>
   );
 }
