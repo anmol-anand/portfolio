@@ -131,7 +131,7 @@
         {
             "title_left": "Goldman Sachs",
             "subtitle_list": [
-                {"designation": "Big Data Intern", "date": "Summer 2018"}
+                {"designation": "Software Engineer Intern", "date": "Summer 2018"}
             ],
             "content_head": "During my internship, I successfully developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Through this project, I achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program. This experience honed my skills in software development, automation, and provided valuable insights into large-scale data processing systems.",
             "content_items": [],
