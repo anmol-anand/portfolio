@@ -54,7 +54,7 @@ function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
                                     {jsonObj.title_right}
                                     {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
                                         <button className="elaborate">
-                                            <Icon as={AccordionIcon} boxSize={5} p={1}/>
+                                            <Icon as={AccordionIcon} boxSize={5} />
                                         </button>
                                     )}
                                 </div>)}
