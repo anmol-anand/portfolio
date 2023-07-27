@@ -1,5 +1,5 @@
 import React from 'react';
-import {Heading} from '@chakra-ui/react'
+import {Heading} from '@chakra-ui/react';
 import about_json from './content/About.json';
 import './css/About.css';
 // ROLE ICONS
@@ -9,7 +9,7 @@ import ROLE_ML from '../assets/role-icons/pytorch.svg';
 function About({cute_layout}) {
     return (
         <div className={cute_layout ? 'about-container-cute' : 'about-container'} id="top-panel-2">
-            <Heading p="20px" justifyContent="center" display="flex" color="#323232">My Expertise</Heading>
+            <Heading size="xl" p="20px" justifyContent="center" display="flex" color="#323232">My Expertise</Heading>
             
             <div className={cute_layout ? 'roles-container-vertical' : 'roles-container'}>
                 <div className={cute_layout ? 'role-full' : 'role'}>
