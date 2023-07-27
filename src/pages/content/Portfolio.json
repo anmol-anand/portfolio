@@ -67,7 +67,7 @@
             "hrefs": [
                 {"icon": "external", "url": "https://anmol-anand.github.io/paper/kWayConductance.pdf"}
             ],
-            "content_head": "Dividing a graph into k-clusters can be defined as partitioning the vertex set into k mutually-disjoint subsets, such that each induced subgraph is dense, and it is sparsely connected to the rest of the original graph. This paper introduces and explores a novel k-way conductance function that measures the quality of a k-clustering. Additionally, we define and prove an equivalent of Cheeger's inequality for this k-way conductance function.",
+            "content_head": "In this paper, we introduce a novel k-way graph conductance function to measure the quality of a k-clustering on a graph. We compare its effectiveness in finding k-clusters to existing k-way conductance functions and give a novel proof for a k-way Cheeger’s inequality on this conductance function.",
             "content_items": [],
             "tags": [
                 {"name": "Theory", "categories": ["th"]},
@@ -106,7 +106,7 @@
                 {"designation": "Software Engineer II", "period": "6 mos", "date": "Jan 2022 - Jun 2022"},
                 {"designation": "Software Engineer I", "period": "2 yrs 7 mos", "date": "Jun 2019 - Dec 2021"}
             ],
-            "content_head": "I worked in the Search Engineering team on a natural language, petabyte-scale, distributed search engine that powers search for almost every use-case of the firm. My major contributions to the product were:",
+            "content_head": "Worked in the Search Engineering team on a natural language, petabyte-scale, distributed search engine that powers search for almost every use-case of the firm. Major contributions to the product were:",
             "content_items": [
                 "Improved the complexity of the retrieval algorithm, reducing the average retrieval latency by a factor of 50.",
                 "Improved the detection of meaningful n-grams in search queries, increasing precision from 0.45 to 0.85 and recall from 0.30 to 0.59.",
@@ -133,7 +133,7 @@
             "subtitle_list": [
                 {"designation": "Software Engineer Intern", "date": "Summer 2018"}
             ],
-            "content_head": "During my internship, I successfully developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Through this project, I achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program. This experience honed my skills in software development, automation, and provided valuable insights into large-scale data processing systems.",
+            "content_head": "Developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program.  Honed my skills in software development, automation, and gained valuable insights into large-scale data processing systems.",
             "content_items": [],
             "tags": [
                 {"name": "Big Data", "categories": ["ml"]}, 
@@ -152,7 +152,7 @@
             "subtitle_list": [
                 {"designation": "Researcher & Open Source Contributor", "date": "Spring 2023"}
             ],
-            "content_head": "During my time as an open source contributor to DIVE Labs' deep learning Python library, \"DIVE into Graphs\" (DIG), I focused on leveraging my expertise in PyTorch, PyTorch Geometric, and Graph Neural Networks (GNNs) to enhance the library's capabilities. My contributions to the project included the following:",
+            "content_head": "As an open source contributor to DIVE Labs' deep learning Python library, \"DIVE into Graphs\" (DIG), I focused on leveraging my expertise in PyTorch, PyTorch Geometric, and Graph Neural Networks (GNNs) to enhance the library's capabilities. My contributions to the project included the following:",
             "content_items": [
                 "Implemented the GraphAug method based on the paper \"Automated Data Augmentations for Graph Classification,\" using Graph Neural Networks (GNNs) for graph datasets.",
                 "Created user-friendly Python documentation for the GraphAug implementation.",
