@@ -7,9 +7,6 @@ import { Code, Icon,
     AccordionPanel,
     AccordionIcon } from "@chakra-ui/react";
 import { getTagColor, getTagFS, getSelectedTagBorder } from './Hash';
-// ACTION ICONS
-import ACTION_PLUS from '../../assets/action-icons/plus.svg';
-import ACTION_MINUS from '../../assets/action-icons/minus.svg';
 // LOGOS
 import LOGO_AWS from '../../assets/logos/aws.png';
 import LOGO_DIVE from '../../assets/logos/dive.png';
@@ -42,7 +39,7 @@ function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
     return (
         <div className={`portfolio-section ${jsonObj.content_head || jsonObj.content_items.length > 0 ? 'hover-pointer' : ''}`}>
         <AccordionItem border="none">
-            <AccordionButton borderRadius={"10px"}>
+            <AccordionButton borderRadius={"10px"} p={0}>
                 <div className='visible-section'>
                     <div className='logo-container'>
                         <img src={logos[jsonObj.logo]} alt='LOGO' className='logo'/>
@@ -57,7 +54,7 @@ function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
                                     {jsonObj.title_right}
                                     {(jsonObj.content_head || jsonObj.content_items.length > 0) && (
                                         <button className="elaborate">
-                                            <Icon as={AccordionIcon} />
+                                            <Icon as={AccordionIcon} boxSize={5} p={1}/>
                                         </button>
                                     )}
                                 </div>)}

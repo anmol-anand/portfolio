@@ -48,6 +48,7 @@
     font-size: var(--portfolio_title_left_fs);
     font-weight: var(--portfolio_title_left_fw);
     font-family: inherit;
+    text-align: left;
 }
 
 .title-right {
@@ -76,6 +77,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    text-align: left;
 }
 
 .designation {
