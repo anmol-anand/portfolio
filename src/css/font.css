@@ -44,13 +44,13 @@
 
     /* Footer */
 
-    --footer_email_ff: "Arial Black", Arial, sans-serif;
+    --footer_email_ff: Arial, sans-serif;
     --footer_email_fs: 18px;
-    --footer_email_fw: 300;
+    --footer_email_fw: 900;
 
     --footer_resume_ff: var(--footer_email_ff);
-    --footer_resume_fs: 18px;
-    --footer_resume_fw: 300;
+    --footer_resume_fs: var(--footer_email_fs);
+    --footer_resume_fw: var(--footer_email_fw);
 
     /* Portfolio section */
 
