@@ -66,18 +66,18 @@ function TagsCloud({filter_tags, cute_layout}) {
                   <div className='skill-category-tags'>
                     {all_tags.map((tag, index) => {
                       if (filter_tags.includes(tag)) {
+                        // Selected tags
                         return (
-                          // <div className={`selected-tag-common ${cute_layout ? 'selected-tag-cute-color' : 'selected-tag-color'}`} key={index} onClick={() => unselectTag(tag)}>
-                          //   #{tag}
-                          // </div>
-                          <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag} />
+                          <div className='clickable' onClick={() => unselectTag(tag)}>
+                            <Code m="5px" border={"2px solid"} fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag}/>
+                          </div>
                         );
                       } else {
+                        // Not selected tags
                         return (
-                          // <div className={`unselected-tag-common ${cute_layout ? 'unselected-tag-cute-color' : 'unselected-tag-color'}`} key={index} onClick={() => selectTag(tag)}>
-                          //   #{tag}
-                          // </div>
-                          <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag} />
+                          <div className='clickable' onClick={() => selectTag(tag)}>
+                            <Code m="5px" fontSize={getTagFS} colorScheme={getTagColor(tag)} children={tag}/>
+                          </div>
                         );
                       }
                     })}

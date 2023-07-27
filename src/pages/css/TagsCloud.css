@@ -43,7 +43,6 @@
     text-decoration: underline;
     font-size: var(--tags_category_fs);
     font-weight: var(--tags_category_fw);
-    color: var(--text_skill_category);
 }
 
 .skill-category-tags {
@@ -54,66 +53,10 @@
     flex-wrap: wrap;
 }
 
-.selected-tag-common {
-    border-radius: 100px;
-    background-color: var(--bg_tags_sel);
-    padding: 4px 12px;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    white-space: nowrap;
-}
-
-.unselected-tag-common {
-    border-radius: 100px;
-    background-color: var(--bg_tags);
-    padding: 4px 12px;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    white-space: nowrap;
-}
-
-.selected-tag-common:hover {
-    cursor: pointer;
-}
-
-.unselected-tag-common:hover {
-    cursor: pointer;
-}
-
-.selected-tag-color {
-    color: var(--text_tags_sel);
-}
-
-.unselected-tag-color {
-    color: var(--text_tags_unsel);
-}
-
-.selected-tag-color:hover {
-    background-color: var(--bg_tags_hover);
-}
-
-.unselected-tag-color:hover {
-    background-color: var(--bg_tags_hover);
-}
-
-.selected-tag-cute-color {
-    background-color: var(--bg_tags_cute_sel);
-}
-
-.unselected-tag-cute-color {
-    
-}
-
-.selected-tag-cute-color:hover {
-    background-color: var(--bg_tags_cute_hover);
-}
-
-.unselected-tag-cute-color:hover {
-    background-color: var(--bg_tags_cute_hover);
-}
-
 .tags-cloud-cute-margin {
     margin-top: 40px;
+}
+
+.clickable:hover {
+    cursor: pointer;
 }

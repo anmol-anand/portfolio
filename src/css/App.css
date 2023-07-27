@@ -155,8 +155,5 @@
   left: 0;
   background-color: var(--bg_navbar);
   backdrop-filter: blur(2px);
-}
-
-#tags-cloud-cute-wrapper * {
-  color: var(--text_navbar) !important;
+  color: var(--text_navbar);
 }
