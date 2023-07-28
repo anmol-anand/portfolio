@@ -32,6 +32,9 @@
 
     --text_clear_element: #ee4c2c;
     --bg_clear_element: #eba99c76;
+    /* --text_clear_element: var(--text_small_pane);
+    --bg_clear_element: var(--bg_small_pane); */
+
     --bg_section: transparent;
     --bg_section_hover: var(--bg_section);
     --bg_highlight: #e1eedd;

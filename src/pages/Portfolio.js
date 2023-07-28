@@ -46,7 +46,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout, navbar_at_t
             ))}
           </div>
           <div className='clear-skills-filter' onClick={clearSkillsFilter}>
-            clear skills filter
+            clear filter
           </div>
         </div>
       )}
