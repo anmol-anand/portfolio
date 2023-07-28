@@ -39,7 +39,6 @@
 
 .thumbnail {
     width: 48%;
-    height: fit-content;
     margin-bottom: 10px;
     border-radius: 10px;
     /* border: 1px solid var(--text_primary); */

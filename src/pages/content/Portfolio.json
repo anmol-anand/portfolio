@@ -55,8 +55,8 @@
                 {"name": "Deep Learning", "categories": ["ml"]},
                 {"name": "Python", "categories": ["ml"]}, 
                 {"name": "PyTorch", "categories": ["ml"]}, 
-                {"name": "Convolutional Neural Nets", "categories": ["ml"]}, 
-                {"name": "Vision", "categories": ["ml"]}
+                {"name": "Vision", "categories": ["ml"]}, 
+                {"name": "Convolutional Neural Nets", "categories": ["ml"]}
             ],
             "layout": 1
         },
