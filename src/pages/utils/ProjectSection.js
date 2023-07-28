@@ -3,8 +3,7 @@ import '../css/ProjectSection.css';
 import { Code,
     AccordionItem,
     AccordionButton,
-    AccordionPanel,
-    AccordionIcon } from "@chakra-ui/react";
+    AccordionPanel } from "@chakra-ui/react";
 import { getTagColor, getTagFS, getSelectedTagBorder } from './Hash';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -13,8 +12,6 @@ import { faSquareArrowUpRight } from '@fortawesome/free-solid-svg-icons';
 import THUMB_CODEJUDGE from '../../assets/project-thumb/codejudge.png';
 import THUMB_RESNET from '../../assets/project-thumb/resnet.png';
 import THUMB_KWAY from '../../assets/project-thumb/kway.png';
-
-const ASSETS_FOLDER = "/assets/";
 
 function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
 
@@ -27,8 +24,6 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
     const handleTagClick = (event) => {
         event.stopPropagation();
     };
-    
-    const imagePath = ASSETS_FOLDER + jsonObj.thumbnail;
 
     return (
     <div className={`${'project-section-wrapper'} 
