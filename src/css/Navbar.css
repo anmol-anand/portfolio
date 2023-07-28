@@ -91,7 +91,7 @@
     color: var(--text_navbar-dead);
 }
 
-.nav-item-font:hover {
+.nav-link:hover {
     cursor: pointer;
 }
 
