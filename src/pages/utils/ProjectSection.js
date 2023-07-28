@@ -43,12 +43,15 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
                         <span className='title'>{jsonObj.title}</span>
                         {jsonObj.hrefs.length > 0 && (
                             <span className='hrefs-container'>
-                                {jsonObj.hrefs.map((href, index) => (
-                                    <a href={href.url} target="_blank" rel="noreferrer" className='project-href' onClick={handleTagClick}>
-                                        {(href.icon == "external") && <FontAwesomeIcon icon={faSquareArrowUpRight} />}
-                                        {(href.icon == "git") && <FontAwesomeIcon icon={faGithub} />}
-                                    </a>
-                                ))}
+                                {jsonObj.hrefs.map((href, index) => {
+                                    const hrefURL = href.url === '' ? '/coming-soon' : href.url;
+                                    return(
+                                        <a href={hrefURL} target="_blank" rel="noreferrer" className='project-href' onClick={handleTagClick}>
+                                            {(href.icon == "external") && <FontAwesomeIcon icon={faSquareArrowUpRight} />}
+                                            {(href.icon == "git") && <FontAwesomeIcon icon={faGithub} />}
+                                        </a>
+                                    );
+                                })}
                             </span>
                         )}
                     </div>
