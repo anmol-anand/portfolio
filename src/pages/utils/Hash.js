@@ -25,7 +25,7 @@ function getSelectedTagBorder(cute_layout) {
 }
 
 function tagFilteringOn() {
-  return true;
+  return false;
 }
 
 export {getTagColor, getTagFS, getSelectedTagBorder, tagFilteringOn };
