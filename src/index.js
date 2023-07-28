@@ -16,7 +16,7 @@ root.render(
     <ChakraProvider>
       <Routes>
           <Route path="/coming-soon" element={<ComingSoon />} />
-          <Route path={PORTFOLIO_ROUTE} element={<App />} />
+          <Route path="/" element={<App />} />
           {/* <Route path="/*" element={<Navigate to="/portfolio" />} /> */}
         </Routes>
     </ChakraProvider>
