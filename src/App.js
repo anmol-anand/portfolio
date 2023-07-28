@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+import Hammer from 'hammerjs';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import About from './pages/About';
@@ -85,6 +86,68 @@ function useOutsideTagsCloud(ref) {
   }, [ref]);
 }
 
+function handleMobileSwipe(swipeDirection) {
+  const navbar_is_open = document.getElementById('navbar-cute-wrapper').style.display === 'block';
+  const tags_cloud_is_open = document.getElementById('tags-cloud-cute-wrapper').style.display === 'block';
+
+  if (navbar_is_open) {
+    if (tags_cloud_is_open) {
+      // Both are open
+      if(swipeDirection == 'swipeleft') {
+        collapseTagsCloud();
+      } else if(swipeDirection == 'swiperight') {
+        collapseNavbar();
+      } else {
+        collapseTagsCloud();
+        collapseNavbar();
+      }
+    } else {
+      // Only Navbar is open
+      if(swipeDirection == 'swipeleft') {
+        
+      } else if(swipeDirection == 'swiperight') {
+        collapseNavbar();
+      }
+    }
+  } else {
+    if (tags_cloud_is_open) {
+      // Only TagsCloud is open
+      if(swipeDirection == 'swipeleft') {
+        collapseTagsCloud();
+      } else if(swipeDirection == 'swiperight') {
+        
+      }
+    } else {
+      // Both are closed
+      if(swipeDirection == 'swipeleft') {
+        showNavbar();
+      } else if(swipeDirection == 'swiperight') {
+        showTagsCloud();
+      }
+    }
+  }
+}
+
+function useMobileHorizontalSwipes() {
+  useEffect(() => {
+    const hammer = new Hammer(document.body);
+    hammer.get('swipe').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+
+    hammer.on('swipeleft', () => {
+      handleMobileSwipe('swipeleft');
+    });
+
+    hammer.on('swiperight', () => {
+      handleMobileSwipe('swiperight');
+    });
+
+    return () => {
+      hammer.off('swipeleft');
+      hammer.off('swiperight');
+    };
+  }, []);
+}
+
 function App() {
   const first_breakpoint = 570;
   const second_breakpoint = 800;
@@ -103,6 +166,8 @@ function App() {
 
   const tagsCloudRef = useRef(null);
   useOutsideTagsCloud(tagsCloudRef);
+
+  useMobileHorizontalSwipes();
 
   const filtered_section_keys = filter_tags.length === 0 ? 
     Object.keys(portfolio_json): 
