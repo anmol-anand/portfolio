@@ -2,7 +2,7 @@
   "name": "personal-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://anmol-anand.github.io/portfolio",
+  "homepage": "http://anmol-anand.github.io",
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",
     "@chakra-ui/react": "^2.8.0",
