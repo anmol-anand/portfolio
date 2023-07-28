@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.8fd9c4ea.css",
-    "main.js": "/portfolio/static/js/main.81e5dff9.js",
+    "main.js": "/portfolio/static/js/main.21e9f7a6.js",
     "static/js/787.dfb08324.chunk.js": "/portfolio/static/js/787.dfb08324.chunk.js",
     "static/media/resnet.png": "/portfolio/static/media/resnet.7e5ea19f199e0087bc20.png",
     "static/media/dive.png": "/portfolio/static/media/dive.4a45861c7eefcf17e8fb.png",
@@ -9,7 +9,6 @@
     "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
     "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/kubernetes.png": "/portfolio/static/media/kubernetes.a849ad9689e110154249.png",
-    "static/media/coming-soon.gif": "/portfolio/static/media/coming-soon.d3b9b7295562a5ae8daa.gif",
     "static/media/codejudge.png": "/portfolio/static/media/codejudge.f20565584ae37546117d.png",
     "static/media/iitr.png": "/portfolio/static/media/iitr.cb03efbb9a37bb9f7cb3.png",
     "static/media/fa-solid-900.woff2": "/portfolio/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
@@ -28,11 +27,11 @@
     "static/media/codeforces.svg": "/portfolio/static/media/codeforces.e65217bbbe3bc343c27de93577a94591.svg",
     "static/media/react.svg": "/portfolio/static/media/react.6dfa7aa5acf75ed4e083a3a913e088e6.svg",
     "main.8fd9c4ea.css.map": "/portfolio/static/css/main.8fd9c4ea.css.map",
-    "main.81e5dff9.js.map": "/portfolio/static/js/main.81e5dff9.js.map",
+    "main.21e9f7a6.js.map": "/portfolio/static/js/main.21e9f7a6.js.map",
     "787.dfb08324.chunk.js.map": "/portfolio/static/js/787.dfb08324.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8fd9c4ea.css",
-    "static/js/main.81e5dff9.js"
+    "static/js/main.21e9f7a6.js"
   ]
 }
