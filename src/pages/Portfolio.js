@@ -6,6 +6,7 @@ import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
 import portfolio_json from './content/Portfolio.json';
 import {getTagFS, getTagColor} from './utils/Hash';
+import PORTFOLIO_ROUTE from '../PortfolioRoute';
 
 function Portfolio({filter_tags, filtered_section_keys, cute_layout, navbar_at_top}) {
 
@@ -13,7 +14,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout, navbar_at_t
   
   const clearSkillsFilter = () => {
     console.log("Clearing skills filter");
-    navigate(`/portfolio`);
+    navigate(`${PORTFOLIO_ROUTE}`);
   };
 
   useEffect(() => {

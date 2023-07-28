@@ -5,6 +5,7 @@ import skill_categories_json from './content/SkillCategories.json';
 import './css/TagsCloud.css';
 import { Code } from "@chakra-ui/react";
 import { getTagColor, getTagFS, getSelectedTagBorder, tagFilteringOn } from './utils/Hash';
+import PORTFOLIO_ROUTE from '../PortfolioRoute';
 
 function TagsCloud({filter_tags, cute_layout}) {
 
@@ -12,7 +13,7 @@ function TagsCloud({filter_tags, cute_layout}) {
 
     const renderAgain = (updated_filter_tags) => {
       if (tagFilteringOn()) {
-        navigate(`/portfolio?filter_tags=${updated_filter_tags.join(',')}`);
+        navigate(`${PORTFOLIO_ROUTE}?filter_tags=${updated_filter_tags.join(',')}`);
       }
     };
   
