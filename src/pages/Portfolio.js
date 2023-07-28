@@ -13,7 +13,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout, navbar_at_t
   
   const clearSkillsFilter = () => {
     console.log("Clearing skills filter");
-    navigate(`/`);
+    navigate(`/portfolio`);
   };
 
   useEffect(() => {
