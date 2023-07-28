@@ -12,7 +12,7 @@ function TagsCloud({filter_tags, cute_layout}) {
 
     const renderAgain = (updated_filter_tags) => {
       if (tagFilteringOn()) {
-        navigate(`/portfolio?filter_tags=${updated_filter_tags.join(',')}`);
+        navigate(`/?filter_tags=${updated_filter_tags.join(',')}`);
       }
     };
   

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
-import {Code, Accordion, Heading} from '@chakra-ui/react'
+import {Code, Accordion, Heading} from '@chakra-ui/react';
 import './css/Portfolio.css';
 import PortfolioSection from './utils/PortfolioSection';
 import ProjectSection from './utils/ProjectSection';
@@ -13,7 +13,7 @@ function Portfolio({filter_tags, filtered_section_keys, cute_layout, navbar_at_t
   
   const clearSkillsFilter = () => {
     console.log("Clearing skills filter");
-    navigate(`/portfolio`);
+    navigate(`/`);
   };
 
   useEffect(() => {

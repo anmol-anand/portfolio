@@ -3,16 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { ChakraProvider } from '@chakra-ui/react';
+import ComingSoon from './ComingSoon';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
     <ChakraProvider>
-      <App />
+      <Routes>
+          <Route path="/coming-soon" element={<ComingSoon />} />
+          <Route path="/" element={<App />} />
+        </Routes>
     </ChakraProvider>
     </BrowserRouter>
   </React.StrictMode>
