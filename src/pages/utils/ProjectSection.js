@@ -39,7 +39,7 @@ function ProjectSection({ jsonObj, filter_tags, cute_layout}) {
                         {jsonObj.hrefs.length > 0 && (
                             <span className='hrefs-container'>
                                 {jsonObj.hrefs.map((href, index) => {
-                                    const hrefURL = href.url === '' ? '/coming-soon' : href.url;
+                                    const hrefURL = href.url === '' ? 'https://anmol-anand.github.io/coming-soon' : href.url;
                                     return(
                                         <a href={hrefURL} target="_blank" rel="noreferrer" className='project-href' onClick={handleTagClick}>
                                             {(href.icon == "external") && <FontAwesomeIcon icon={faSquareArrowUpRight} />}
