@@ -152,9 +152,9 @@
             "subtitle_list": [
                 {"designation": "Researcher & Open Source Contributor", "date": "Spring 2023"}
             ],
-            "content_head": "As an open source contributor to DIVE Labs' deep learning Python library, \"DIVE into Graphs\" (DIG), I focused on leveraging my expertise in PyTorch, PyTorch Geometric, and Graph Neural Networks (GNNs) to enhance the library's capabilities. My contributions to the project included the following:",
+            "content_head": "As an open source contributor to DIVE Lab's deep learning Python library, \"DIVE into Graphs\" (DIG), I focused on leveraging my expertise in PyTorch, PyTorch Geometric, and Graph Neural Networks (GNNs) to enhance the library's capabilities. My contributions to the project included the following:",
             "content_items": [
-                "Implemented the GraphAug method based on the paper \"Automated Data Augmentations for Graph Classification,\" using Graph Neural Networks (GNNs) for graph datasets.",
+                "Implemented the GraphAug method based on the paper \"Automated Data Augmentations for Graph Classification\", using Graph Neural Networks (GNNs) for graph datasets.",
                 "Created user-friendly Python documentation for the GraphAug implementation.",
                 "Improved graph classification performance by generating label-invariant augmentations."
             ],
