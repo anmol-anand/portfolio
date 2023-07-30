@@ -29,7 +29,7 @@
                 {"icon": "external", "url": ""},
                 {"icon": "git", "url": ""}
             ],
-            "content_head": "In this project, we built a Competitive Programming Platform. It is a Ruby on Rails-based web application, deployed using Docker and Heroku. Instructors can create problems, and students can solve them in their preferred programming language. The platform offers real-time code evaluation, a leaderboard for healthy competition, and a collaborative discussion forum. With automated test case evaluation and analytics, it fosters an engaging and supportive learning environment for students aspiring to excel in data strcutures and algorithms.",
+            "content_head": "In this project, we built a Competitive Programming Platform. It is a Ruby on Rails-based web application, deployed using Docker and Heroku. Instructors can create problems, and students can solve them in their preferred programming language. The platform offers real-time code evaluation, a leaderboard for healthy competition, and a collaborative discussion forum. With automated test case evaluation and analytics, it fosters an engaging and supportive learning environment for students aspiring to excel in data structures and algorithms.",
             "content_items": [],
             "tags": [
                 {"name": "Software Engineering", "categories": ["swe"]},
@@ -49,7 +49,7 @@
                 {"icon": "external", "url": "https://anmol-anand.github.io/paper/resnetReport.pdf"},
                 {"icon": "git", "url": ""}
             ],
-            "content_head": "In this project, I have created an advanced image classification model that harnesses the potential of ResNet in conjunction with shortcut networks, achieving exceptional precision and efficiency during training. The introduction of a novel ResNet variant, carefully optimized in terms of layer depth, channel sizes, and skip connections, strikes an ideal balance between complexity and performance. The model showcased remarkable results, attaining an impressive accuracy of 93.56% within just 90 epochs, a testament to its strategic approach in overcoming challenges like vanishing gradients and slow convergence. ",
+            "content_head": "In this project, I have created an advanced image classification model that harnesses the potential of ResNet in conjunction with shortcut networks, achieving exceptional precision and efficiency during training. The introduction of a novel ResNet variant, carefully optimized in terms of layer depth, channel sizes, and skip connections, strikes an ideal balance between complexity and performance. The model showcased remarkable results, attaining an impressive accuracy of 93.56% within just 90 epochs, a testament to its strategic approach in overcoming challenges like vanishing gradients and slow convergence.",
             "content_items": [],
             "tags": [
                 {"name": "Deep Learning", "categories": ["ml"]},
@@ -82,7 +82,7 @@
         {
             "title_left": "Magna International",
             "subtitle_list": [
-                {"designation": "Data Scientist Intern", "date": "Summer 2023"}
+                {"designation": "Machine Learning Intern", "date": "Summer 2023"}
             ],
             "content_head": "Engaged in a vision-oriented project encompassing image segmentation and classification, I developed a comprehensive application capable of capturing images from a camera and saving them either locally or on Azure. The application offers a user-friendly interface to label the captured images and utilizes well-known models like ResNet, AlexNet, GoogLeNet, among others, for training on the annotated data. After training, these models can be easily deployed from the UI. To create the web interface, I employed NodeJS and libraries such as React, while PyTorch was utilized for crafting the deep learning models.",
             "content_items": [],
