@@ -1,19 +1,23 @@
 {
     "portfolio": [
-        "update project links",
-        "rearrange sidebar with change in height"
+        "rearrange sidebar with change in height",
+        "update resnet repo link",
+        "update codejudge repo link",
+        "update codejudge heroku link",
+        "add aws certification"
     ],
     "linkedin": [
         "update profile picture",
-        "update background picture"
-    ],
-    "github": [
-        "add repo for resnet project",
-        "fix readme for codejudge repo",
-        "update intro",
-        "..fix readme for all other repos.."
+        "update background picture",
+        "add aws certification"
     ],
     "resume": [
-        
+        "add aws certification"
+    ],
+    "github": [
+        "finalize resnet repo",
+        "finalize codejudge repo",
+        "finalize bingefy repo",
+        "update intro"
     ]
 }
