@@ -1,0 +1,19 @@
+{
+    "portfolio": [
+        "update project links",
+        "rearrange sidebar with change in height"
+    ],
+    "linkedin": [
+        "update profile picture",
+        "update background picture"
+    ],
+    "github": [
+        "add repo for resnet project",
+        "fix readme for codejudge repo",
+        "update intro",
+        "..fix readme for all other repos.."
+    ],
+    "resume": [
+        
+    ]
+}
