@@ -27,7 +27,7 @@
             "title": "CodeJudge - Competitive Programming Platform",
             "hrefs": [
                 {"icon": "external", "url": ""},
-                {"icon": "git", "url": ""}
+                {"icon": "git", "url": "https://github.com/anmol-anand/CSCE606_CodeJudge_ProdDeloyment"}
             ],
             "content_head": "In this project, we built a Competitive Programming Platform. It is a Ruby on Rails-based web application, deployed using Docker and Heroku. Instructors can create problems, and students can solve them in their preferred programming language. The platform offers real-time code evaluation, a leaderboard for healthy competition, and a collaborative discussion forum. With automated test case evaluation and analytics, it fosters an engaging and supportive learning environment for students aspiring to excel in data structures and algorithms.",
             "content_items": [],
