@@ -1,5 +1,6 @@
 @import '../../css/font.css';
 @import '../../css/colors.css';
+@import '../../css/dimensions.css';
 
 
 .tags-cloud {
@@ -9,6 +10,16 @@
     flex-direction: column;
     font-size: var(--tags_fs);
     font-weight: var(--tags_fw);
+    overflow-y: scroll;
+}
+
+.tags-cloud-full-height {
+    height: calc(100vh - var(--navbar_height));
+}
+
+.tags-cloud-height-constraint {
+    /* 250px is the total height w/o margins of headshot container and footer */
+    max-height: calc(100% - 250px - var(--navbar_height) - 2 * var(--headshot_margin) - 2 * var(--footer_vertical_margin));
 }
 
 .tags-cloud-heading {

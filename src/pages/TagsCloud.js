@@ -52,7 +52,7 @@ function TagsCloud({filter_tags, cute_layout}) {
       }, {});
 
     return (
-        <div className="tags-cloud">
+        <div className={`tags-cloud ${cute_layout ? 'tags-cloud-full-height' : 'tags-cloud-height-constraint'}`}>
           <div className={`tags-cloud-heading ${cute_layout ? 'tags-cloud-cute-margin' : ''}`}>
             {tagFilteringOn() ? "Filter by Skills" : "Skills"}
           </div>
