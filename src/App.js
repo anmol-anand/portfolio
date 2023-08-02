@@ -152,10 +152,10 @@ function App() {
   const first_breakpoint = 570;
   const second_breakpoint = 800;
   const third_breakpoint = 1300;
-  const first_screen_size = useMediaQuery({ maxWidth: first_breakpoint - 1 });
-  const second_screen_size = useMediaQuery({ minWidth: first_breakpoint, maxWidth: second_breakpoint - 1});
-  const third_screen_size = useMediaQuery({ minWidth: second_breakpoint, maxWidth: third_breakpoint - 1 });
-  const fourth_screen_size = useMediaQuery({ minWidth: third_breakpoint });
+  const first_width = useMediaQuery({ maxWidth: first_breakpoint - 1 });
+  const second_width = useMediaQuery({ minWidth: first_breakpoint, maxWidth: second_breakpoint - 1});
+  const third_width = useMediaQuery({ minWidth: second_breakpoint, maxWidth: third_breakpoint - 1 });
+  const fourth_width = useMediaQuery({ minWidth: third_breakpoint });
 
   const location = useLocation();
   const filter_tags_param = new URLSearchParams(location.search).get('filter_tags');
@@ -179,8 +179,8 @@ function App() {
 
   return (
     <div className="outer-wrapper">
-      {(first_screen_size || second_screen_size || third_screen_size) && <div className='small-screen'>
-        {third_screen_size ? (
+      {(first_width || second_width || third_width) && <div className='small-screen'>
+        {third_width ? (
           <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} picture_on_the_side={false}/>
         ) : (
           <>
@@ -192,27 +192,27 @@ function App() {
             </div>
           </>
         )}
-        <button className={`expand-button ${third_screen_size ? 'add-margin-due-to-navbar' : ''}`} id="expand-tags-cloud-button" onClick={showTagsCloud}>
+        <button className={`expand-button ${third_width ? 'add-margin-due-to-navbar' : ''}`} id="expand-tags-cloud-button" onClick={showTagsCloud}>
           <FontAwesomeIcon icon={faSlidersH} style={{ height: '25px', width: '25px' }} /> 
         </button>
-        <div id='tags-cloud-cute-wrapper' className={`${third_screen_size ? 'add-margin-due-to-navbar' : ''}`} ref={tagsCloudRef}>
+        <div id='tags-cloud-cute-wrapper' className={`${third_width ? 'add-margin-due-to-navbar' : ''}`} ref={tagsCloudRef}>
           <TagsCloud filter_tags={filter_tags} cute_layout={true}/>
         </div>
-        <div className={`single-pane ${third_screen_size ? 'add-margin-due-to-navbar single-pane-restricted-width' : ''}`}>
+        <div className={`single-pane ${third_width ? 'add-margin-due-to-navbar single-pane-restricted-width' : ''}`}>
           <div id='top-panel-1' className='small-pane-cute small-pane-cute-header'>
             <div className='headshot-container-cute'>
                 <img src={HEADSHOT} alt='HEADSHOT' className='headshot'/>
                 <div className='name'> Anmol Anand </div>
             </div>
           </div>
-          <About cute_layout={first_screen_size} />
-          <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} cute_layout={first_screen_size} navbar_at_top={third_screen_size}/>
+          <About cute_layout={first_width} />
+          <Portfolio filter_tags={filter_tags} filtered_section_keys={filtered_section_keys} cute_layout={first_width} navbar_at_top={third_width}/>
           <div className='small-pane-cute small-pane-cute-footer'>
             <Footer cute_layout={true} />
           </div>
         </div>
       </div>}
-      {fourth_screen_size && <div className='large-screen'>
+      {fourth_width && <div className='large-screen'>
         <Navbar cute_layout={false} filtered_section_keys={filtered_section_keys} picture_on_the_side={true}/>
         <div className='double-pane'>
           <div className='small-pane'>
