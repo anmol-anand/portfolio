@@ -34,7 +34,7 @@ function Navbar({cute_layout, filtered_section_keys, picture_on_the_side}) {
             duration={duration}
             className='nav-link-common nav-link'
           >
-            <div className='blank-space' />
+            {cute_layout && <div className='blank-space' />}
             <FontAwesomeIcon icon={faHome} />
           </Link>
         </li>
@@ -55,6 +55,20 @@ function Navbar({cute_layout, filtered_section_keys, picture_on_the_side}) {
             </Link>
           </li>
         ))}
+        {!picture_on_the_side && <li className={cute_layout ? 'nav-item-font nav-item-cute-dim' : 'nav-item-font nav-item-dim'}>
+          <Link
+            activeClass="active"
+            to={"contact_info"}
+            spy={true}
+            smooth={true}
+            offset={offset}
+            duration={duration}
+            className='nav-link-common nav-link'
+          >
+            {cute_layout && <div className='blank-space' />}
+            Contact
+          </Link>
+        </li>}
       </ul>
     </nav>
   );
