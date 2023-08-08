@@ -15,7 +15,7 @@ function Footer({cute_layout}) {
         </a>
       </div>
       <div className="footer-row">
-        <a href="https://anmol-anand.github.io/resume.pdf" className="resume-text" target="_blank" rel="noopener noreferrer">
+        <a href="https://anmol-anand.github.io/resume/anmol_anand_sde_ml.pdf" className="resume-text" target="_blank" rel="noopener noreferrer">
           resume.pdf
         </a>
         {/* <FontAwesomeIcon icon={faSquareArrowUpRight} className='social-icon'/> */}

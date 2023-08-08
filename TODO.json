@@ -1,19 +1,16 @@
 {
     "portfolio": [
-        "add contact on navbar",
-        "add aws certification",
+        "AWS",
         "update codejudge heroku link"
     ],
     "linkedin": [
         "endorsements",
         "check linkedin training tips",
-        "add aws certification",
+        "AWS",
         "update profile picture"
     ],
     "resume": [
-        "ats friendly",
-        "resume file name",
-        "add aws certification"
+        "AWS"
     ],
     "github": [
         "update intro"
