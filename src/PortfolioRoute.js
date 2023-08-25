@@ -1,1 +1,1 @@
-export default '/portfolio';
+export default '/';
