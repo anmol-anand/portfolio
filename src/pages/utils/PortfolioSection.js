@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../css/PortfolioSection.css';
 import '../../css/font.css';
 import { Code, Icon,
@@ -18,11 +18,7 @@ import LOGO_MAGNA from '../../assets/logos/magna.png';
 import LOGO_PAG from '../../assets/logos/pag.png';
 import LOGO_TAMU from '../../assets/logos/tamu.png';
 
-const ASSETS_FOLDER = "/assets/";
-
 function PortfolioSection({ jsonObj, filter_tags, cute_layout }) {
-
-    const tagsFS = getComputedStyle(document.documentElement).getPropertyValue('--primary-color');
 
     const logos = {
         "aws": LOGO_AWS,

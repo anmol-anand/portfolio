@@ -51,6 +51,8 @@ function TagsCloud({filter_tags, cute_layout}) {
         return acc;
       }, {});
 
+    console.log(tags_by_categories);
+
     return (
         <div className={`tags-cloud ${cute_layout ? 'tags-cloud-full-height' : 'tags-cloud-height-constraint'}`}>
           <div className={`tags-cloud-heading ${cute_layout ? 'tags-cloud-cute-margin' : ''}`}>
