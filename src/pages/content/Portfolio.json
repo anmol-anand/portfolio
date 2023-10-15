@@ -33,8 +33,7 @@
             "content_items": [],
             "tags": [
                 {"name": "Software Engineering", "categories": ["swe"]},
-                {"name": "Ruby", "categories": ["swe"]},
-                {"name": "Rails", "categories": ["swe"]},
+                {"name": "Ruby on Rails", "categories": ["swe"]},
                 {"name": "Docker", "categories": ["swe"]},
                 {"name": "Heroku", "categories": ["swe"]},
                 {"name": "Databases", "categories": ["swe"]},
