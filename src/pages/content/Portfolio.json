@@ -1,24 +1,71 @@
 {
-    "Education": [
+    "Professional Experience": [
         {
-            "title_left": "Texas A&M University",
-            "title_right": "GPA: 4.00",
+            "title_left": "Goldman Sachs",
             "subtitle_list": [
-                {"designation": "Master of Science in Computer Science", "period": "2 yrs", "date": "Aug 2022 - May 2024"}
+                {"designation": "Software Engineer II", "period": "6 mos", "date": "Jan 2022 - Jun 2022"},
+                {"designation": "Software Engineer I", "period": "2 yrs 7 mos", "date": "Jun 2019 - Dec 2021"}
             ],
-            "content_items": [],
-            "tags": [],
-            "logo": "tamu"
+            "content_head": "Worked in the Search Engineering team on a natural language, petabyte-scale, distributed search engine that powers search for almost every use-case of the firm. Major contributions to the product were:",
+            "content_items": [
+                "Improved the complexity of the retrieval algorithm, reducing the average retrieval latency by a factor of 50.",
+                "Improved the detection of meaningful n-grams in search queries, increasing precision from 0.45 to 0.85 and recall from 0.30 to 0.59.",
+                "Redesigned the document scoring algorithm, improving query-document relevance by 30%.",
+                "Introduced a score to consider the positions of relevant terms in documents, further improving query-document relevance by 16%.",
+                "Worked on summarizing search results (which could go up to a billion documents).",
+                "Generated the inverted index for two corpora."
+            ],
+            "tags": [
+                {"name": "Information Retrieval", "categories": ["ml"]}, 
+                {"name": "Search Engines", "categories": ["swe"]},
+                {"name": "Distributed Computing", "categories": ["swe"]}, 
+                {"name": "Big Data", "categories": ["ml"]}, 
+                {"name": "MapReduce", "categories": ["ml"]}, 
+                {"name": "Apache Hadoop", "categories": ["ml"]}, 
+                {"name": "ANTLR", "categories": ["ml"]}, 
+                {"name": "Protocol Buffers", "categories": ["swe"]},
+                {"name": "Software Engineering", "categories": ["swe"]}
+            ],
+            "logo": "gs"
         },
         {
-            "title_left": "Indian Institute of Technology",
-            "title_right": "GPA: 3.38",
+            "title_left": "Goldman Sachs",
             "subtitle_list": [
-                {"designation": "Bachelor's in Computer Science", "period": "4 yrs", "date": "Jul 2015 - May 2019"}
+                {"designation": "Software Engineer Intern", "date": "Summer 2018"}
             ],
+            "content_head": "Developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program.  Honed my skills in software development, automation, and gained valuable insights into large-scale data processing systems.",
             "content_items": [],
-            "tags": [],
-            "logo": "iitr"
+            "tags": [
+                {"name": "Big Data", "categories": ["ml"]}, 
+                {"name": "MapReduce", "categories": ["ml"]}, 
+                {"name": "Apache Hadoop", "categories": ["ml"]}, 
+                {"name": "Cron", "categories": ["swe"]}, 
+                {"name": "Multithreading", "categories": ["swe"]},
+                {"name": "Software Engineering", "categories": ["swe"]}
+            ],
+            "logo": "gs"
+        },
+        {
+            "title_left": "Magna International",
+            "subtitle_list": [
+                {"designation": "Data Scientist Intern", "date": "Summer 2023"},
+                {"designation": "Data Scientist Intern", "date": "Fall 2023"}
+            ],
+            "content_head": "Engaged in a vision-oriented project encompassing image segmentation and classification, I developed a comprehensive application capable of capturing images from a camera and saving them either locally or on Azure. The application offers a user-friendly interface to label the captured images and utilizes well-known models like ResNet, AlexNet, GoogLeNet, among others, for training on the annotated data. After training, these models can be easily deployed from the UI. To create the web interface, I employed NodeJS and libraries such as React, while PyTorch was utilized for crafting the deep learning models.",
+            "content_items": [],
+            "tags": [
+                {"name": "Deep Learning", "categories": ["ml"]},
+                {"name": "Software Engineering", "categories": ["swe"]},
+                {"name": "Vision", "categories": ["ml"]}, 
+                {"name": "Python", "categories": ["ml"]}, 
+                {"name": "PyTorch", "categories": ["ml"]},
+                {"name": "Convolutional Neural Nets", "categories": ["ml"]}, 
+                {"name": "Node.js", "categories": ["swe"]}, 
+                {"name": "React", "categories": ["swe"]}, 
+                {"name": "Azure", "categories": ["swe"]}, 
+                {"name": "Docker", "categories": ["swe"]}
+            ],
+            "logo": "magna"
         }
     ],
     "Projects": [
@@ -77,73 +124,26 @@
             "layout": 0
         }
     ],
-    "Professional Experience": [
+    "Education": [
         {
-            "title_left": "Goldman Sachs",
+            "title_left": "Texas A&M University",
+            "title_right": "GPA: 4.00",
             "subtitle_list": [
-                {"designation": "Software Engineer II", "period": "6 mos", "date": "Jan 2022 - Jun 2022"},
-                {"designation": "Software Engineer I", "period": "2 yrs 7 mos", "date": "Jun 2019 - Dec 2021"}
+                {"designation": "Master of Science in Computer Science", "period": "2 yrs", "date": "Aug 2022 - May 2024"}
             ],
-            "content_head": "Worked in the Search Engineering team on a natural language, petabyte-scale, distributed search engine that powers search for almost every use-case of the firm. Major contributions to the product were:",
-            "content_items": [
-                "Improved the complexity of the retrieval algorithm, reducing the average retrieval latency by a factor of 50.",
-                "Improved the detection of meaningful n-grams in search queries, increasing precision from 0.45 to 0.85 and recall from 0.30 to 0.59.",
-                "Redesigned the document scoring algorithm, improving query-document relevance by 30%.",
-                "Introduced a score to consider the positions of relevant terms in documents, further improving query-document relevance by 16%.",
-                "Worked on summarizing search results (which could go up to a billion documents).",
-                "Generated the inverted index for two corpora."
-            ],
-            "tags": [
-                {"name": "Information Retrieval", "categories": ["ml"]}, 
-                {"name": "Search Engines", "categories": ["swe"]},
-                {"name": "Distributed Computing", "categories": ["swe"]}, 
-                {"name": "Big Data", "categories": ["ml"]}, 
-                {"name": "MapReduce", "categories": ["ml"]}, 
-                {"name": "Apache Hadoop", "categories": ["ml"]}, 
-                {"name": "ANTLR", "categories": ["ml"]}, 
-                {"name": "Protocol Buffers", "categories": ["swe"]},
-                {"name": "Software Engineering", "categories": ["swe"]}
-            ],
-            "logo": "gs"
+            "content_items": [],
+            "tags": [],
+            "logo": "tamu"
         },
         {
-            "title_left": "Magna International",
+            "title_left": "Indian Institute of Technology",
+            "title_right": "GPA: 3.38",
             "subtitle_list": [
-                {"designation": "Data Scientist Intern", "date": "Summer 2023"},
-                {"designation": "Data Scientist Intern", "date": "Fall 2023"}
+                {"designation": "Bachelor's in Computer Science", "period": "4 yrs", "date": "Jul 2015 - May 2019"}
             ],
-            "content_head": "Engaged in a vision-oriented project encompassing image segmentation and classification, I developed a comprehensive application capable of capturing images from a camera and saving them either locally or on Azure. The application offers a user-friendly interface to label the captured images and utilizes well-known models like ResNet, AlexNet, GoogLeNet, among others, for training on the annotated data. After training, these models can be easily deployed from the UI. To create the web interface, I employed NodeJS and libraries such as React, while PyTorch was utilized for crafting the deep learning models.",
             "content_items": [],
-            "tags": [
-                {"name": "Deep Learning", "categories": ["ml"]},
-                {"name": "Software Engineering", "categories": ["swe"]},
-                {"name": "Vision", "categories": ["ml"]}, 
-                {"name": "Python", "categories": ["ml"]}, 
-                {"name": "PyTorch", "categories": ["ml"]},
-                {"name": "Convolutional Neural Nets", "categories": ["ml"]}, 
-                {"name": "Node.js", "categories": ["swe"]}, 
-                {"name": "React", "categories": ["swe"]}, 
-                {"name": "Azure", "categories": ["swe"]}, 
-                {"name": "Docker", "categories": ["swe"]}
-            ],
-            "logo": "magna"
-        },
-        {
-            "title_left": "Goldman Sachs",
-            "subtitle_list": [
-                {"designation": "Software Engineer Intern", "date": "Summer 2018"}
-            ],
-            "content_head": "Developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program.  Honed my skills in software development, automation, and gained valuable insights into large-scale data processing systems.",
-            "content_items": [],
-            "tags": [
-                {"name": "Big Data", "categories": ["ml"]}, 
-                {"name": "MapReduce", "categories": ["ml"]}, 
-                {"name": "Apache Hadoop", "categories": ["ml"]}, 
-                {"name": "Cron", "categories": ["swe"]}, 
-                {"name": "Multithreading", "categories": ["swe"]},
-                {"name": "Software Engineering", "categories": ["swe"]}
-            ],
-            "logo": "gs"
+            "tags": [],
+            "logo": "iitr"
         }
     ],
     "Academic Experience": [
