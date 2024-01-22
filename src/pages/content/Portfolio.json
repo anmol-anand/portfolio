@@ -126,6 +126,28 @@
             "logo": "pag"
         }
     ],
+    "Education": [
+        {
+            "title_left": "Texas A&M University",
+            "title_right": "GPA: 3.88",
+            "subtitle_list": [
+                {"designation": "Master's in Computer Science", "period": "2 yrs", "date": "Aug 2022 - May 2024"}
+            ],
+            "content_items": [],
+            "tags": [],
+            "logo": "tamu"
+        },
+        {
+            "title_left": "Indian Institute of Technology",
+            "title_right": "GPA: 3.38",
+            "subtitle_list": [
+                {"designation": "Bachelor's in Computer Science", "period": "4 yrs", "date": "Jul 2015 - May 2019"}
+            ],
+            "content_items": [],
+            "tags": [],
+            "logo": "iitr"
+        }
+    ],
     "Projects": [
         {
             "thumbnail": "codejudge",
@@ -180,28 +202,6 @@
                 {"name": "Advanced Algorithms", "categories": ["th"]}
             ],
             "layout": 0
-        }
-    ],
-    "Education": [
-        {
-            "title_left": "Texas A&M University",
-            "title_right": "GPA: 3.88",
-            "subtitle_list": [
-                {"designation": "Master's in Computer Science", "period": "2 yrs", "date": "Aug 2022 - May 2024"}
-            ],
-            "content_items": [],
-            "tags": [],
-            "logo": "tamu"
-        },
-        {
-            "title_left": "Indian Institute of Technology",
-            "title_right": "GPA: 3.38",
-            "subtitle_list": [
-                {"designation": "Bachelor's in Computer Science", "period": "4 yrs", "date": "Jul 2015 - May 2019"}
-            ],
-            "content_items": [],
-            "tags": [],
-            "logo": "iitr"
         }
     ],
     "Achievements": [
