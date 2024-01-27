@@ -52,24 +52,6 @@
             "logo": "gs"
         },
         {
-            "title_left": "Goldman Sachs",
-            "subtitle_list": [
-                {"designation": "Software Engineer Intern", "date": "Summer 2018"}
-            ],
-            "content_head": "Developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program.  Honed my skills in software development, automation, and gained valuable insights into large-scale data processing systems.",
-            "content_items": [],
-            "tags": [
-                {"name": "C++", "categories": ["swe"]},
-                {"name": "Big Data", "categories": ["ml"]}, 
-                {"name": "MapReduce", "categories": ["ml"]}, 
-                {"name": "Apache Hadoop", "categories": ["ml"]}, 
-                {"name": "Cron", "categories": ["swe"]}, 
-                {"name": "Multithreading", "categories": ["swe"]},
-                {"name": "Software Engineering", "categories": ["swe"]}
-            ],
-            "logo": "gs"
-        },
-        {
             "title_left": "Magna International",
             "subtitle_list": [
                 {"designation": "Data Scientist Intern", "date": "Spring 2024"},
@@ -91,6 +73,24 @@
                 {"name": "Docker", "categories": ["swe"]}
             ],
             "logo": "magna"
+        },
+        {
+            "title_left": "Goldman Sachs",
+            "subtitle_list": [
+                {"designation": "Software Engineer Intern", "date": "Summer 2018"}
+            ],
+            "content_head": "Developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program.  Honed my skills in software development, automation, and gained valuable insights into large-scale data processing systems.",
+            "content_items": [],
+            "tags": [
+                {"name": "C++", "categories": ["swe"]},
+                {"name": "Big Data", "categories": ["ml"]}, 
+                {"name": "MapReduce", "categories": ["ml"]}, 
+                {"name": "Apache Hadoop", "categories": ["ml"]}, 
+                {"name": "Cron", "categories": ["swe"]}, 
+                {"name": "Multithreading", "categories": ["swe"]},
+                {"name": "Software Engineering", "categories": ["swe"]}
+            ],
+            "logo": "gs"
         }
     ],
     "Academic Experience": [
