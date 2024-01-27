@@ -1,6 +1,6 @@
 {
     "roles": {
-        "swe": "Experienced in developing applications using Java, Ruby on Rails, React, and Node.js, with proficiency in cloud platforms (Azure Blob, AWS S3), databases (Postgres), and deployment tools (Heroku, Docker).",
+        "swe": "Skilled developer (Java, Ruby on Rails, React, Node.js) with cloud (Azure Blob, AWS S3), database (Postgres), and deployment (Heroku, Docker) expertise. Passionate about mathematics and algorithms.",
         "ml": "Skilled in PyTorch, Deep Learning for Graph and Image datasets, with three years of work experience in information retrieval and developing natural language search engines."
     }
 }
