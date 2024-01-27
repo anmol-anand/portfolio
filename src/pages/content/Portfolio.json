@@ -1,4 +1,26 @@
 {
+    "Education": [
+        {
+            "title_left": "Texas A&M University",
+            "title_right": "GPA: 3.88",
+            "subtitle_list": [
+                {"designation": "Master's in Computer Science", "period": "2 yrs", "date": "Aug 2022 - May 2024"}
+            ],
+            "content_items": [],
+            "tags": [],
+            "logo": "tamu"
+        },
+        {
+            "title_left": "Indian Institute of Technology",
+            "title_right": "GPA: 3.38",
+            "subtitle_list": [
+                {"designation": "Bachelor's in Computer Science", "period": "4 yrs", "date": "Jul 2015 - May 2019"}
+            ],
+            "content_items": [],
+            "tags": [],
+            "logo": "iitr"
+        }
+    ],
     "Professional Experience": [
         {
             "title_left": "Goldman Sachs",
@@ -16,6 +38,7 @@
                 "Generated the inverted index for two corpora."
             ],
             "tags": [
+                {"name": "Java", "categories": ["swe"]},
                 {"name": "Information Retrieval", "categories": ["ml"]}, 
                 {"name": "Search Engines", "categories": ["swe"]},
                 {"name": "Distributed Computing", "categories": ["swe"]}, 
@@ -36,6 +59,7 @@
             "content_head": "Developed a versatile scheduler designed to handle a diverse range of batch-processing map-reduce jobs. Achieved automation and monitoring capabilities for extensive workloads, encapsulating the entire process within a well-structured and efficient program.  Honed my skills in software development, automation, and gained valuable insights into large-scale data processing systems.",
             "content_items": [],
             "tags": [
+                {"name": "C++", "categories": ["swe"]},
                 {"name": "Big Data", "categories": ["ml"]}, 
                 {"name": "MapReduce", "categories": ["ml"]}, 
                 {"name": "Apache Hadoop", "categories": ["ml"]}, 
@@ -124,28 +148,6 @@
                 {"name": "Teaching", "categories": ["act"]}
             ],
             "logo": "pag"
-        }
-    ],
-    "Education": [
-        {
-            "title_left": "Texas A&M University",
-            "title_right": "GPA: 3.88",
-            "subtitle_list": [
-                {"designation": "Master's in Computer Science", "period": "2 yrs", "date": "Aug 2022 - May 2024"}
-            ],
-            "content_items": [],
-            "tags": [],
-            "logo": "tamu"
-        },
-        {
-            "title_left": "Indian Institute of Technology",
-            "title_right": "GPA: 3.38",
-            "subtitle_list": [
-                {"designation": "Bachelor's in Computer Science", "period": "4 yrs", "date": "Jul 2015 - May 2019"}
-            ],
-            "content_items": [],
-            "tags": [],
-            "logo": "iitr"
         }
     ],
     "Projects": [
