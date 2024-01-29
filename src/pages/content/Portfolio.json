@@ -58,7 +58,7 @@
                 {"designation": "Data Scientist Intern", "date": "Fall 2023"},
                 {"designation": "Data Scientist Intern", "date": "Summer 2023"}
             ],
-            "content_head": "Engaged in a vision project for the automotive industry focused on image segmentation and classification. Developed a comprehensive web-application using technologies such as Node.js, React, PyTorch, Azure, and Docker that provided the following functionality:",
+            "content_head": "Engaged in a vision project for the automotive industry, focusing on image segmentation and classification. Developed a comprehensive web application using technologies such as Node.js, React, PyTorch, Azure, and Docker, providing the following functionality:",
             "content_items": ["Capturing camera images from the UI, and storing on Local or Azure platforms.",
             "Annotating and labelling images through an intuitive user interface.",
             "Training and deployment of renowned models such as AlexNet, ResNet from the UI."],
