@@ -45,6 +45,8 @@
                 {"name": "Big Data", "categories": ["ml"]}, 
                 {"name": "MapReduce", "categories": ["ml"]}, 
                 {"name": "Apache Hadoop", "categories": ["ml"]}, 
+                {"name": "Apache Hbase", "categories": ["ml"]},  
+                {"name": "Apache Twill", "categories": ["swe"]}, 
                 {"name": "ANTLR", "categories": ["ml"]}, 
                 {"name": "Protocol Buffers", "categories": ["swe"]},
                 {"name": "Software Engineering", "categories": ["swe"]}
@@ -58,7 +60,7 @@
                 {"designation": "Data Scientist Intern", "date": "Fall 2023"},
                 {"designation": "Data Scientist Intern", "date": "Summer 2023"}
             ],
-            "content_head": "Engaged in a vision project for the automotive industry, focusing on image segmentation and classification. Developed a comprehensive web application using technologies such as Node.js, React, PyTorch, Azure, and Docker, providing the following functionality:",
+            "content_head": "Engaged in a vision project for the automotive industry, focusing on image segmentation and classification. Developed a comprehensive web application using technologies such as Node.js, React.js, PyTorch, Azure, and Docker, providing the following functionality:",
             "content_items": ["Periodically capturing camera images, and storing them locally, or on cloud storage options including Azure Blob, and AWS S3.",
             "Annotating and labelling images through an intuitive user interface.",
             "Training and deployment of renowned models such as AlexNet, ResNet from the UI."],
@@ -70,10 +72,11 @@
                 {"name": "PyTorch", "categories": ["ml"]},
                 {"name": "Convolutional Neural Nets", "categories": ["ml"]}, 
                 {"name": "Node.js", "categories": ["swe"]}, 
-                {"name": "React", "categories": ["swe"]}, 
+                {"name": "React.js", "categories": ["swe"]}, 
                 {"name": "Azure", "categories": ["swe"]}, 
                 {"name": "AWS", "categories": ["swe"]}, 
-                {"name": "Docker", "categories": ["swe"]}
+                {"name": "Docker", "categories": ["swe"]},
+                {"name": "Flask", "categories": ["swe"]}
             ],
             "logo": "magna"
         },
@@ -114,6 +117,7 @@
                 {"name": "PyTorch", "categories": ["ml"]},
                 {"name": "PyTorch Geometric", "categories": ["ml"]},
                 {"name": "Graph Neural Nets", "categories": ["ml"]}, 
+                {"name": "Sphinx", "categories": ["ml"]}, 
                 {"name": "Graphs", "categories": ["ml"]}, 
                 {"name": "Data Augmentation", "categories": ["ml"]}
             ],
