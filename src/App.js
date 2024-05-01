@@ -10,7 +10,7 @@ import TagsCloud from './pages/TagsCloud';
 import portfolio_json from './pages/content/Portfolio.json';
 import './css/App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faSlidersH } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 // HEADSHOT
 import HEADSHOT from './assets/headshot/headshot.JPG';
 
@@ -193,7 +193,7 @@ function App() {
           </>
         )}
         <button className={`expand-button ${third_width ? 'add-margin-due-to-navbar' : ''}`} id="expand-tags-cloud-button" onClick={showTagsCloud}>
-          <FontAwesomeIcon icon={faSlidersH} style={{ height: '25px', width: '25px' }} /> 
+          <FontAwesomeIcon icon={faLightbulb} style={{ height: '25px', width: '25px' }} /> 
         </button>
         <div id='tags-cloud-cute-wrapper' className={`${third_width ? 'add-margin-due-to-navbar' : ''}`} ref={tagsCloudRef}>
           <TagsCloud filter_tags={filter_tags} cute_layout={true}/>
