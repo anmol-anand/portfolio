@@ -19,7 +19,7 @@
 
 .tags-cloud-height-constraint {
     /* 250px is the total height w/o margins of headshot container and footer */
-    max-height: calc(100% - 250px - var(--navbar_height) - 2 * var(--headshot_margin) - 2 * var(--footer_vertical_margin));
+    max-height: calc(100% - 250px - var(--navbar_height) - var(--headshot_upper_margin) - var(--headshot_lower_margin) - 2 * var(--footer_vertical_margin));
 }
 
 .tags-cloud-heading {

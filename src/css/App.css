@@ -77,8 +77,8 @@
 }
 
 .headshot-container {
-  margin-top: var(--headshot_margin);
-  margin-bottom: var(--headshot_margin);
+  margin-top: var(--headshot_upper_margin);
+  margin-bottom: var(--headshot_lower_margin);
   width: 100%;
   display: flex;
   flex-direction: column;

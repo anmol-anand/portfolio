@@ -14,7 +14,8 @@
 
     /* Headshot */
 
-    --headshot_margin: 47px;
+    --headshot_upper_margin: 36px;
+    --headshot_lower_margin: 18px;
     --headshot_height: 120px;
 
     /* Footer */
