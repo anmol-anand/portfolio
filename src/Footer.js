@@ -45,12 +45,12 @@ function Footer({cute_layout}) {
               // <span className="tooltip">Email</span>
             </a>
           </div> */}
-          <div class="icon-wrapper">
+          {/* <div class="icon-wrapper">
             <a href="https://www.instagram.com/_anmol_anand_/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} size="lg" className="social-icon" />
-              {/* <span className="tooltip">Instagram</span> */}
+              // { <span className="tooltip">Instagram</span> }
             </a>
-          </div>
+          </div> */}
       </div>
     </div>
   );
