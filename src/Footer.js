@@ -10,8 +10,8 @@ function Footer({cute_layout}) {
   return (
     <div className={cute_layout ? "footer-cute" : "footer"} id="contact_info">
       <div className="footer-row">
-        <a href="mailto:aanand@tamu.edu" className="email-text">
-          aanand@tamu.edu
+        <a href="mailto:anmol-anand@outlook.com" className="email-text">
+          anmol-anand@outlook.com
         </a>
       </div>
       <div className="footer-row">
