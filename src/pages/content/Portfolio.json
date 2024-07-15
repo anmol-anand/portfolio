@@ -25,6 +25,20 @@
         {
             "title_left": "Goldman Sachs",
             "subtitle_list": [
+                {"designation": "Software Engineer II", "date": "Jul 2024 - Present"}
+            ],
+            "content_head": "",
+            "content_items": [
+                
+            ],
+            "tags": [
+                
+            ],
+            "logo": "gs"
+        },
+        {
+            "title_left": "Goldman Sachs",
+            "subtitle_list": [
                 {"designation": "Software Engineer II", "period": "6 mos", "date": "Jan 2022 - Jun 2022"},
                 {"designation": "Software Engineer I", "period": "2 yrs 7 mos", "date": "Jun 2019 - Dec 2021"}
             ],
